@@ -1,0 +1,370 @@
+.wrap {
+  padding-block: var(--space-m) var(--space-l);
+}
+
+.title {
+  display: grid;
+  line-height: 1.2;
+}
+
+.titleThin {
+  font-size: var(--step-4);
+  font-weight: var(--w-thin);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.titleCode {
+  font-size: var(--step-1);
+  font-weight: var(--w-black);
+  margin-block-start: 6px;
+}
+
+/* the track, drawn to scale */
+.trackArea {
+  margin-block: 72px 8px;
+  padding-inline: 14px;
+}
+
+.track {
+  position: relative;
+  height: 6px;
+  background: var(--line);
+  border-radius: 3px;
+}
+
+.elapsed {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  background: var(--sage);
+  border-radius: 3px;
+}
+
+.range {
+  position: absolute;
+  inset-block: -3px;
+  background: var(--sky);
+  opacity: 0.35;
+  border-radius: 6px;
+}
+
+.range[data-status='past'] {
+  background: var(--sage);
+}
+
+.tick {
+  position: absolute;
+  inset-block-start: -5px;
+  width: 2px;
+  height: 16px;
+  translate: 50% 0;
+  background: var(--line-strong);
+}
+
+.tick[data-status='past'] {
+  background: var(--sage);
+}
+
+.marker {
+  position: absolute;
+  inset-block-start: 50%;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  translate: 50% -50%;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  font-size: 0.8125rem;
+  font-weight: var(--w-black);
+  line-height: 1;
+}
+
+.marker[data-lift] {
+  translate: 50% calc(-50% - 30px);
+}
+
+/* stem joining a lifted marker to the track */
+.marker[data-lift]::after {
+  content: '';
+  position: absolute;
+  inset-block-start: 100%;
+  width: 2px;
+  height: 17px;
+  background: inherit;
+  border-inline: 1px solid var(--ink);
+}
+
+.marker[data-status='past'] {
+  border-color: var(--sage);
+  color: var(--sage);
+}
+
+.marker[data-status='past']::after {
+  border-color: var(--sage);
+}
+
+.marker[data-status='current'] {
+  background: var(--sky);
+  border-color: var(--sky);
+  color: #fff;
+}
+
+/* the one red element on the page */
+.today {
+  position: absolute;
+  inset-block-start: 50%;
+  width: 2px;
+  height: 64px;
+  translate: 50% -50%;
+  background: var(--today);
+  z-index: 2;
+}
+
+.todayLabel {
+  position: absolute;
+  inset-block-end: calc(100% + 4px);
+  inset-inline-start: 50%;
+  translate: 50% 0;
+  white-space: nowrap;
+  font-size: 0.8125rem;
+  font-weight: var(--w-bold);
+  color: var(--today);
+}
+
+.months {
+  position: relative;
+  height: 28px;
+  margin-block-start: 22px;
+}
+
+.months span {
+  position: absolute;
+  inset-block-start: 50%;
+  translate: 50% -50%;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.months span::before {
+  content: '';
+  position: absolute;
+  inset-block-end: calc(100% + 6px);
+  inset-inline-start: 50%;
+  width: 1px;
+  height: 10px;
+  background: var(--line-strong);
+}
+
+/* legend: the readable version of the track */
+.legend {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0;
+  margin-block-start: var(--space-m);
+  border-block-start: 1px solid var(--line);
+}
+
+.item {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: var(--space-s) 10px var(--space-s) 0;
+  border-inline-end: 1px solid var(--line);
+}
+
+.item:last-child {
+  border-inline-end: 0;
+}
+
+.item + .item {
+  padding-inline-start: 12px;
+}
+
+.num {
+  font-size: var(--step-3);
+  font-weight: var(--w-black);
+  line-height: 1;
+}
+
+.itemLabel {
+  font-weight: var(--w-bold);
+  line-height: 1.5;
+  margin-block-start: 6px;
+}
+
+.itemDate {
+  font-size: 0.875rem;
+}
+
+.itemStatus {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.item[data-status='past'] {
+  color: var(--sage);
+}
+
+.item[data-status='past'] .itemStatus {
+  color: var(--sage);
+}
+
+.item[data-status='current'] .num,
+.item[data-status='current'] .itemStatus {
+  color: var(--sky-deep);
+  font-weight: var(--w-bold);
+}
+
+/* full list */
+.all {
+  margin-block-start: var(--space-m);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.all summary {
+  padding: 12px var(--space-s);
+  cursor: pointer;
+  font-weight: var(--w-bold);
+  color: var(--sky-deep);
+}
+
+.all[open] summary {
+  border-block-end: 1px solid var(--line);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.table th,
+.table td {
+  padding: 8px var(--space-s);
+  text-align: start;
+  border-block-end: 1px solid var(--line);
+}
+
+.table thead th {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  font-weight: var(--w-bold);
+}
+
+.table tbody th {
+  font-weight: var(--w-medium);
+}
+
+.table tr[data-status='past'] {
+  color: var(--sage);
+}
+
+.table tr[data-status='current'] {
+  background: var(--sky-wash);
+}
+
+.notes {
+  display: grid;
+  gap: 6px;
+  padding: var(--space-s);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  list-style: disc;
+  padding-inline-start: 36px;
+}
+
+.all > a {
+  display: inline-block;
+  padding: 0 var(--space-s) var(--space-s);
+  font-weight: var(--w-medium);
+}
+
+@media (max-width: 1100px) {
+  .legend {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .item:nth-child(4n) {
+    border-inline-end: 0;
+  }
+
+  .item:nth-child(n + 5) {
+    border-block-start: 1px solid var(--line);
+  }
+
+  .item:nth-child(4n + 1) {
+    padding-inline-start: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .trackArea {
+    margin-block-start: 64px;
+  }
+
+  .months span:nth-child(even) {
+    display: none;
+  }
+
+  .legend {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .item {
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    grid-template-areas:
+      'num label status'
+      'num date date';
+    border-inline-end: 0;
+    border-block-end: 1px solid var(--line);
+  }
+
+  .item,
+  .item + .item {
+    padding: 12px 0;
+  }
+
+  .item:nth-child(n + 5) {
+    border-block-start: 0;
+  }
+
+  .num {
+    grid-area: num;
+    font-size: var(--step-2);
+  }
+
+  .itemLabel {
+    grid-area: label;
+    margin: 0;
+  }
+
+  .itemDate {
+    grid-area: date;
+  }
+
+  .itemStatus {
+    grid-area: status;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-block-end: 1px solid var(--line);
+    padding: 6px var(--space-s);
+  }
+
+  .table th,
+  .table td {
+    border: 0;
+    padding: 0;
+  }
+}

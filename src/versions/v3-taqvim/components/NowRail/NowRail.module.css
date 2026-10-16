@@ -1,0 +1,167 @@
+.rail {
+  position: sticky;
+  inset-block-start: var(--space-m);
+  display: grid;
+  gap: var(--space-m);
+  align-self: start;
+}
+
+.today {
+  padding-block-end: var(--space-m);
+  border-block-end: 1px solid var(--line);
+}
+
+.weekday {
+  font-size: var(--step-2);
+  font-weight: var(--w-thin);
+  line-height: 1.2;
+}
+
+.day {
+  font-size: var(--step-5);
+  font-weight: var(--w-black);
+  line-height: 0.95;
+  color: var(--today);
+  letter-spacing: -0.03em;
+}
+
+.month {
+  font-size: var(--step-2);
+  font-weight: var(--w-thin);
+  line-height: 1.4;
+}
+
+.week {
+  margin-block-start: var(--space-s);
+  font-size: 0.9375rem;
+  font-weight: var(--w-medium);
+  color: var(--text-muted);
+}
+
+.weekBar {
+  display: block;
+  height: 4px;
+  margin-block-start: 6px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.weekBar span {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+}
+
+.label {
+  font-size: var(--step--1);
+  font-weight: var(--w-bold);
+  color: var(--text-muted);
+  margin-block-end: 4px;
+}
+
+.next {
+  padding: var(--space-s);
+  border-radius: var(--radius);
+  background: var(--sky-wash);
+  border-inline-start: 4px solid var(--sky);
+}
+
+.next[data-urgent] {
+  background: #fbecee;
+  border-color: var(--today);
+}
+
+.nextTitle {
+  font-size: var(--step-1);
+  font-weight: var(--w-black);
+  line-height: 1.4;
+}
+
+.cohort {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.nextWhen {
+  margin-block-start: 4px;
+  font-weight: var(--w-medium);
+}
+
+.services ul {
+  display: grid;
+  border-block-start: 1px solid var(--line);
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  border-block-end: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: var(--w-bold);
+}
+
+.service:hover {
+  background: var(--sky-wash);
+}
+
+.service svg:first-child {
+  color: var(--sky);
+}
+
+.serviceName {
+  flex: 1;
+}
+
+.out {
+  color: var(--text-muted);
+  scale: -1 1;
+}
+
+.more {
+  display: block;
+  margin-block-start: var(--space-xs);
+  font-size: 0.9375rem;
+  font-weight: var(--w-medium);
+}
+
+/* Small screens: the rail becomes a compact band above the timeline */
+@media (max-width: 960px) {
+  .rail {
+    position: static;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--space-s) var(--space-m);
+    padding-block-end: var(--space-m);
+    border-block-end: 1px solid var(--line);
+  }
+
+  .today {
+    border: 0;
+    padding: 0;
+  }
+
+  .day {
+    font-size: 4rem;
+  }
+
+  .weekday,
+  .month {
+    font-size: var(--step-1);
+  }
+
+  .next {
+    align-self: start;
+  }
+
+  .services {
+    grid-column: 1 / -1;
+  }
+
+  .services ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--space-s);
+  }
+}

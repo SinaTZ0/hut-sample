@@ -1,32 +1,63 @@
-# React + TypeScript + Vite
+# HUT homepage redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Homepage redesigns for Hamedan University of Technology ([hut.ac.ir](https://hut.ac.ir)) in Persian, right-to-left.
+Every version reads the same typed content, so new versions can sit beside the existing ones.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```sh
+pnpm install
+pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3
+pnpm build && pnpm preview
+node scripts/scrape/scrape.mjs            # refresh the archive from the live site
+node scripts/scrape/scrape.mjs --offline  # re-parse archive/raw only
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The audit, information architecture, wireframes and tokens are in [`docs/redesign-plan.md`](docs/redesign-plan.md).
+How the code fits together, and how to add a version step by step, is in [`docs/project-guide.md`](docs/project-guide.md).
+The scraped reference material is in [`archive/INVENTORY.md`](archive/INVENTORY.md).
+
+| Route | Version | Leads with |
+|---|---|---|
+| `/v1` | Ganjnameh (گنج‌نامه) | University identity and student gateway as twin carved tablets |
+| `/v2` | Lalejin (لالجین) | Student service mosaic with live search |
+| `/v3` | Taqvim (تقویم) | Live semester timeline and a sticky "now" rail |
+
+Add `?today=1405-09-28` to any URL to preview the calendar widgets on another day of the term.
+
+## Structure
+
+```
+archive/                 scraped snapshot (raw HTML, catalog.json, media, calendar PDF, INVENTORY.md)
+scripts/scrape/          archiver (cheerio; parses, never executes, the scraped HTML)
+src/
+  content/               shared, typed content — edit university data here
+    types.ts             content model
+    ia.ts                navigation / information architecture
+    services.ts          service entry points (group, priority, audience)
+    calendar.ts          semester 4051 calendar (Jalali dates)
+    news.ts, site.ts     news, achievements, identity, contact, departments, stats
+  shared/                behaviour shared by all versions (no visual styling)
+    components/          Icon, Tabs, ExternalLink, LogoMark, SkipLink
+    hooks/               useToday, useServiceSearch, useDismiss
+    utils/               jalali.ts, fa.ts (Persian digits/dates), semester.ts (status of each event)
+  versions/
+    registry.ts          list of versions → routes + gallery
+    v1-ganjnameh/        index.tsx · tokens.css · fonts.ts · components/<Name>/<Name>.tsx + .module.css
+    v2-lalejin/
+    v3-taqvim/
+  pages/VersionGallery/  index page comparing versions
+  app/                   router, shell, reviewer version bar
+```
+
+## Editing
+
+- **Content** (news, services, dates): edit `src/content/*`. Every version updates.
+- **A version's look**: start from its `tokens.css` (colours, type scale, spacing), which is scoped to `[data-version='vN']`.
+- **A section**: each section is its own component folder with a CSS module and takes its data through props.
+
+## Adding a version
+
+1. Copy a version folder, e.g. `src/versions/v3-taqvim` to `src/versions/v4-<name>`.
+2. Change `data-version="v4"` in its `index.tsx` and the selectors in its `tokens.css`.
+3. Register it in `src/versions/registry.ts` with a `slug` of `v4` and `load: () => import('./v4-<name>')`.
+
+The route and gallery card appear automatically.

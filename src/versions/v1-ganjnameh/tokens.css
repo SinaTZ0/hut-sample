@@ -1,0 +1,66 @@
+/*
+ * V1 "Ganjnameh": design tokens.
+ * Granite and limestone of Mount Alvand, lapis for links, weathered bronze for rules and focus.
+ * Scoped to the version wrapper so tokens never leak into other versions.
+ */
+[data-version='v1'] {
+  /* palette */
+  --granite: #2b2f33;
+  --lapis: #1d3b6f;
+  --lapis-deep: #142a52;
+  --limestone: #e6e7e3;
+  --limestone-deep: #d7d9d3;
+  --snow: #f7f8f6;
+  --bronze: #8e6a3a;
+
+  /* roles */
+  --bg: var(--snow);
+  --surface: var(--limestone);
+  --text: var(--granite);
+  --text-muted: #565c62;
+  --link: var(--lapis);
+  --rule: #c4c7c0;
+  --focus: var(--bronze);
+
+  /* type */
+  --font-display: 'Noto Kufi Arabic Variable', 'Noto Kufi Arabic', system-ui, sans-serif;
+  --font-body: 'Noto Naskh Arabic Variable', 'Noto Naskh Arabic', serif;
+
+  /* modular scale 1.25 from 18px body */
+  --step--1: 0.875rem;
+  --step-0: 1.125rem;
+  --step-1: 1.375rem;
+  --step-2: 1.75rem;
+  --step-3: 2.1875rem;
+  --step-4: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+
+  /* space */
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 40px;
+  --space-xl: clamp(56px, 7vw, 96px);
+  --gutter: clamp(16px, 4vw, 48px);
+  --max: 1240px;
+
+  --skip-bg: var(--lapis);
+  --skip-fg: var(--snow);
+
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.9;
+}
+
+:where([data-version='v1']) :focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+:where([data-version='v1']) a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}

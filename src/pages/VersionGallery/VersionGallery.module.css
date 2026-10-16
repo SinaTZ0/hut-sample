@@ -1,0 +1,145 @@
+.page {
+  --ink: #1d2024;
+  --muted: #5d636b;
+  --line: #dfe2e5;
+  --bg: #f6f7f8;
+  font-family: 'Vazirmatn Variable', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  min-height: 100dvh;
+  padding: clamp(24px, 5vw, 64px) clamp(16px, 5vw, 64px) 120px;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 48px);
+  align-items: end;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-block-end: 48px;
+}
+
+.photo {
+  aspect-ratio: 952 / 467;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.lede {
+  margin-block-start: 12px;
+  max-width: 60ch;
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s;
+}
+
+.card:hover {
+  border-color: var(--ink);
+}
+
+.card:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.slug {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: end;
+}
+
+.name {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.emphasis {
+  font-weight: 600;
+}
+
+.concept {
+  color: var(--muted);
+  line-height: 1.9;
+  flex: 1;
+}
+
+.swatches {
+  display: flex;
+  margin-block-start: 8px;
+}
+
+.swatches span {
+  flex: 1;
+  height: 28px;
+}
+
+.swatches span:first-child {
+  border-start-start-radius: 3px;
+  border-end-start-radius: 3px;
+}
+
+.swatches span:last-child {
+  border-start-end-radius: 3px;
+  border-end-end-radius: 3px;
+}
+
+.fonts {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: end;
+}
+
+.note {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.note code {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+@media (max-width: 720px) {
+  .head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

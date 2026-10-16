@@ -1,0 +1,107 @@
+.footer {
+  background: var(--granite);
+  color: var(--limestone);
+  margin-block-start: var(--space-l);
+}
+
+/* Alvand at dusk closes the page, answering the daylight photo at the top */
+.horizon {
+  height: clamp(120px, 16vw, 220px);
+  background-size: cover;
+  background-position: 50% 45%;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+  gap: var(--space-l);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: var(--space-l) var(--gutter);
+}
+
+.footer a {
+  color: var(--snow);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer :focus-visible {
+  outline-color: #d9c19a;
+}
+
+.mark {
+  color: var(--snow);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 800;
+  margin-block: var(--space-s) var(--space-xs);
+  color: var(--snow);
+}
+
+.address {
+  display: grid;
+  gap: 6px;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.address span {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.email {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+}
+
+.address svg {
+  flex: none;
+  translate: 0 3px;
+  color: #d9c19a;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #d9c19a;
+  margin-block-end: var(--space-s);
+}
+
+.links {
+  display: grid;
+  gap: 4px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.legal {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: var(--space-s) var(--gutter) var(--space-l);
+  border-block-start: 1px solid rgb(230 231 227 / 0.15);
+  font-size: var(--step--1);
+  color: rgb(230 231 227 / 0.7);
+}
+
+@media (max-width: 960px) {
+  .inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

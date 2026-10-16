@@ -1,0 +1,77 @@
+/* Stone grain: fractal noise, very low alpha, multiplied over the base colour. */
+.tablet {
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .17 0 0 0 0 .18 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  position: relative;
+  padding: clamp(28px, 4vw, 52px);
+  border-radius: 3px;
+  /* chiselled bevel: lit from the upper right (RTL reading start) */
+  box-shadow:
+    inset -1px 1px 0 rgb(255 255 255 / 0.75),
+    inset 1px -1px 0 rgb(0 0 0 / 0.14),
+    0 1px 0 rgb(0 0 0 / 0.08),
+    0 40px 60px -36px rgb(20 26 32 / 0.55);
+}
+
+/* carved inner frame, like the border around the inscription text */
+.tablet::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgb(43 47 51 / 0.24);
+  box-shadow:
+    -1px 1px 0 rgb(255 255 255 / 0.55),
+    inset -1px 1px 0 rgb(43 47 51 / 0.1);
+  pointer-events: none;
+}
+
+.stone {
+  background: var(--grain), linear-gradient(170deg, #eceee9 0%, #dfe1dc 100%);
+  color: var(--granite);
+}
+
+.lapis {
+  background: var(--grain), linear-gradient(170deg, #22457f 0%, #18325f 100%);
+  color: var(--snow);
+  box-shadow:
+    inset -1px 1px 0 rgb(255 255 255 / 0.18),
+    inset 1px -1px 0 rgb(0 0 0 / 0.3),
+    0 40px 60px -36px rgb(20 26 32 / 0.6);
+}
+
+.lapis::before {
+  border-color: rgb(255 255 255 / 0.22);
+  box-shadow:
+    -1px 1px 0 rgb(0 0 0 / 0.2),
+    inset -1px 1px 0 rgb(255 255 255 / 0.08);
+}
+
+.audience {
+  font-family: var(--font-display);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--bronze);
+  margin-block-end: 6px;
+}
+
+.lapis .audience {
+  color: #d9c19a;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 800;
+  line-height: 1.35;
+  /* letterpress: carved into the surface */
+  text-shadow: -1px 1px 0 rgb(255 255 255 / 0.6);
+  text-wrap: balance;
+}
+
+.lapis .title {
+  text-shadow: 1px -1px 0 rgb(0 0 0 / 0.35);
+}
+
+.body {
+  margin-block-start: var(--space-m);
+  position: relative;
+}

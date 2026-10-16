@@ -1,0 +1,150 @@
+.feed {
+  padding-block: var(--space-xl) var(--space-l);
+  border-block-start: 2px solid var(--ink);
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-s);
+}
+
+.title {
+  font-size: var(--step-3);
+  font-weight: var(--w-black);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.head a {
+  font-weight: var(--w-medium);
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: var(--space-m);
+  margin-block-start: var(--space-m);
+  padding: var(--space-s);
+  background: var(--sky-wash);
+  border-radius: var(--radius);
+}
+
+.featured img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.featured p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  max-width: 64ch;
+}
+
+.featuredTitle {
+  font-size: var(--step-1);
+  font-weight: var(--w-black);
+  line-height: 1.5;
+}
+
+.featuredTitle a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.featuredTitle a:hover {
+  text-decoration: underline;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  margin-block: var(--space-m) var(--space-xs);
+  border-block-end: 1px solid var(--line);
+}
+
+.tab {
+  padding: 8px 0;
+  border: 0;
+  border-block-end: 3px solid transparent;
+  margin-block-end: -1px;
+  background: none;
+  font-weight: var(--w-medium);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.tab[aria-selected='true'] {
+  color: var(--ink);
+  font-weight: var(--w-black);
+  border-color: var(--ink);
+}
+
+.list:focus-visible {
+  outline-offset: 6px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) auto;
+  gap: var(--space-m);
+  align-items: center;
+  padding-block: 14px;
+  border-block-end: 1px solid var(--line);
+}
+
+.date {
+  display: grid;
+  line-height: 1.1;
+}
+
+.day {
+  font-size: var(--step-3);
+  font-weight: var(--w-black);
+}
+
+.month {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.rowTitle {
+  font-size: 1.0625rem;
+  font-weight: var(--w-medium);
+  line-height: 1.7;
+}
+
+.rowTitle a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.rowTitle a:hover {
+  color: var(--sky-deep);
+  text-decoration: underline;
+}
+
+.thumb {
+  width: 96px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .featured {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .row {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: var(--space-s);
+  }
+
+  .thumb {
+    display: none;
+  }
+}

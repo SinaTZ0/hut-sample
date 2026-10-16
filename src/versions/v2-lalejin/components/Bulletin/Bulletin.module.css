@@ -1,0 +1,146 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+  gap: clamp(24px, 4vw, 56px);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: var(--space-xl) var(--gutter);
+  align-items: start;
+}
+
+.featured {
+  padding: var(--space-m);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+}
+
+.kicker {
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--turquoise-deep);
+  margin-block-end: var(--space-xs);
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.featuredTitle {
+  margin-block-start: var(--space-s);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--step-2);
+  line-height: 1.4;
+}
+
+.featuredTitle a {
+  color: var(--cobalt);
+  text-decoration: none;
+}
+
+.featuredTitle a:hover {
+  text-decoration: underline;
+}
+
+.summary {
+  margin-block-start: var(--space-xs);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--step-3);
+  color: var(--heading);
+  line-height: 1.3;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-block: var(--space-s);
+  padding-block-end: 4px;
+  scrollbar-width: thin;
+}
+
+.tab {
+  flex: none;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-chip);
+  background: #fff;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab[aria-selected='true'] {
+  background: var(--turquoise);
+  border-color: var(--turquoise);
+  color: #fff;
+}
+
+.list {
+  border-block-start: 2px solid var(--umber);
+}
+
+.row {
+  display: flex;
+  gap: var(--space-s);
+  align-items: flex-start;
+  padding-block: 14px;
+  border-block-end: 1px solid var(--line);
+}
+
+.thumb {
+  width: 88px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  flex: none;
+}
+
+.rowTitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.rowTitle a {
+  color: var(--umber);
+  text-decoration: none;
+}
+
+.rowTitle a:hover {
+  color: var(--cobalt);
+  text-decoration: underline;
+}
+
+.date {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.more {
+  display: inline-block;
+  margin-block-start: var(--space-s);
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}

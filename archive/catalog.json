@@ -1,0 +1,3306 @@
+{
+  "fetchedAt": "2026-10-16T22:29:34.267Z",
+  "origin": "https://hut.ac.ir",
+  "pages": {
+    "home": {
+      "url": "https://hut.ac.ir/",
+      "title": "صفحه اصلی - پرتال اصلی دانشگاه صنعتی همدان - پرتال دانشگاه صنعتی همدان",
+      "siteName": "دانشگاه صنعتی همدان",
+      "language": "fa-IR",
+      "direction": "rtl",
+      "nav": [
+        {
+          "title": "دانشگـاه",
+          "href": "https://hut.ac.ir/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87",
+          "groups": [
+            {
+              "title": "دانشگاه",
+              "href": "https://hut.ac.ir/%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87",
+              "links": [
+                {
+                  "title": "اعضای هیات علمی",
+                  "href": "https://hut.ac.ir/%D8%A7%D8%B9%D8%B6%D8%A7%DB%8C-%D9%87%DB%8C%D8%A7%D8%AA-%D8%B9%D9%84%D9%85%DB%8C"
+                },
+                {
+                  "title": "فرم‌ها و آئین نامه‌ها",
+                  "href": "https://hut.ac.ir/university-forms"
+                },
+                {
+                  "title": "ارتباط با ما",
+                  "href": "https://hut.ac.ir/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%A8%D8%A7-%D9%85%D8%A7-%D8%AC%D8%AF%DB%8C%D8%AF"
+                },
+                {
+                  "title": "دفترچه تلفن",
+                  "href": "https://hut.ac.ir/%D8%AA%D9%84%D9%81%D9%86-%D8%AF%D8%A7%D8%AE%D9%84%DB%8C"
+                },
+                {
+                  "title": "کنگره شهداء مهندس استان همدان",
+                  "href": "https://hut.ac.ir/%DA%A9%D9%86%DA%AF%D8%B1%D9%87-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%85%D9%87%D9%86%D8%AF%D8%B3-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%D9%87%D9%85%D8%AF%D8%A7%D9%86"
+                }
+              ]
+            },
+            {
+              "title": "حوزه ریاست",
+              "href": "https://hut.ac.ir/%D8%AD%D9%88%D8%B2%D9%87-%D8%B1%DB%8C%D8%A7%D8%B3%D8%AA",
+              "links": [
+                {
+                  "title": "رئیس دانشگاه",
+                  "href": "https://hut.ac.ir/%D8%B1%D8%A6%DB%8C%D8%B3-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%871"
+                },
+                {
+                  "title": "رئیس دفتر ریاست",
+                  "href": "https://hut.ac.ir/%D8%B1%D8%A6%DB%8C%D8%B3-%D8%AF%D9%81%D8%AA%D8%B1-%D8%B1%DB%8C%D8%A7%D8%B3%D8%AA"
+                },
+                {
+                  "title": "روسای ادوار دانشگاه",
+                  "href": "https://hut.ac.ir/%D8%B1%D9%88%D8%B3%D8%A7%DB%8C-%D9%BE%DB%8C%D8%B4%DB%8C%D9%86-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87"
+                },
+                {
+                  "title": "اداره روابط عمومی",
+                  "href": "https://hut.ac.ir/%D8%B1%D9%88%D8%A7%D8%A8%D8%B7-%D8%B9%D9%85%D9%88%D9%85%DB%8C"
+                },
+                {
+                  "title": "اداره همکاری های علمی بین المللی",
+                  "href": "https://hut.ac.ir/%D8%A7%D8%AF%D8%A7%D8%B1%D9%87-%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C-%D9%87%D8%A7%DB%8C-%D8%B9%D9%84%D9%85%DB%8C-%D8%A8%DB%8C%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%84%DB%8C"
+                },
+                {
+                  "title": "واحد فناوری اطلاعات",
+                  "href": "http://it.hut.ac.ir/"
+                },
+                {
+                  "title": "نظارت و ارزیابی",
+                  "href": "https://hut.ac.ir/%D9%86%D8%B8%D8%A7%D8%B1%D8%AA-%D9%88-%D8%A7%D8%B1%D8%B2%DB%8C%D8%A7%D8%A8"
+                },
+                {
+                  "title": "نهاد نمایندگی مقام معظم رهبری",
+                  "href": "http://hamedan.nahad.ir/"
+                },
+                {
+                  "title": "امور دانشجویان شاهد و ایثارگر",
+                  "href": "https://hut.ac.ir/%D8%A7%D9%85%D9%88%D8%B1-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%D8%A7%D9%86-%D8%B4%D8%A7%D9%87%D8%AF-%D9%88-%D8%A7%DB%8C%D8%AB%D8%A7%D8%B1%DA%AF%D8%B1"
+                },
+                {
+                  "title": "دبیرخانه جذب هیات علمی",
+                  "href": "http://jazb.hut.ac.ir/"
+                },
+                {
+                  "title": "هیأت امنا",
+                  "href": "https://omana.basu.ac.ir/"
+                },
+                {
+                  "title": "دبیرخانه شورای رفاهی",
+                  "href": "https://refahi.hut.ac.ir/"
+                },
+                {
+                  "title": "مدیریت برنامه ریزی،بودجه، بهره وری و تحول اداری",
+                  "href": "https://hut.ac.ir/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%A8%D9%88%D8%AF%D8%AC%D9%87"
+                }
+              ]
+            },
+            {
+              "title": "معاونت",
+              "href": "https://hut.ac.ir/%D9%85%D8%B9%D8%A7%D9%88%D9%86%D8%AA-%D9%87%D8%A7",
+              "links": [
+                {
+                  "title": "معاونت اداری و مالی",
+                  "href": "http://daf.hut.ac.ir/"
+                },
+                {
+                  "title": "معاونت آموزشی و پژوهشی",
+                  "href": "http://edu.hut.ac.ir/"
+                },
+                {
+                  "title": "معاونت دانشجویی و فرهنگی",
+                  "href": "http://student.hut.ac.ir/"
+                }
+              ]
+            }
+          ],
+          "links": []
+        },
+        {
+          "title": "آموزش",
+          "href": "https://hut.ac.ir/%D8%A7%D9%85%D9%88%D8%B2%D8%B4",
+          "groups": [
+            {
+              "title": "معاونت آموزشی",
+              "href": "https://hut.ac.ir/%D9%85%D8%B9%D8%A7%D9%88%D9%86%D8%AA-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C2",
+              "links": [
+                {
+                  "title": "اداره امور خدمات آموزشی",
+                  "href": "http://web.hut.ac.ir/web/edu/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C"
+                },
+                {
+                  "title": "اداره تحصیلات تکمیلی",
+                  "href": "http://web.hut.ac.ir/web/edu/%D8%A7%D8%AF%D8%A7%D8%B1%D9%87-%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%D8%A7%D8%AA-%D8%AA%DA%A9%D9%85%DB%8C%D9%84%DB%8C2"
+                },
+                {
+                  "title": "اداره پذیرش و دانش آموختگان",
+                  "href": "http://web.hut.ac.ir/web/edu/%D8%A7%D8%AF%D8%A7%D8%B1%D9%87-%D8%AF%D8%A7%D9%86%D8%B4-%D8%A2%D9%85%D9%88%D8%AE%D8%AA%DA%AF%D8%A7%D9%86"
+                }
+              ]
+            },
+            {
+              "title": "گروه‌های آموزشی",
+              "href": "https://hut.ac.ir/groups",
+              "links": [
+                {
+                  "title": "گروه مهندسی برق",
+                  "href": "http://ee.hut.ac.ir/"
+                },
+                {
+                  "title": "گروه مهندسی پزشکی",
+                  "href": "http://bme.hut.ac.ir/"
+                },
+                {
+                  "title": "گروه مهندسی کامپیوتر",
+                  "href": "http://ce.hut.ac.ir/"
+                },
+                {
+                  "title": "گروه مهندسی مکانیک",
+                  "href": "http://mech.hut.ac.ir/"
+                },
+                {
+                  "title": "گروه مهندسی مواد",
+                  "href": "http://materials.hut.ac.ir/"
+                },
+                {
+                  "title": "گروه مهندسی معدن",
+                  "href": "http://me.hut.ac.ir/"
+                },
+                {
+                  "title": "گروه مهندسی شیمی",
+                  "href": "http://chemeng.hut.ac.ir/"
+                },
+                {
+                  "title": "گروه آموزشی علوم پایه",
+                  "href": "http://bs.hut.ac.ir/"
+                }
+              ]
+            },
+            {
+              "title": "آموزش آزاد",
+              "href": "https://hut.ac.ir/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A2%D8%B2%D8%A7%D8%AF",
+              "links": [
+                {
+                  "title": "آموزش مجازی",
+                  "href": "https://hut.ac.ir/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C"
+                },
+                {
+                  "title": "سامانه مرکز آموزش آزاد و مجازی",
+                  "href": "http://academics.hut.ac.ir/"
+                }
+              ]
+            }
+          ],
+          "links": []
+        },
+        {
+          "title": "پژوهش",
+          "href": "https://hut.ac.ir/%D9%BE%DA%98%D9%88%D9%87%D8%B4",
+          "groups": [
+            {
+              "title": "مدیریت پژوهشی",
+              "href": "https://hut.ac.ir/%D9%85%D8%B9%D8%A7%D9%88%D9%86-%D9%BE%DA%98%D9%88%D9%87%D8%B4%DB%8C-%D8%AC%D8%AF%DB%8C%D8%AF",
+              "links": [
+                {
+                  "title": "اداره امور پژوهشی",
+                  "href": "https://edu.hut.ac.ir/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%BE%DA%98%D9%88%D9%87%D8%B4%DB%8C"
+                },
+                {
+                  "title": "مجله انرژی پایدار و هوش مصنوعی",
+                  "href": "https://enai.hut.ac.ir/"
+                },
+                {
+                  "title": "دفتر ارتباط با صنعت",
+                  "href": "http://industry.hut.ac.ir/"
+                },
+                {
+                  "title": "مرکز رشد، فناوری و کارآفرینی",
+                  "href": "https://hut.ac.ir/web/roshd"
+                },
+                {
+                  "title": "اداره انتشارات",
+                  "href": "http://press.hut.ac.ir/"
+                },
+                {
+                  "title": "کتابخانه مرکزی",
+                  "href": "http://library.hut.ac.ir/"
+                }
+              ]
+            },
+            {
+              "title": "آزمایشگاه",
+              "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87",
+              "links": [
+                {
+                  "title": "آزمایشگاه مهندسی کامپیوتر",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1"
+                },
+                {
+                  "title": "آزمایشگاه مهندسی پزشکی",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%BE%D8%B2%D8%B4%DA%A9%DB%8C"
+                },
+                {
+                  "title": "آزمایشگاه مهندسی برق",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D8%A8%D8%B1%D9%82"
+                },
+                {
+                  "title": "آزمایشگاه مهندسی مکانیک",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%85%DA%A9%D8%A7%D9%86%DB%8C%DA%A9"
+                },
+                {
+                  "title": "آزمایشگاه مهندسی مواد",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%85%D9%88%D8%A7%D8%AF"
+                },
+                {
+                  "title": "آزمایشگاه مهندسی شیمی",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D8%B4%DB%8C%D9%85%DB%8C"
+                },
+                {
+                  "title": "آزمایشگاه مهندسی معدن",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%85%D8%B9%D8%AF%D9%86"
+                },
+                {
+                  "title": "آزمایشگاه علوم پایه",
+                  "href": "https://hut.ac.ir/%D8%A2%D8%B2%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-%D8%B9%D9%84%D9%88%D9%85-%D9%BE%D8%A7%DB%8C%D9%87"
+                },
+                {
+                  "title": "آزمایشگاه مرکزی",
+                  "href": "http://lab.hut.ac.ir/"
+                }
+              ]
+            }
+          ],
+          "links": []
+        },
+        {
+          "title": "دانشجویی‌فرهنگی",
+          "href": "https://hut.ac.ir/%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C-%D9%81%D8%B1%D9%87%D9%86%DA%AF%DB%8C",
+          "groups": [
+            {
+              "title": "معاونت دانشجویی و فرهنگی",
+              "href": "https://hut.ac.ir/%D9%85%D8%B9%D8%A7%D9%88%D9%86%D8%AA-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C-%D8%AC%D8%AF%DB%8C%D8%AF",
+              "links": [
+                {
+                  "title": "مدیر امور دانشجویی",
+                  "href": "http://web.hut.ac.ir/web/student/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A7%D9%85%D9%88%D8%B1-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C"
+                },
+                {
+                  "title": "مدیر امور فرهنگی",
+                  "href": "http://web.hut.ac.ir/web/student/%D9%85%D8%AF%DB%8C%D8%B1-%D8%A7%D9%85%D9%88%D8%B1-%D9%81%D8%B1%D9%87%D9%86%DA%AF%DB%8C"
+                },
+                {
+                  "title": "اداره تربیت بدنی",
+                  "href": "http://web.hut.ac.ir/web/student/%D8%A7%D8%AF%D8%A7%D8%B1%D9%87-%D8%AA%D8%B1%D8%A8%DB%8C%D8%AA-%D8%A8%D8%AF%D9%86%DB%8C"
+                },
+                {
+                  "title": "مرکز مشاوره وسبک زندگی",
+                  "href": "http://counseling.hut.ac.ir/"
+                },
+                {
+                  "title": "شورای انضباطی",
+                  "href": "https://student.hut.ac.ir/%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D8%A7%D9%86%D8%B6%D8%A8%D8%A7%D8%B7%DB%8C"
+                }
+              ]
+            },
+            {
+              "title": "مدیریت امور دانشجویی",
+              "href": "https://hut.ac.ir/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A7%D9%85%D9%88%D8%B1-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C-%D8%AC%D8%AF%DB%8C%D8%AF",
+              "links": [
+                {
+                  "title": "خدمات رفاهی دانشجویی",
+                  "href": "https://student.hut.ac.ir/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%B1%D9%81%D8%A7%D9%87%DB%8C-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C"
+                },
+                {
+                  "title": "اداره خوابگاه دانشجویی",
+                  "href": "https://student.hut.ac.ir/%D8%A7%D8%AF%D8%A7%D8%B1%D9%87-%D8%AE%D9%88%D8%A7%D8%A8%DA%AF%D8%A7%D9%87-%D9%87%D8%A7"
+                },
+                {
+                  "title": "اداره تغذیه",
+                  "href": "https://student.hut.ac.ir/%D8%A7%D8%AF%D8%A7%D8%B1%D9%87-%D8%AA%D8%BA%D8%B0%DB%8C%D9%87"
+                }
+              ]
+            },
+            {
+              "title": "مدیریت امور فرهنگی",
+              "href": "https://hut.ac.ir/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A7%D9%85%D9%88%D8%B1-%D9%81%D8%B1%D9%87%D9%86%DA%AF%DB%8C1",
+              "links": [
+                {
+                  "title": "کانون‌های فرهنگی و هنری",
+                  "href": "https://student.hut.ac.ir/%DA%A9%D8%A7%D9%86%D9%88%D9%86-%D9%87%D8%A7%DB%8C-%D9%81%D8%B1%D9%87%D9%86%DA%AF%DB%8C"
+                },
+                {
+                  "title": "انجمن‌های علمی",
+                  "href": "https://student.hut.ac.ir/%D8%A7%D9%86%D8%AC%D9%85%D9%86-%D9%87%D8%A7%DB%8C-%D8%B9%D9%84%D9%85%DB%8C-%D8%B5%D9%86%D8%B9%D8%AA%DB%8C"
+                },
+                {
+                  "title": "تشکل‌های دانشجویی",
+                  "href": "https://student.hut.ac.ir/tashakol"
+                },
+                {
+                  "title": "پایگاه نشریات دانشجویی",
+                  "href": "https://hut.ac.ir/%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87-%D9%86%D8%B4%D8%B1%DB%8C%D8%A7%D8%AA-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C"
+                }
+              ]
+            }
+          ],
+          "links": []
+        },
+        {
+          "title": "اداری و مالی",
+          "href": "https://hut.ac.ir/%D8%A7%D8%AF%D8%A7%D8%B1%DB%8C-%D9%88-%D9%85%D8%A7%D9%84%DB%8C",
+          "groups": [
+            {
+              "title": "معاونت اداری مالی",
+              "href": "https://hut.ac.ir/%D9%85%D8%B9%D8%A7%D9%88%D9%86%D8%AA-%D8%A7%D8%AF%D8%A7%D8%B1%DB%8C-%D9%85%D8%A7%D9%84%DB%8C",
+              "links": [
+                {
+                  "title": "مدیریت امور اداری",
+                  "href": "https://daf.hut.ac.ir/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A7%D8%AF%D8%A7%D8%B1%DB%8C-%D9%88-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C"
+                },
+                {
+                  "title": "مدیریت امور مالی",
+                  "href": "https://daf.hut.ac.ir/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A7%D9%85%D9%88%D8%B1-%D9%85%D8%A7%D9%84%DB%8C"
+                }
+              ]
+            }
+          ],
+          "links": []
+        },
+        {
+          "title": "سامانه‌ها",
+          "href": "https://hut.ac.ir/%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D9%87%D8%A7",
+          "groups": [
+            {
+              "title": "کارکنان",
+              "href": "https://hut.ac.ir/%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%DA%A9%D9%86%D8%A7%D9%86-%D9%88-%D8%A7%D8%B3%D8%A7%D8%AA%DB%8C%D8%AF",
+              "links": [
+                {
+                  "title": "سامانه اتوماسیون اداری",
+                  "href": "https://eoffice.hut.ac.ir/"
+                },
+                {
+                  "title": "سامانه فیش حقوقی",
+                  "href": "http://192.168.3.230:88/auth/login"
+                },
+                {
+                  "title": "سامانه تغذیه",
+                  "href": "http://nutrition.hut.ac.ir/"
+                },
+                {
+                  "title": "سامانه ورود و خروج",
+                  "href": "http://kasra.hut.ac.ir/Lego.Web/Kevlar/Account/Login"
+                },
+                {
+                  "title": "سامانه ایمیل",
+                  "href": "http://mail.hut.ac.ir/"
+                },
+                {
+                  "title": "سامانه ارزیابی عملکرد",
+                  "href": "http://arzyabi.hut.ac.ir/"
+                },
+                {
+                  "title": "سامانه آموزش کارکنان",
+                  "href": "http://ste.hut.ac.ir/"
+                },
+                {
+                  "title": "سامانه آموزش آزاد و مجازی",
+                  "href": "https://academics.hut.ac.ir/"
+                }
+              ]
+            },
+            {
+              "title": "دانشجو",
+              "href": "https://hut.ac.ir/%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D9%87%D8%A7%DB%8C-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C",
+              "links": [
+                {
+                  "title": "سامانه گلستان",
+                  "href": "http://golestan.hut.ac.ir/"
+                },
+                {
+                  "title": "سامانه تغذیه",
+                  "href": "http://nutrition.hut.ac.ir/"
+                },
+                {
+                  "title": "سامانه صندوق رفاه",
+                  "href": "https://swf.ir/"
+                },
+                {
+                  "title": "سامانه کتابخانه دیجیتال",
+                  "href": "http://elibrary.hut.ac.ir/diglibguest/WebUI/Index.aspx"
+                },
+                {
+                  "title": "سامانه تمدید و رزرو کتاب",
+                  "href": "http://simorgh.hut.ac.ir/simwebclt/WebAccess/SimWebPortal.dll/CircPage"
+                },
+                {
+                  "title": "سامانه آموزش آزاد و مجازی",
+                  "href": "https://academics.hut.ac.ir/"
+                }
+              ]
+            },
+            {
+              "title": "هیات علمی",
+              "href": "https://hut.ac.ir/%D9%87%DB%8C%D8%A7%D8%AA-%D8%B9%D9%84%D9%85%DB%8C",
+              "links": [
+                {
+                  "title": "پورتال اساتید",
+                  "href": "https://hut.ac.ir/%D9%BE%D9%88%D8%B1%D8%AA%D8%A7%D9%84-%D8%A7%D8%B3%D8%A7%D8%AA%DB%8C%D8%AF"
+                }
+              ]
+            }
+          ],
+          "links": []
+        }
+      ],
+      "quickLinks": [
+        {
+          "title": "مجله انرژی پایدار و هوش مصنوعی",
+          "href": "https://enai.hut.ac.ir/",
+          "icon": "https://hut.ac.ir/documents/38165/0/seai1+%281%29.png/046b3e6e-eb6f-7e41-dd70-868716556ec5?t=1713934812530&download=true"
+        },
+        {
+          "title": "مرکز آموزش های آزاد",
+          "href": "https://www.hut.ac.ir/fa/آموزش-آزاد",
+          "icon": "https://hut.ac.ir/documents/38165/275863/2-student.png/6217b3de-1a8b-104f-f1c8-a5087193c139?t=1630918132434&download=true"
+        },
+        {
+          "title": "سامانه گلستان",
+          "href": "https://golestan.hut.ac.ir/home/Default.htm",
+          "icon": "https://hut.ac.ir/documents/38165/275863/3-golestan2.png/fffc7b4c-f8f8-c2b3-e0f8-2e19ef46358d?t=1630919029648&download=true"
+        },
+        {
+          "title": "مرکز رشد، فناوری و کارآفرینی",
+          "href": "https://hut.ac.ir/web/roshd",
+          "icon": "https://hut.ac.ir/documents/38165/357499/olum.png/92bc23ae-9f56-1348-863e-1c644bb22dc0?t=1633948111076&download=true"
+        },
+        {
+          "title": "سامانه تغذیه",
+          "href": "http://nutrition.hut.ac.ir/",
+          "icon": "https://hut.ac.ir/documents/38165/275863/4-food.png/106fb24a-08f7-164e-a8e3-b61e8b5abcf2?t=1630919434161&download=true"
+        },
+        {
+          "title": "درس افزار",
+          "href": "https://ec.hut.ac.ir/",
+          "icon": "https://hut.ac.ir/documents/38165/275863/darsafzar2.png/29d3b13a-8af1-8a20-931f-9b3dae8f98c0?t=1655279499566&download=true"
+        },
+        {
+          "title": "نو دانشجویان",
+          "href": "https://edu.hut.ac.ir/ngs1403",
+          "icon": "https://hut.ac.ir/documents/38165/0/2-student.png/0eb7aea9-23e6-6877-fb96-0161f9d72326?t=1728713402242&download=true"
+        }
+      ],
+      "sections": {
+        "featured": {
+          "title": "اسلایدر اصلی",
+          "instance": "jclk",
+          "items": [
+            {
+              "title": "تا پای جان برای ایران",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/رهبری?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/467382/ayatollah-mojtaba-khamenei-500-300-Tarh.ir-04+copy.jpg/bc1785b8-477d-eb82-ae1e-23556171863f?t=1788666890620&imagePreview=1"
+            },
+            {
+              "title": "تقویم آموزشی نیم‌سال اول سال تحصیلی 1406-1405 (نیم‌سال 4051)",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/-772?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/467382/taghvim1-scaled+%281%29.jpg/4344809c-9299-5224-8dcf-1e95382ae700?t=1787036529929&imagePreview=1"
+            },
+            {
+              "title": "وداع با رهبر شهید ایران",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/-771?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/467382/tasliat-rahbari-500-300-Tarh.ir-68.jpg/2e050ae3-20b2-8a19-f2aa-07aeeaf703e5?t=1783758056925&imagePreview=1"
+            }
+          ]
+        },
+        "news": {
+          "title": "اخبار",
+          "instance": "ekjl",
+          "items": [
+            {
+              "title": "چهار عضو هیئت علمی دانشگاه صنعتی همدان در فهرست دانشمندان دو درصد برتر جهان قرار گرفتند",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/چهار-عضو-هیئت-علمی-دانشگاه-صنعتی-همدان-در-فهرست-دا?redirect=%2F",
+              "date": "2026-10-13",
+              "image": "https://hut.ac.ir/documents/38165/55248/0h0u0t.jpg/b2a54741-416f-6fdd-759d-409dc79b0a9a?t=1791875845140&imagePreview=1"
+            },
+            {
+              "title": "پیام رئیس دانشگاه صنعتی همدان به مناسبت روز ملی مدیریت بحران",
+              "summary": null,
+              "href": null,
+              "date": "2026-10-12",
+              "image": "https://hut.ac.ir/documents/38165/55248/Screenshot+2026-10-12+115756.png/54ad3efa-820e-95a8-a56d-bd6c80daa0a3?t=1791793814201&imagePreview=1"
+            },
+            {
+              "title": "انتصاب رئیس دانشگاه صنعتی همدان به عضویت شورای علمی بنیاد...",
+              "summary": "به گزارش روابط عمومی دانشگاه صنعتی همدان، دکتر محمود پری‌پور، رئیس دانشگاه صنعتی همدان، به عضویت شورای علمی بنیاد نخبگان استان همدان منصوب شد. حکم این انتصاب هم‌زمان با...",
+              "href": null,
+              "date": "2026-10-11",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=19090580&t=1791696701302"
+            },
+            {
+              "title": "انتصاب دکتر پژمان بیات به سمت مدیر گروه مهندسی برق",
+              "summary": null,
+              "href": null,
+              "date": "2026-10-07",
+              "image": "https://hut.ac.ir/documents/38165/55248/969696.jpg/d204a968-b1cd-c31f-a9f7-2ca4e7fb83b0?t=1791369398276&imagePreview=1"
+            },
+            {
+              "title": "انتشار کتاب بین‌المللی پروژه AI FORA با مشارکت عضو هیئت علمی...",
+              "summary": "کتاب بین‌المللی Participatory Modelling and Simulation to Improve AI-based Public Social Services: Scientific Advice for Policy and Practice به ویراستاری Petra Ahrweiler و...",
+              "href": null,
+              "date": "2026-10-04",
+              "image": "https://hut.ac.ir/documents/38165/55248/A5zBC7viit5w8z6GavfEVwnCWxA-HOmKz2NwRbStiwNuTTvXlw.png/1fe47a46-8c2a-c204-14c6-a06ed7f69ecd?t=1791093910924&imagePreview=1"
+            }
+          ]
+        },
+        "announcements": {
+          "title": "اطلاعیه‌ها",
+          "instance": "bnxj",
+          "items": [
+            {
+              "title": "اطلاعیه شماره ۱: 🎓 مراسم آیین دانش آموختگی سال 1405 دانشگاه صنعتی همدان🌟",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/اطلاعیه-شماره-۱-🎓-مراسم-آیین-دانش-آموختگی-سال-1405-دا?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55251/photo_2026-10-05_11-50-28.jpg/7953eb01-7b77-7a93-844a-0854431ec0d1?t=1791370045019&imagePreview=1"
+            },
+            {
+              "title": "اطلاعیه دفاع دانشجویان کارشناسی ارشد",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/اطلاعیه-دفاع-دانشجویان-کارشناسی-ارشد-3?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/275863/%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%DB%8C%D9%87+%D8%AF%D9%81%D8%A7%D8%B9.png/b8ad3d08-b69f-d9f4-a943-3cbe5837f96c?t=1791091634796&imagePreview=1"
+            },
+            {
+              "title": "اطلاعیه معرفی به استاد نیمسال 4051",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/-4051?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55251/6d05b9b5-a52d-4569-b97b-cf98d2b272fe.png/f2b2b016-60ce-a6ef-7d4a-b8cd61cfe48f?t=1791090510164&imagePreview=1"
+            },
+            {
+              "title": "اطلاعیه ثبت عنوان پروژه کارشناسی نیمسال 4051",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/اطلاعیه-ثبت-عنوان-پروژه-کارشناسی-نیمسال-4051?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55251/68932728-116d-4f32-9422-57eb799fd696.png/732b77fe-e171-7123-3d83-4d36a674ccd5?t=1791089617895&imagePreview=1"
+            },
+            {
+              "title": "اطلاعیه آغاز کلاس‌های تربیت بدنی و ورزش ۱",
+              "summary": null,
+              "href": "https://hut.ac.ir/fa/w/اطلاعیه-آغاز-کلاس‌های-تربیت-بدنی-و-ورزش-۱?redirect=%2F",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55251/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87+%D8%B3%D8%A7%D9%84%D9%86+%D8%AA%D9%86%D8%AF%D8%B1%D8%B3%D8%AA%DB%8C+%D8%AF%D8%B1+%D8%B3%D8%A7%D9%84+%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C+405-406.jpg/0e002a60-1be0-3910-7d94-19147de5ea5e?t=1790672956839&imagePreview=1"
+            }
+          ]
+        },
+        "growthCenter": {
+          "title": "مرکز رشد، فناوری و کارآفرینی",
+          "instance": "smis",
+          "items": [
+            {
+              "title": "انتصاب دکتر محمدباقر سبحانی متین به سمت \"سرپرست...",
+              "summary": "به گزارش دفتر روابط عمومی، دکتر محمدباقر سبحانی متین عضو هیات علمی گروه مهندسی شیمی، طی حکمی از سوی سرپرست...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/275863/169199989.jpg/e5137a52-edd4-d635-4bde-f36573942864?t=1677040326874&imagePreview=1&width=350"
+            },
+            {
+              "title": "مسابقه «ارائه های 200 ثانیه ای» با حضور دانشجویان...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/IMG_0986+-+4K+JPEG.jpg/b2a3b23a-d69f-2b43-ca50-7213bbef3143?t=1748980523379&imagePreview=1&width=350"
+            },
+            {
+              "title": "نشست تخصصی هدایت شغلی با حضور مدیرعامل شرکت مها...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/1234.jpg/8373556f-aba6-9ebc-e8ca-aff1e5a78cde?t=1747720605494&imagePreview=1&width=350"
+            },
+            {
+              "title": "در اولین همایش روز ملی صنعت برق در استان نایب...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/963.jpg/c8e971d3-4ac4-3beb-fd75-aaab4dc80f55?t=1746950501358&imagePreview=1&width=350"
+            },
+            {
+              "title": "مدیرعامل شرکت توزیع برق استان همدان در اولین...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/85.jpg/8c67b598-d098-f815-fb36-80628df17a51?t=1746947582844&imagePreview=1&width=350"
+            },
+            {
+              "title": "\"اولین همایش روز ملی صنعت برق در استان، باعث...",
+              "summary": "✅ \"اولین همایش روز ملی صنعت برق در استان، باعث تعامل بین نظام مهندسی ساختمان و دانشگاه شد\" دبیر اجرایی اولین...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/IMG_9525.jpg/a9352d6e-b5b5-1b1d-9396-5e5f8c4a9cfb?t=1746947056991&imagePreview=1&width=350"
+            },
+            {
+              "title": "برگزاری جلسه مشاوره در مرکز هدایت شغلی با حضور...",
+              "summary": "به گزارش روابط عمومی دانشگاه، جلسه‌هدایت شغلی با حضور مهندس نوریون، مدیر فنی مهندسی شرکت قطعه سازان سینا، در...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/%DA%A9%D8%A7%D9%87%D8%B4+%D8%AD%D8%AC%D9%854.jpg/e0bce0ad-01c8-dde8-0a41-97feb4d2b8d4?t=1745643905286&imagePreview=1&width=350"
+            },
+            {
+              "title": "برگزاری ۳۳ دوره مهارت افزایی عمومی و تخصصی توسط...",
+              "summary": "طی یک‌سال گذشته ۳۳ دوره مهارت افزایی عمومی و تخصصی توسط مرکز هدایت شغلی دانشگاه صنعتی همدان برگزار شد.",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/01+%281%29.png/4a00c948-42fa-e9ca-bfb4-e568c9bba9a3?t=1740897273620&imagePreview=1&width=350"
+            },
+            {
+              "title": "بازدید هیأت نظارت، ارزیابی و تضمین کیفیت عتف...",
+              "summary": "هیأت نظارت، ارزیابی و تضمین کیفیت عتف استان همدان از مرکز رشد مستقر در دانشگاه صنعتی همدان بازدید به عمل آورد.",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/03031303.jpg/e765ba95-f3b8-95be-d8ab-2b7c2921604f?t=1717315675398&imagePreview=1&width=350"
+            },
+            {
+              "title": "معرفی ظرفیت دانشگاه صنعتی همدان با اجرای...",
+              "summary": "رئیس مرکز رشد، فناوری و کارآفرینی دانشگاه صنعتی همدان گفت: معرفی ظرفیت دانشگاه در اجرای پروژه‌های پژوهشی و...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/275863/photo_%DB%B2%DB%B0%DB%B2%DB%B3-%DB%B1%DB%B1-%DB%B1%DB%B5_%DB%B1%DB%B5-%DB%B2%DB%B0-%DB%B1%DB%B4.jpg/40206917-6ffa-b326-0e39-1cc674464d48?t=1713248642215&imagePreview=1&width=350"
+            },
+            {
+              "title": "رئیس دانشگاه صنعتی همدان: دانشجویان به شرکت‌های...",
+              "summary": "نهمین جلسه شورای مرکز رشد دانشگاه صنعتی همدان با حضور رئیس دانشگاه و ۹ شرکت و واحد فناور مستقر در مرکز...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=3874183&t=1791935234070&width=350"
+            },
+            {
+              "title": "مرکز هدایت شغلی دانشگاه صنعتی همدان افتتاح شد",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=3829179&t=1791516931737&width=350"
+            },
+            {
+              "title": "انتصاب دکتر سید مجتبی حسینی تودشکی ، به سمت رییس...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/0140211024.jpg/de982070-624b-5c77-9538-2769f7acf2f6?t=1708505981933&imagePreview=1&width=350"
+            },
+            {
+              "title": "«شرکت توسعه دانش مواد پیشرفته» در مرکز رشد...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/006.jpg/23851592-8760-a97f-44c5-82ec6a2177d4?t=1706436677203&imagePreview=1&width=350"
+            },
+            {
+              "title": "برگزاری آزمون های پایان ترم به صورت حضوری",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=946807&t=1792188541808&width=350"
+            },
+            {
+              "title": "از سرگیری فعالیت های آموزشی دانشگاه ها به شرح تصویر",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=833567&t=1792188541809&width=350"
+            },
+            {
+              "title": "بازگشائی آزمایشگاه ها و کارگاه ها در دانشگاه...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=829459&t=1792188541811&width=350"
+            },
+            {
+              "title": "بازگشائی کلاس های حضوری در دانشگاه صنعتی همدان-...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=829435&t=1792188541813&width=350"
+            }
+          ]
+        },
+        "tabEducation": {
+          "title": "آموزش",
+          "instance": "yaez",
+          "items": [
+            {
+              "title": "اطلاعیه ثبت عنوان پروژه کارشناسی نیمسال 4051",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/19057678",
+              "date": "2026-10-04",
+              "image": "https://hut.ac.ir/documents/38165/55251/68932728-116d-4f32-9422-57eb799fd696.png/732b77fe-e171-7123-3d83-4d36a674ccd5?t=1791089617895&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه معرفی به استاد نیمسال 4051",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/19057712",
+              "date": "2026-10-04",
+              "image": "https://hut.ac.ir/documents/38165/55251/6d05b9b5-a52d-4569-b97b-cf98d2b272fe.png/f2b2b016-60ce-a6ef-7d4a-b8cd61cfe48f?t=1791090510164&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه دفاع دانشجویان کارشناسی ارشد",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/19057912",
+              "date": "2026-10-04",
+              "image": "https://hut.ac.ir/documents/38165/275863/%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%DB%8C%D9%87+%D8%AF%D9%81%D8%A7%D8%B9.png/b8ad3d08-b69f-d9f4-a943-3cbe5837f96c?t=1791091634796&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه آغاز کلاس‌های تربیت بدنی و ورزش ۱",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/19042273",
+              "date": "2026-09-29",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87+%D8%B3%D8%A7%D9%84%D9%86+%D8%AA%D9%86%D8%AF%D8%B1%D8%B3%D8%AA%DB%8C+%D8%AF%D8%B1+%D8%B3%D8%A7%D9%84+%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C+405-406.jpg/0e002a60-1be0-3910-7d94-19147de5ea5e?t=1790672956839&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه مهم حذف و اضافه ترم 4051",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/19039509",
+              "date": "2026-09-26",
+              "image": "https://hut.ac.ir/documents/38165/55251/c6b58a45-648b-406a-925f-a5af2b1e4bce.png/88ff9431-7823-b570-04d1-640f88f34aea?t=1790410497721&imagePreview=1&width=350"
+            },
+            {
+              "title": "قابل توجه دانشجویان متقاضی استفاده از سهمیه...",
+              "summary": "دانشجویان متقاضی بایستی حداکثر تا پایان وقت اداری یک شنبه مورخ 1405/06/22 درخواست خود را مطابق فرم موجود در...",
+              "href": "https://hut.ac.ir/article/18989220",
+              "date": "2026-09-08",
+              "image": "https://hut.ac.ir/documents/38165/55251/69e7b8b4-fe50-47f9-8e1b-54f039d8406e.png/ebeac2f4-3cab-66fe-5f8c-6b87afe0a07a?t=1788841349501&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه مهلت دفاع از پایان‌نامه کارشناسی...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18986550",
+              "date": "2026-09-06",
+              "image": "https://hut.ac.ir/documents/38165/55251/13d2486c-2ce7-4f04-b51f-4aea168d6b5b.png/f6d9b62d-4d77-fd09-adaf-ff7d91f6236f?t=1788682873979&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه تمدید سنوات ورودی 1400 و ماقبل...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18985217",
+              "date": "2026-09-05",
+              "image": "https://hut.ac.ir/documents/38165/55251/a594e209-05d5-4c5e-994e-bc570b2abb5d.png/4332bc20-228a-60f7-f0fe-9df8b6cc4dee?t=1788587549234&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه ثبت درخواست مجوز ادامه تحصیل برای...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18985254",
+              "date": "2026-09-05",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%82%D8%A7%D8%A8%D9%84+%D8%AA%D9%88%D8%AC%D9%87+%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%D8%A7%D9%86+%D9%85%D9%82%D8%B7%D8%B9+%DA%A9%D8%A7%D8%B1%D8%B4%D9%86%D8%A7%D8%B3%DB%8C+%D8%A8%D8%A7+%D8%B4%D8%B1%D8%A7%DB%8C%D8%B7+%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC+%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C.png/8c1f466c-b128-76ec-06da-d03572230452?t=1788587823742&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه مهم انتخاب واحد کلیه دانشجویان در...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18985527",
+              "date": "2026-09-05",
+              "image": "https://hut.ac.ir/documents/38165/55251/7bc162e7-e5ec-49ab-acd0-b2b999a5ab48.png/38dbf91b-849b-3062-48d8-323740a269d4?t=1788600896484&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه شماره ۲ – شیوه انتخاب محل برگزاری...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18968087",
+              "date": "2026-08-28",
+              "image": "https://hut.ac.ir/documents/38165/55251/main-noti+%281%29.jpg/dfe39c81-ae0f-0cc9-f6b8-6de3b23d68a4?t=1787826821845&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاع رسانی درخصوص برگزاری حضوری امتحانات...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18967845",
+              "date": "2026-08-27",
+              "image": "https://hut.ac.ir/documents/38165/55251/main-noti+%281%29.jpg/dfe39c81-ae0f-0cc9-f6b8-6de3b23d68a4?t=1787826821845&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه مهم در خصوص تاریخ وچگونگی ثبت‌نام...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18953187",
+              "date": "2026-08-24",
+              "image": "https://hut.ac.ir/documents/38165/55251/Screenshot+2026-08-24+095425.png/658e9057-e969-b21e-88e1-75f7801a8836?t=1787552922712&imagePreview=1&width=350"
+            },
+            {
+              "title": "تقویم آموزشی نیم‌سال اول سال تحصیلی...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18937786",
+              "date": "2026-08-18",
+              "image": "https://hut.ac.ir/documents/38165/467382/taghvim1-scaled+%281%29.jpg/4344809c-9299-5224-8dcf-1e95382ae700?t=1787036529929&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه معرفی به استاد ترم 4043",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18921078",
+              "date": "2026-08-11",
+              "image": "https://hut.ac.ir/documents/38165/55251/Screenshot+2026-08-11+132457.png/bc645ec6-0a8c-3a2c-d091-e42350650d2d?t=1786442351051&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه تسویه شهریه ترم تابستان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18921130",
+              "date": "2026-08-11",
+              "image": "https://hut.ac.ir/documents/38165/55251/Screenshot+2026-08-11+134018.png/739dd7e9-8884-4b29-1711-0d9e37b71991?t=1786443268911&imagePreview=1&width=350"
+            },
+            {
+              "title": "🔴 اطلاعیه تمدید مهلت ثبت نام ترم تابستان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18889916",
+              "date": "2026-07-29",
+              "image": "https://hut.ac.ir/documents/38165/55251/ChatGPT+Image+Jul+29%2C+2026%2C+12_17_42+PM+copy.png/2b0bd9b1-37c3-d7f0-20c9-2232c627da8c?t=1785317271789&imagePreview=1&width=350"
+            },
+            {
+              "title": "تاریخ رسیدگی به اعتراضات امتحانات حضوری...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18817665",
+              "date": "2026-07-21",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=18817668&t=1791506046662&width=350"
+            },
+            {
+              "title": "اطلاعیه برگزاری ترم تابستان 1405 در دانشگاه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18870799",
+              "date": "2026-07-21",
+              "image": "https://hut.ac.ir/documents/38165/55251/93b5318d-23ea-4d50-858d-cb2dd7a3aa3a.png/4836a536-2cfc-0bc1-f855-1082a15464fb?t=1783142522967&imagePreview=1&width=350"
+            }
+          ]
+        },
+        "tabGraduate": {
+          "title": "تحصیلات تکمیلی",
+          "instance": "qicz",
+          "items": [
+            {
+              "title": "اطلاعیه دفاع دانشجویان کارشناسی ارشد",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/19057912",
+              "date": "2026-10-04",
+              "image": "https://hut.ac.ir/documents/38165/275863/%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%DB%8C%D9%87+%D8%AF%D9%81%D8%A7%D8%B9.png/b8ad3d08-b69f-d9f4-a943-3cbe5837f96c?t=1791091634796&imagePreview=1&width=350"
+            },
+            {
+              "title": "قابل توجه دانشجویان متقاضی استفاده از سهمیه...",
+              "summary": "دانشجویان متقاضی بایستی حداکثر تا پایان وقت اداری یک شنبه مورخ 1405/06/22 درخواست خود را مطابق فرم موجود در...",
+              "href": "https://hut.ac.ir/article/18989220",
+              "date": "2026-09-08",
+              "image": "https://hut.ac.ir/documents/38165/55251/69e7b8b4-fe50-47f9-8e1b-54f039d8406e.png/ebeac2f4-3cab-66fe-5f8c-6b87afe0a07a?t=1788841349501&imagePreview=1&width=350"
+            },
+            {
+              "title": "برگزاری جلسه دفاع از سمینار کارشناسی ارشد...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18986145",
+              "date": "2026-09-06",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=18986148&t=1791432006186&width=350"
+            },
+            {
+              "title": "اطلاعیه مهلت دفاع از پایان‌نامه کارشناسی...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18986550",
+              "date": "2026-09-06",
+              "image": "https://hut.ac.ir/documents/38165/55251/13d2486c-2ce7-4f04-b51f-4aea168d6b5b.png/f6d9b62d-4d77-fd09-adaf-ff7d91f6236f?t=1788682873979&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه مهم در خصوص تاریخ وچگونگی ثبت‌نام...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18953187",
+              "date": "2026-08-24",
+              "image": "https://hut.ac.ir/documents/38165/55251/Screenshot+2026-08-24+095425.png/658e9057-e969-b21e-88e1-75f7801a8836?t=1787552922712&imagePreview=1&width=350"
+            },
+            {
+              "title": "تاریخ رسیدگی به اعتراضات امتحانات حضوری...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18817665",
+              "date": "2026-07-21",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=18817668&t=1791506046662&width=350"
+            },
+            {
+              "title": "اطلاعیه برگزاری ترم تابستان 1405 در دانشگاه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18870799",
+              "date": "2026-07-21",
+              "image": "https://hut.ac.ir/documents/38165/55251/93b5318d-23ea-4d50-858d-cb2dd7a3aa3a.png/4836a536-2cfc-0bc1-f855-1082a15464fb?t=1783142522967&imagePreview=1&width=350"
+            },
+            {
+              "title": "اسامی پذیرفته‌شدگان اولیه کارشناسی ارشد...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18832454",
+              "date": "2026-07-04",
+              "image": "https://hut.ac.ir/documents/38165/55251/e2a0e056-3dc4-4f24-89dd-f79f464194c7.jpg/08d4a4b7-40dc-3b2a-be34-027128d2850b?t=1783142406259&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه تغییر تاریخ امتحانات ۱۷ و ۱۸ تیرماه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18761921",
+              "date": "2026-06-08",
+              "image": "https://hut.ac.ir/documents/38165/55251/%E2%9C%B3%EF%B8%8F+%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%DB%8C%D9%87+%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1+%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE+%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA+%DB%B1%DB%B7+%D9%88+%DB%B1%DB%B8+%D8%AA%DB%8C%D8%B1%D9%85%D8%A7%D9%87+%D8%AF%D8%B1+%D9%85%D9%82%D8%B7%D8%B9+%DA%A9%D8%A7%D8%B1%D8%B4%D9%86%D8%A7%D8%B3%DB%8C.jpg/c7907f68-2db7-7f17-bc76-2ee870e71f9b?t=1780895669359&imagePreview=1&width=350"
+            },
+            {
+              "title": "آغاز فرآیند ارزشیابی اساتید توسط دانشجویان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18761939",
+              "date": "2026-06-08",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D8%A7%D8%B1%D8%B2%D8%B4%DB%8C%D8%A7%D8%A8%DB%8C.jpg/39b10a90-075f-f1ce-3f51-b24da4c6155e?t=1780895834318&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه وام های دانشجویی نیمسال دوم 405-404",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18609450",
+              "date": "2026-04-14",
+              "image": "https://hut.ac.ir/documents/38165/55251/09.jpg/e17d3d2d-14a2-307b-03f4-993775579a44?t=1776238549223&imagePreview=1&width=350"
+            },
+            {
+              "title": "فراخوان پذیرش دانشجوی کارشناسی ارشد بدون آزمون",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18602233",
+              "date": "2026-04-11",
+              "image": "https://hut.ac.ir/documents/38165/55251/21-1.jpg/3253a0f3-a2b4-f781-66a9-76229a1336c4?t=1775894367223&imagePreview=1&width=350"
+            },
+            {
+              "title": "فراخوان و فرم‌های پیوست در خصوص پذیرش...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18602267",
+              "date": "2026-04-11",
+              "image": "https://hut.ac.ir/documents/38165/55251/21-1-1.jpg/214e0b0f-d675-4c0d-19af-7e74a13a139f?t=1775895278882&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه مهمان و انتقال",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18602465",
+              "date": "2026-04-11",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%82%D8%A7%D8%A8%D9%84+%D8%AA%D9%88%D8%AC%D9%87+%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%D9%8A%D8%A7%D9%86+%D9%85%D8%AD%D8%AA%D8%B1%D9%85+%D9%85%D8%AA%D9%82%D8%A7%D8%B6%D9%8A+%D9%85%DB%8C%D9%87%D9%85%D8%A7%D9%86%D9%8A+%D9%88+%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84.jpg/8d73bd31-c300-6bda-f887-8b82b5984568?t=1775895710790&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه شروع نیمسال دوم تحصیلی ۱۴۰۵-۱۴۰۴",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18484686",
+              "date": "2026-02-21",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D8%B4%D8%B1%D9%88%D8%B9+%D9%86%DB%8C%D9%85%D8%B3%D8%A7%D9%84+%D8%AF%D9%88%D9%85+%D8%AA%D8%AD%D8%B5%DB%8C%D9%84%DB%8C+%DB%B1%DB%B4%DB%B0%DB%B5-%DB%B1%DB%B4%DB%B0%DB%B4.jpg/e9ceb356-1af7-1012-9625-547f0ac62bcf?t=1771652653630&imagePreview=1&width=350"
+            },
+            {
+              "title": "زمان برگزاری امتحانات دروس عملی نیم سال...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18330475",
+              "date": "2026-02-02",
+              "image": "https://hut.ac.ir/documents/38165/55251/01+%283%29.jpg/e2c9bf60-2ce9-a820-4779-6187918de954?t=1770014532919&imagePreview=1&width=350"
+            },
+            {
+              "title": "تمدید مهلت دفاع از پایان نامه کارشناسی ...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18330524",
+              "date": "2026-02-02",
+              "image": "https://hut.ac.ir/documents/38165/55251/02.jpg/bec3757a-725f-9918-a7da-8f0a213a02d9?t=1770014642595&imagePreview=1&width=350"
+            }
+          ]
+        },
+        "tabIndustry": {
+          "title": "ارتباط با صنعت",
+          "instance": "goeq",
+          "items": [
+            {
+              "title": "دفتر ارتباط با صنعت با همکاری انجمن علمی...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5901539",
+              "date": "2025-05-27",
+              "image": "https://hut.ac.ir/documents/38165/55251/photo_2025-05-27_08-08-37.jpg/e7b01be1-2a1f-d895-2c0d-e9160076a537?t=1748320727916&imagePreview=1&width=350"
+            },
+            {
+              "title": "بورس حین تحصیل و بدون کنکور صنعت و مشاغل",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5885096",
+              "date": "2025-05-20",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1+%D8%A8%D8%AF%D9%88+%DA%A9%D9%86%DA%A9%D9%88%D8%B1-min.jpg/cc885725-154f-61ac-d639-fa2a82dfd05d?t=1747715685625&imagePreview=1&width=350"
+            },
+            {
+              "title": "طرح دستیار فناوری",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5621389",
+              "date": "2025-02-02",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D8%AF%D8%B3%D8%AA%DB%8C%D8%A7%D8%B1+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C.jpg/7202a021-57c6-9103-5fc4-f0fb547d110c?t=1738491080283&imagePreview=1&width=350"
+            },
+            {
+              "title": "رویداد فناورانه ملی با رویکرد مهارتی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5495019",
+              "date": "2025-02-23",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "پوستر سخنرانی های هفته پژوهش 1403",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5412107",
+              "date": "2024-12-15",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "ثبت نام کارگاه عملکرد و نگهداری بهینه خودرو",
+              "summary": "به اطلاع دانشجویان عزیز می رسانیم مفتخریم اولین کارگاه بررسی عملکرد و نگهداری بهینه از خودرو همراه با حضور خودرو...",
+              "href": "https://hut.ac.ir/article/5372204",
+              "date": "2024-12-11",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5372207&t=1791516932032&width=350"
+            },
+            {
+              "title": "ارائه سمینار \" با عنوان\" سنتز پارانیترو...",
+              "summary": "ارائه سمینار فرصت مطالعاتی در صنعت آقای دکتر یوسف سیف با عنوان\" سنتز پارانیترو آنیلین از ماده اولیه آنیلین\" در...",
+              "href": "https://hut.ac.ir/article/5368674",
+              "date": "2024-12-11",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "ثبت نام دوره مقدماتی طراحی و ساخت پرینتر سه...",
+              "summary": "دفتر ارتباط با صنعت با همکاری انجمن‌های علمی مهندسی مکانیک و برق و کانون کارآفرینی برگزار می‌کند:",
+              "href": "https://hut.ac.ir/article/5368519",
+              "date": "2024-12-08",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5368522&t=1791596769342&width=350"
+            },
+            {
+              "title": "فراخوان جذب امریه دفتر ارتباط با جامعه و صنعت",
+              "summary": "فراخوان جذب امریه دفتر ارتباط با جامعه و صنعت",
+              "href": "https://hut.ac.ir/article/5367222",
+              "date": "2024-12-07",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5367225&t=1791596769348&width=350"
+            },
+            {
+              "title": "فراخوان هفته پژوهش و فناوری 1403",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5324136",
+              "date": "2024-11-27",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه رسانی جذب نیروی امریه دفتر ارتباط...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4171146",
+              "date": "2024-05-05",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "فراخوان ارسال مقاله",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4018491",
+              "date": "2024-04-13",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1+%D9%86%D8%B4%D8%B1%DB%8C%D9%87.jpg/fb14e59c-d11d-7b42-f322-81c5ca091aa5?t=1712995763159&imagePreview=1&width=350"
+            },
+            {
+              "title": "ثبت نام متقاضیان امریه دفاتر ارتباط با...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3763872",
+              "date": "2024-02-17",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "سمینار «بیت‌کوین و بلاک‌چین»",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3540600",
+              "date": "2023-12-27",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "مرکز رشد دانشگاه صنعتی همدان با همکاری شرکت...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3533181",
+              "date": "2023-12-23",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "برنامه سخنرانی ها و کارگاه ها به مناسبت...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3499624",
+              "date": "2023-12-12",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "طرح ملی کارآفرینی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/2960498",
+              "date": "2023-09-23",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "سخنرانی علمی با موضوع داده رسانه های...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/2936031",
+              "date": "2023-09-17",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "نخستین فراخوان جذب ایده و تیم در دانشگاه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/2338721",
+              "date": "2023-07-03",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "تمدید طرح دستیار فناوری",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/2268335",
+              "date": "2023-06-20",
+              "image": "https://hut.ac.ir/documents/38165/55248/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1+%D8%A7%D8%B5%D9%84%DB%8C+%D8%B7%D8%B1%D8%AD+%D8%AF%D8%B3%D8%AA%DB%8C%D8%A7%D8%B1+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C.jpg/4a386fb5-e188-d3b2-9e01-6768f0348249?t=1686644537500&imagePreview=1&width=350"
+            },
+            {
+              "title": "سمینار \" هوش مصنوعی در صنعت مهندسی\"",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/2223041",
+              "date": "2023-05-26",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%87%D9%88%D8%B4+%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C.jpg/90403302-16f2-7b31-1ae2-9b8be5f014ad?t=1685089055331&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه کارآموزی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/2102125",
+              "date": "2023-05-10",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه فراخوان امریه وزارت ارتباطات",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/2082770",
+              "date": "2023-05-03",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "سمینار ارائه نهایی فرصت مطالعاتی در صنعت با...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1963325",
+              "date": "2023-04-26",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه فراخوان جذب نیروی امریه",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1642362",
+              "date": "2023-02-14",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=1642365&t=1791771957704&width=350"
+            },
+            {
+              "title": "تفاهم نامه همکاری آموزشی و پژوهشی دانشگاه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1594967",
+              "date": "2023-01-24",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "تفاهم نامه مشترک مابین دانشگاه صنعتی همدان...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1594953",
+              "date": "2023-01-24",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "جذب کارآموز در شرکت کنترل گاز اکباتان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1590977",
+              "date": "2023-01-22",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "سمینار کسب‌وکار در حوزه فناوری و رسانه",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1535150",
+              "date": "2022-12-31",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1+%D8%B3%D9%85%DB%8C%D9%86%D8%A7%D8%B1+%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C+%D9%88+%D8%B1%D8%B3%D8%A7%D9%86%D9%87.jpg/d8137c68-6cbf-9f10-919b-b839a083d001?t=1672482368201&imagePreview=1&width=350"
+            },
+            {
+              "title": "شتابدهنده نوآوران اکباتان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1535122",
+              "date": "2022-12-31",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D8%A7%D8%B3%D8%AA%D9%86%D8%AF+%D8%B4%D8%AA%D8%A7%D8%A8%D8%AF%D9%87%D9%86%D8%AF%D9%87+ve.2.jpg/086b47d5-cddd-294d-5994-78e94d2aba0c?t=1672482207439&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاع رسانی نشست تخصصی به مناسبت هفته پژوهش...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1487710",
+              "date": "2022-12-11",
+              "image": "https://hut.ac.ir/documents/38165/55251/9865042%282%29.jpg/af98890e-3146-7efa-fff1-8f108d02af67?t=1670737515597&imagePreview=1&width=350"
+            },
+            {
+              "title": "مرکز هدایت شغلی دانشگاه صنعتی همدان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1471045",
+              "date": "1899-11-30",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "فراخوان هفته پژوهش و فناوری",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1339220",
+              "date": "2022-11-22",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "مشاوره راه اندازی کسب و کار",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1330417",
+              "date": "2022-11-14",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=1330420&t=1791516932149&width=350"
+            },
+            {
+              "title": "سمینار \"کارمند خوب\"",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1330392",
+              "date": "2022-11-15",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=1330395&t=1791516932153&width=350"
+            },
+            {
+              "title": "فراخوان پذیرش امریه سازمان برنامه و بودجه کشور",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1330333",
+              "date": "2022-11-15",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=1330336&t=1791596769478&width=350"
+            },
+            {
+              "title": "آگهی جذب نیرو",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1329226",
+              "date": "1899-11-30",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=1329229&t=1791516932164&width=350"
+            },
+            {
+              "title": "سمینار \"استارتاپ، موفقیت یا شکست ؟\"",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1319523",
+              "date": "2022-11-09",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=1319527&t=1791596725512&width=350"
+            },
+            {
+              "title": "دفتر ارتباط با صنعت دانشگاه صنعتی همدان به...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1319508",
+              "date": "2022-11-09",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=1319511&t=1791596769488&width=350"
+            },
+            {
+              "title": "دوره های ارتباط با صنعت",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/1154278",
+              "date": "2022-10-23",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "فراخوان طرح های پژوهشی دستگاه های اجرایی در...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/995811",
+              "date": "2022-08-27",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "رویداد ایده پارک",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/991359",
+              "date": "2022-08-24",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=991362&t=1792188224834&width=350"
+            },
+            {
+              "title": "کنفرانس ارزیابی و تضمین کیفیت در نظام های...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/988867",
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=988870&t=1792188224842&width=350"
+            },
+            {
+              "title": "اطلاعیه جذب نیروی امریه",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/988691",
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=988694&t=1792188224868&width=350"
+            },
+            {
+              "title": "اطلاعیه سمینار فرصت مطالعاتی در صنعت جناب...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/988656",
+              "date": "2022-08-22",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=988659&t=1792188224874&width=350"
+            },
+            {
+              "title": "متن تفاهم نامه همکاری دانشگاه صنعتی همدان و...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/969649",
+              "date": "2022-08-03",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه کتابخانه دانشگاه",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/959313",
+              "date": "2022-07-23",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "رویداد طراحی حسگرها و زیست حسگرهای شیمیایی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/937271",
+              "date": "2022-07-05",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "سمینار فرصت مطالعاتی در صنعت، دکتر علیپور",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/937244",
+              "date": "2022-07-05",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "تفاهم نامه طرح دستیار فناوری",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/915772",
+              "date": "2022-06-18",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            }
+          ]
+        },
+        "tabStudent": {
+          "title": "دانشجویی و فرهنگی",
+          "instance": "srha",
+          "items": [
+            {
+              "title": "طرح احوال پرسی پسا جنگ",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18904770",
+              "date": "2026-08-02",
+              "image": "https://hut.ac.ir/documents/38165/55251/photo_2026-08-02_20-09-18.jpg/7120010c-7b83-0ae2-ccfc-5fe174d6ffd4?t=1785689041942&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه وام های دانشجویی نیمسال دوم 405-404",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/18609450",
+              "date": "2026-04-14",
+              "image": "https://hut.ac.ir/documents/38165/55251/09.jpg/e17d3d2d-14a2-307b-03f4-993775579a44?t=1776238549223&imagePreview=1&width=350"
+            },
+            {
+              "title": "آغاز ثبت نام وام های ضروری و وام شهریه ...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/16686617",
+              "date": "2025-12-07",
+              "image": "https://hut.ac.ir/documents/38165/55248/photo_2025-12-07_08-36-03.jpg/5e982195-c02f-8a76-1480-7da82c785b33?t=1765083891656&imagePreview=1&width=350"
+            },
+            {
+              "title": "❇️ اطلاعیه شماره 2 خوابگاه ویژه امتحانات...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/6133335",
+              "date": "2025-08-19",
+              "image": "https://hut.ac.ir/documents/38165/55251/main-noti.jpg/6121ec1a-1440-73de-56af-91ead30b710a?t=1755178639087&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه شماره 1 خوابگاه 🔴 برای امتحانات...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/6115940",
+              "date": "2025-08-10",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "مراسم آیین دانش آموختگی سال ۱۴۰۴ دانشگاه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/6101246",
+              "date": "2025-08-02",
+              "image": "https://hut.ac.ir/documents/38165/275863/hut+%281%29.jpg/654d6632-c62a-401e-7d95-324602589f62?t=1687150317600&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه ثبت سامانه‌ای پروژه کارشناسی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/6022417",
+              "date": "2025-07-14",
+              "image": "https://hut.ac.ir/documents/38165/275863/main-noti-960x750.jpg/6db0bd4d-5d0b-e8c6-c726-bac5a33c9c0a?t=1737957234545&imagePreview=1&width=350"
+            },
+            {
+              "title": "تمدید انتخابات شورای صنفی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5919778",
+              "date": "2025-06-03",
+              "image": "https://hut.ac.ir/documents/38165/55251/32+%281%29.jpg/55f88c23-a468-1be1-dd30-e510de306ba5?t=1748670250661&imagePreview=1&width=350"
+            },
+            {
+              "title": "نتایج مسابقات هفته خوابگاه ها",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5868042",
+              "date": "2025-05-28",
+              "image": "https://hut.ac.ir/documents/38165/55251/hut+%28Copy%29.jpg/941a25a6-89fd-b40d-2211-53477a114fea?t=1747129435973&imagePreview=1&width=350"
+            },
+            {
+              "title": "اردوی فرهنگی–تفریحی قم،جمکران و کاشان ویژه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5885121",
+              "date": "2025-05-20",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "انتخابات شورای مرکزی انجمن‌های علمی...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5885220",
+              "date": "2025-05-20",
+              "image": "https://hut.ac.ir/documents/38165/55251/photo_2025-05-20_08-13-24.jpg/8f6cd0f7-09ab-5d0e-17f3-b4cf8c7d8605?t=1747716256759&imagePreview=1&width=350"
+            },
+            {
+              "title": "انتخابات شورای مرکزی انجمن های علمی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5844945",
+              "date": "2025-05-04",
+              "image": "https://hut.ac.ir/documents/38165/55251/photo_2025-05-03_09-48-17.jpg/78117427-54f4-28a2-1b66-45bcfcb1d469?t=1746350826321&imagePreview=1&width=350"
+            },
+            {
+              "title": "انتخابات شورای مرکزی کانون‌های فرهنگی و...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5844963",
+              "date": "2025-05-04",
+              "image": "https://hut.ac.ir/documents/38165/55251/photo_2025-05-03_09-48-55.jpg/90789414-6374-8e8d-ea08-fe88f4d904fd?t=1746351157456&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه مهمان و انتقال",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5774759",
+              "date": "2025-04-08",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D8%B2%D9%85%D8%A7%D9%86-%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84%DB%8C-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D8%B3%D8%B1%D8%A7%D8%B3%D8%B1%DB%8C.jpg/8ff75040-b7bd-2fd4-44fc-ab2138f531df?t=1744087299630&imagePreview=1&width=350"
+            },
+            {
+              "title": "آغاز ثبت نام وام های دانشجویی نیمسال دوم ...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5720463",
+              "date": "2025-03-11",
+              "image": "https://hut.ac.ir/documents/38165/55251/student-loan-e1571127732815.jpg/3c28d22f-c9ee-f052-4f90-5f0353dff2a7?t=1741149921355&imagePreview=1&width=350"
+            },
+            {
+              "title": "جدول مبالغ و زمان بندی اعطای وام های...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5705347",
+              "date": "2025-03-04",
+              "image": "https://hut.ac.ir/documents/38165/55251/student-loan-e1571127732815.jpg/3c28d22f-c9ee-f052-4f90-5f0353dff2a7?t=1741149921355&imagePreview=1&width=350"
+            },
+            {
+              "title": "✅گاهنامه روانشناسی دانشگاه صنعتی همدان-...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5704744",
+              "date": "2025-03-03",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5704747&t=1791516932365&width=350"
+            },
+            {
+              "title": "اطلاعیه مهم برنامه ایاب ذهاب دانشجویی ویژه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5495106",
+              "date": "2025-01-06",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5519769&t=1791596769665&width=350"
+            },
+            {
+              "title": "اطلاعیه پرداخت اجاره خوابگاه از طریق سامانه...",
+              "summary": "اطلاعیه پرداخت اجاره خوابگاه از طریق سامانه جهان گستر قابل توجه دانشجویان ساکن خوابگاه: خوابگاه پسرانه اعتماد،...",
+              "href": "https://hut.ac.ir/article/5440160",
+              "date": "2024-12-30",
+              "image": "https://hut.ac.ir/documents/38165/55424/main-noti.jpg/8c3ef7c7-f51d-0515-1604-cef7e97ed5fc?t=1622960002622&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه شماره 2 اردوی مشهد",
+              "summary": "دانشجویانی که در اردوی مشهد مقدس از طریق سامانه گلستان ثبت نام نموده‌اند به‌منظور تهیه بلیط قطار حداکثر تا پایان...",
+              "href": "https://hut.ac.ir/article/5440252",
+              "date": "2024-12-21",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "آیین روز دانشجو در دانشگاه صنعتی همدان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5373582",
+              "date": "2024-12-10",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه شماره 1 انتخابات شورای صنفی- رفاهی...",
+              "summary": "ضمن آرزوی سلامتی برای دانشجویان عزیز و تبریک فرارسیدن روز دانشجو به اطلاع می رساند که انتخابات دانشجویی شورای...",
+              "href": "https://hut.ac.ir/article/5350190",
+              "date": "2024-12-08",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5350193&t=1791596769688&width=350"
+            },
+            {
+              "title": "هنرواره رسانه ای به سوی فتح",
+              "summary": "هنرواره رسانه ای به سوی فتح",
+              "href": "https://hut.ac.ir/article/5232806",
+              "date": "2024-11-13",
+              "image": "https://hut.ac.ir/documents/38165/0/photo14800399167+%281%29.jpg/b93ed58c-5f1f-7815-ca7c-17131e5528be?t=1731743717934&imagePreview=1&width=350"
+            },
+            {
+              "title": "فراخوان سومین نمایشگاه و جشنواره ملی...",
+              "summary": "مهلت ارسال آثار به دبیرخانه سومین نمایشگاه و جشنواره ملی \"هنرهای تجسمی ایثار\" تمدید شد.",
+              "href": "https://hut.ac.ir/article/5217773",
+              "date": "2024-11-09",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5217777&t=1791432006662&width=350"
+            },
+            {
+              "title": "آغاز ثبت‌نام وام‌های دانشجویی نیمسال اول...",
+              "summary": "ثبت‌نام وام‌های دانشجویی نیمسال اول تحصیلی ۱۴۰۳-۱۴۰۴ در سایت صندوق رفاه دانشجویان وزارت علوم(swf.ir) آغاز شد.",
+              "href": "https://hut.ac.ir/article/5200439",
+              "date": "2024-11-06",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5200443&t=1791596769704&width=350"
+            },
+            {
+              "title": "برگزاری نشست هم اندیشی با موضوع: \"حزب الله...",
+              "summary": "نشست هم اندیشی با موضوع: \"حزب الله لبنان، پیشینه و افق های پیش رو \"",
+              "href": "https://hut.ac.ir/article/5164812",
+              "date": "2024-10-27",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "📣ثبت نام کلاس های حلقه معرفت",
+              "summary": "ثبت نام کلاس های حلقه معرفت",
+              "href": "https://hut.ac.ir/article/5164640",
+              "date": "2024-10-27",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه در خصوص پرداخت اجاره خوابگاه...",
+              "summary": "اطلاعیه در خصوص پرداخت اجاره خوابگاه دانشجویان پسر خوابگاه اعتماد",
+              "href": "https://hut.ac.ir/article/5162211",
+              "date": "2024-10-26",
+              "image": "https://hut.ac.ir/documents/38165/55251/PhotoEffect1423571969908.jpg/f168e792-cdd5-f7d8-aeae-25b8b3b2e6f2?t=1728798935343&imagePreview=1&width=350"
+            },
+            {
+              "title": "ثبت نام بیست و هفتمین دوره ازدواج دانشجویی...",
+              "summary": "ثبت نام بیست و هفتمین دوره ازدواج دانشجویی در قالب طرح ملی همسفر تا بهشت (سفر مشهد مقدس)",
+              "href": "https://hut.ac.ir/article/5163280",
+              "date": "2024-10-26",
+              "image": "https://hut.ac.ir/documents/38165/0/ezdevaj.jpg/26045b4d-c4c8-68bf-6344-8ad95f03f725?t=1729937301964&imagePreview=1&width=350"
+            },
+            {
+              "title": "ویژه برنامه دانشجویان نوورود کارشناسی با...",
+              "summary": "اطلاعیه در خصوص پرداخت اجاره خوابگاه دانشجویان پسر خوابگاه اعتماد",
+              "href": "https://hut.ac.ir/article/5163218",
+              "date": "2024-10-26",
+              "image": "https://hut.ac.ir/documents/38165/0/royesh.jpg/90bbfbf2-6d39-c74b-4e73-ddeba9326506?t=1729937012104&imagePreview=1&width=350"
+            },
+            {
+              "title": "اطلاعیه وام های تحصیلی ، ضروری، شهریه و...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/5145605",
+              "date": "2024-10-23",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5145608&t=1791506047334&width=350"
+            },
+            {
+              "title": "نحوه رزرو غذا برای دانشجویان ورودی ۱۴۰۳...",
+              "summary": "نحوه رزرو غذا برای دانشجویان ورودی ۱۴۰۳ کارشناسی",
+              "href": "https://hut.ac.ir/article/5145905",
+              "date": "2024-10-23",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه عزای شهید مقاومت سید حسن نصرالله",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4940080",
+              "date": "2024-09-29",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "برنامه ایاب وذهاب دانشجویی نیمسال اول...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4940008",
+              "date": "2024-09-29",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "قابل توجه دانشجویان ساکن خوابگاه پسرانه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4939993",
+              "date": "2024-09-29",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه اجرای طرح پایش سلامت ویژه دانشجویان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4915049",
+              "date": "2024-09-25",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه نحوه توزیع غذای دانشجویی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4915032",
+              "date": "2024-09-25",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه شماره 2 در خصوص اسکان دانشجویان پسر...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4876220",
+              "date": "2024-09-18",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه اسکان دانشجویان دختر",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4862495",
+              "date": "2024-09-15",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه تغذیه دانشجویان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4862279",
+              "date": "2024-09-15",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه سوم آیین دانش آموختگی 1403",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4862423",
+              "date": "2024-09-15",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "نحوه ثبت نام اسکان دانشجویان تحصیلات تکمیلی...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4862329",
+              "date": "2024-09-15",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "نحوه ثبت نام اسکان دانشجویان پسر ( کلیه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4862238",
+              "date": "2024-09-15",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه پذیرش خوابگاه های دانشگاه صنعتی همدان",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4795761",
+              "date": "2024-09-04",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "مراسم آیین دانش آموختگی ۱۴۰۳",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4622183",
+              "date": "2024-07-20",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "اطلاعیه رزرو غذا روز چهارشنبه 2 خرداد",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4243304",
+              "date": "2024-05-21",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "انتخاب شورای مرکزی انجمن های علمی دانشگاه...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4217042",
+              "date": "2024-05-16",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "برگزاری مسابقه چالش جاذبه ( نجات تخم مرغ )",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4217137",
+              "date": "2024-05-16",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "لیست نامزد های انتخابات شورای صنفی – رفاهی ...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4217300",
+              "date": "2024-05-16",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            }
+          ]
+        },
+        "tabOpenEducation": {
+          "title": "آموزش‌های آزاد",
+          "instance": "jtsr",
+          "items": [
+            {
+              "title": "❇️ سمینار رایگان معامله گری در بازار های مالی",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/9646200",
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55251/photo_2025-11-10_12-03-28.jpg/7742ca08-7b1c-d932-fb9e-ed21e7ea8d35?t=1762763571579&imagePreview=1&width=350"
+            },
+            {
+              "title": "دوره رایگان \"چگونه دانش بنیان شویم\"",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/9505501",
+              "date": "2025-11-09",
+              "image": "https://hut.ac.ir/documents/38165/55251/%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%AF%D8%A7%D9%86%D8%B4-%D8%A8%D9%86%DB%8C%D8%A7%D9%86-%D8%B4%D9%88%DB%8C%D9%85.jpg/2054ce18-6fa3-6e39-9ec7-3d601225eb04?t=1762668294196&imagePreview=1&width=350"
+            },
+            {
+              "title": "ثبت نام درس HSE پیش نیاز دروس عملی نیمسال4031",
+              "summary": "\"به اطلاع دانشجویان گرامی می­رساند دوره آموزشی HSE، روزهای چهار شنبه و پنج شنبه در تاریخ­های 5 و...",
+              "href": "https://hut.ac.ir/article/5371035",
+              "date": "2024-12-25",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=5371079&t=1791430193431&width=350"
+            },
+            {
+              "title": "سمینار روش های تحقیق و ارائه مقاله",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4228552",
+              "date": "2024-05-21",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1%D8%B3%D9%85%DB%8C%D9%86%D8%A7%D8%B1-%D9%85%D8%A8%D8%A7%D9%86%DB%8C-%D8%AA%D8%AD%D9%82%DB%8C%D9%821403.jpg/d83aeed6-a4a5-4435-0363-714caacef32f?t=1715854486116&width=350"
+            },
+            {
+              "title": "کارگاه عملی آشنایی با تعمیرات موبایل",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4228566",
+              "date": "2024-05-22",
+              "image": "https://hut.ac.ir/documents/38165/55251/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1-%DA%A9%D8%A7%D8%B1%DA%AF%D8%A7%D9%87-%D8%AA%D8%B9%D9%85%DB%8C%D8%B1%D8%A7%D8%AA-%D9%85%D9%88%DB%8C%D8%A7%D8%A8%D9%84.jpg/0475efa9-1ff3-de9c-804b-77e386f3a591?t=1715854585853&width=350"
+            },
+            {
+              "title": "دوره های آموزشی کوتاه مدت در مرکز آموزش های...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/4055646",
+              "date": "2024-04-21",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "سمینار \" شیرجه به دنیای یادگیری ماشین\"",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3517741",
+              "date": "2023-12-16",
+              "image": "https://hut.ac.ir/o/sanati-hamedan-theme/images/placeholder.jpg&width=350"
+            },
+            {
+              "title": "کارگاه آشنایی با اینترنت اشیاء IOT",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3473259",
+              "date": "2023-12-06",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=3473263&t=1791432006862&width=350"
+            },
+            {
+              "title": "کارگاه آموزشی آشنایی با PLC",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3473217",
+              "date": "2023-12-06",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=3473221&t=1791516932562&width=350"
+            },
+            {
+              "title": "کارگاه آموزشی تخصصی فشرده گرامر انگلیسی...",
+              "summary": null,
+              "href": "https://hut.ac.ir/article/3473200",
+              "date": "2023-12-06",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=3473203&t=1791516932567&width=350"
+            },
+            {
+              "title": "سمینار معرفی مشاغل در حوزه شبکه های کامپیوتری",
+              "summary": "کارگاه معرفی مشاغل در حوزه شبکه های کامپیوتری، امنیت و مراکز داده در بازار کار داخل و خارج کشور و بررسی نیازهای...",
+              "href": "https://hut.ac.ir/article/1334545",
+              "date": "2022-11-30",
+              "image": "https://hut.ac.ir/documents/38165/934305/seminar_network.jpg/47dde8e7-694a-b6c8-6c1d-c20e570e3b4b?t=1668848871099&width=350"
+            },
+            {
+              "title": "آموزش برنامه نویسی پایتون",
+              "summary": "گروه آموزش آزاد و مجازی اقدام به برگزاری دوره آموزشی تحت عنوان \"آموزش برنامه نویسی پایتون\" به مدت 10 ساعت از...",
+              "href": "https://hut.ac.ir/article/866446",
+              "date": "2022-05-28",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=866449&t=1792188542435&width=350"
+            },
+            {
+              "title": "راه اندازی سامانه آموزشی گروه آموزش های...",
+              "summary": "\"قابل توجه دانشگاهیان گرامی بدین وسیله به اطلاع می رساند سامانه آموزشی گروه آموزش های آزاد و...",
+              "href": "https://hut.ac.ir/article/860608",
+              "date": "2022-05-15",
+              "image": "https://hut.ac.ir/image/journal/article?img_id=861255&t=1791431428730&width=350"
+            }
+          ]
+        },
+        "achievements": {
+          "title": "دستاوردها و افتخارات",
+          "instance": "djmo",
+          "items": [
+            {
+              "title": "چهار عضو هیئت علمی دانشگاه صنعتی همدان در فهرست...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/0h0u0t.jpg/b2a54741-416f-6fdd-759d-409dc79b0a9a?t=1791875845140&imagePreview=1&width=350"
+            },
+            {
+              "title": "انتصاب رئیس دانشگاه صنعتی همدان به عضویت شورای...",
+              "summary": "به گزارش روابط عمومی دانشگاه صنعتی همدان، دکتر محمود پری‌پور، رئیس دانشگاه صنعتی همدان، به عضویت شورای علمی...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=19090580&t=1791696701302&width=350"
+            },
+            {
+              "title": "انتشار کتاب بین‌المللی پروژه AI FORA با مشارکت...",
+              "summary": "کتاب بین‌المللی Participatory Modelling and Simulation to Improve AI-based Public Social Services: Scientific...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/A5zBC7viit5w8z6GavfEVwnCWxA-HOmKz2NwRbStiwNuTTvXlw.png/1fe47a46-8c2a-c204-14c6-a06ed7f69ecd?t=1791093910924&imagePreview=1&width=350"
+            },
+            {
+              "title": "تدوین سند جامع مدیریت شهری هوشمند همدان با همکاری...",
+              "summary": "تدوین سند جامع مدیریت شهری هوشمند همدان با مشارکت این دانشگاه در دستور کار قرار گرفت؛ طرحی که با هدف گذار از...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/06f12c96-9181-4be8-8066-45147ffae552.png/2e93d2a4-83b5-9bf2-d302-a7aa360661b5?t=1789791394412&imagePreview=1&width=350"
+            },
+            {
+              "title": "انتشار کتاب عضو هیأت علمی دانشگاه صنعتی همدان در...",
+              "summary": "کتاب «Failure Mechanism of Rock Materials Containing Pre-existing Notch» تألیف دکتر وهاب سرفرازی، عضو هیأت...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/d7bcf666-5de4-4e50-84b4-05d27a2db8e4.png/8f031a72-5604-4714-0efe-5be7168d7283?t=1789448155365&imagePreview=1&width=350"
+            },
+            {
+              "title": "درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین...",
+              "summary": "کسب مدال طلای کاراته، مقام پنجم کشتی فرنگی و جایگاه هشتم تیراندازی؛ ورزشکاران دانشگاه صنعتی همدان در هفدهمین...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/6.jpg/51b85fd5-b9ff-9c8e-5efb-be7ebc14f6f9?t=1788235583433&imagePreview=1&width=350"
+            },
+            {
+              "title": "نشریه علمی و پژوهشی دانشگاه صنعتی همدان در پایگاه...",
+              "summary": "نشریه علمی و پژوهشی «انرژی پایدار و هوش مصنوعی» Sustainable Energy and Artificial Intelligence متعلق به...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/36+%284%29.jpg/8ca49949-7b2e-2e66-38b8-c3216c6331e5?t=1785318157701&imagePreview=1&width=350"
+            },
+            {
+              "title": "ارتقاء علمی اعضاء هیئت علمی گروه مهندسی پزشکی...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/photo_2026-06-23_07-31-31.jpg/43c99b0a-98c3-9687-a999-238f304bfbdc?t=1783828023904&imagePreview=1&width=350"
+            },
+            {
+              "title": "درخشش دانشجوی دانشگاه صنعتی همدان در رقابت‌های...",
+              "summary": "🔴 محمدرضا اسمعیلی‌خانی، دانشجوی دانشگاه صنعتی همدان، در ترکیب تیم ملی دانشجویان ایران در رقابت‌های جهانی برزیل...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/92.jpg/3914e775-e08e-c4a0-49a0-a5c4e97617cb?t=1781512110680&imagePreview=1&width=350"
+            },
+            {
+              "title": "افتخارآفرینی تیم کاراته دختران دانشگاه صنعتی...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=18763771&t=1791683747324&width=350"
+            },
+            {
+              "title": "افتخارآفرینی تیم کشتی دانشگاه صنعتی همدان در...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/image/journal/article?img_id=18763263&t=1791683747333&width=350"
+            },
+            {
+              "title": "عضویت آزمایشگاه علوم اعصاب شناختی دانشگاه صنعتی...",
+              "summary": "آزمایشگاه علوم اعصاب شناختی گروه مهندسی پزشکی دانشگاه صنعتی همدان به عضویت شبکه آزمایشگاهی کشور...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/9.jpg/21814115-ae41-a9b9-b0a6-c21141831a9e?t=1778138457501&imagePreview=1&width=350"
+            },
+            {
+              "title": "درخشش اعضای هیأت علمی دانشگاه صنعتی همدان در...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/Collage_2026-05-06_11-07.jpg/741c0022-0177-2cc6-cf63-b6e92905c1a6?t=1778053488547&imagePreview=1&width=350"
+            },
+            {
+              "title": "منتخبین آموزشی دانشگاه صنعتی همدان در سال تحصیلی...",
+              "summary": "معاونت آموزشی و پژوهشی دانشگاه صنعتی همدان، همزمان با هفته معلم، روز بزرگداشت مقام استاد و دهه سرآمدی...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/Collage_2026-05-05_10-32.jpg/e5688c04-e2f0-bf7d-98d7-869bd6515835?t=1777965006501&imagePreview=1&width=350"
+            },
+            {
+              "title": "ارتقاء علمی عضو هیات علمی گروه مهندسی برق دانشگاه...",
+              "summary": "به گزارش دفتر روابط عمومی دانشگاه صنعتی همدان، دکتر شعیب بابایی توسکی، عضو هیأت علمی گروه مهندسی برق دانشگاه...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/036+%281%29.jpg/859fbfcb-cc57-6f46-d894-bb45fda2b441?t=1776752888784&imagePreview=1&width=350"
+            },
+            {
+              "title": "پذیرش و چاپ 2 مقاله در مجله‌های Applied Energy و...",
+              "summary": "دکتر پژمان بیات و دکتر پیمان بیات اعضای هیات علمی گروه مهندسی برق قدرت دانشگاه صنعتی همدان، موفق به چاپ 2...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/08+%283%29.jpg/6377c329-c110-2460-2604-51691062be77?t=1776239578459&imagePreview=1&width=350"
+            },
+            {
+              "title": "مجله دانشگاه صنعتی همدان موفق به کسب رتبۀ « ب » ...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/photo_2026-01-19_13-24-04.jpg/80cd1e06-858d-d723-395b-2c23d2f8c93f?t=1768816469255&imagePreview=1&width=350"
+            },
+            {
+              "title": "✳️ انتخاب عضو هیات علمی گروه مهندسی پزشکی دانشگاه...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/C__Users_jen-f_Downloads_Parisa+Ghaderi+Daneshmand-1.jpg/56e946f8-8f7f-c300-ceb3-cfda6718c284?t=1768797999430&imagePreview=1&width=350"
+            },
+            {
+              "title": "تیم بدمینتون دختران دانشگاه صنعتی همدان با کسب...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/36+%283%29.jpg/54440216-b0e9-2ca0-c58d-4668f883f38c?t=1767520220801&imagePreview=1&width=350"
+            }
+          ]
+        },
+        "openEducationEvents": {
+          "title": "رویدادها و دوره‌های مرکز آموزش‌های آزاد و مجازی",
+          "instance": "qill",
+          "items": [
+            {
+              "title": "برگزاری کارگاه تخصصی «آشنایی با آتشباری...",
+              "summary": null,
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/01+%2820%29.jpg/20b13796-cfb3-1566-2a90-49250f2ae483?t=1762246632560&imagePreview=1&width=350"
+            },
+            {
+              "title": "برگزاری دوره آموزشی «باطری و اصول نگهداری آن»...",
+              "summary": "دوره آموزشی کوتاه‌مدت «باطری و اصول نگهداری آن» از مجموعه دوره‌های آموزشی کارکنان نیروگاه شهید مفتح، در...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/photo_2025-10-08_10-22-26.jpg/86924858-1c90-98c7-07a1-3b48cad72890?t=1760514777562&imagePreview=1&width=350"
+            },
+            {
+              "title": "دوره آموزشی کنترل نیروگاه بخار در دانشگاه صنعتی...",
+              "summary": "دوره آموزشی کوتاه‌مدت کنترل نیروگاه بخار با هدف ارتقاء دانش و مهارت‌های فنی کارکنان نیروگاه شهید مفتح در این...",
+              "href": null,
+              "date": null,
+              "image": "https://hut.ac.ir/documents/38165/55248/1404-07-20-2.jpg/34022c29-356c-150c-edb0-828ab43425e3?t=1760248983147&imagePreview=1&width=350"
+            }
+          ]
+        }
+      },
+      "newsTabs": [
+        "آموزش",
+        "تحصیلات تکمیلی",
+        "ارتباط با صنعت",
+        "دانشجوئی و فرهنگی",
+        "آموزش های آزاد"
+      ],
+      "calendar": [
+        {
+          "label": "انتخاب واحد",
+          "dateText": "26 تا 29 بهمن 1404",
+          "currentOnSite": false
+        },
+        {
+          "label": "شروع کلاس ها",
+          "dateText": "2 اسفند 1404",
+          "currentOnSite": false
+        },
+        {
+          "label": "حذف و اضافه",
+          "dateText": "10 تا 11 اسفند 1404",
+          "currentOnSite": false
+        },
+        {
+          "label": "حذف تک درس کارشناسی",
+          "dateText": "17 تا 18 خرداد 1405",
+          "currentOnSite": false
+        },
+        {
+          "label": "ارزشیابی اساتید",
+          "dateText": "16 خرداد تا 29 خرداد 1405",
+          "currentOnSite": true
+        },
+        {
+          "label": "پایان کلاس ها",
+          "dateText": "3 تیر 1405",
+          "currentOnSite": false
+        },
+        {
+          "label": "امتحانات",
+          "dateText": "6 تیر تا 22 تیر 1405",
+          "currentOnSite": false
+        }
+      ],
+      "stats": [
+        {
+          "value": 2300,
+          "suffix": "+",
+          "label": "دانشجو"
+        },
+        {
+          "value": 2200,
+          "suffix": "+",
+          "label": "دانش آموختگان"
+        },
+        {
+          "value": 2400,
+          "suffix": "+",
+          "label": "مقالات"
+        },
+        {
+          "value": 115,
+          "suffix": "+",
+          "label": "اساتید"
+        },
+        {
+          "value": 75,
+          "suffix": "+",
+          "label": "کارکنان"
+        },
+        {
+          "value": 400,
+          "suffix": "+",
+          "label": "دانشجوی ارشد"
+        }
+      ],
+      "video": "https://www.hut.ac.ir/documents/38165/18249686/Jashan_k.mp4/edc8272b-fcd3-35f7-a75d-20655049dd8f?t=1768803535763",
+      "contact": {
+        "address": "همدان، پل پژوهش، بلوار شهید فهمیده، خیابان مردم",
+        "phone": "38411000-081",
+        "fax": "38380660-081",
+        "poBox": "579-65155",
+        "email": "info@hut.ac.ir",
+        "mapEmbed": "https://balad.ir/embed?p=42j1sJdgp1Qvp6"
+      },
+      "affiliates": [
+        {
+          "title": "دفتر مقام معظم رهبری",
+          "href": "https://www.leader.ir/fa"
+        },
+        {
+          "title": "دفتر ریاست جمهوری",
+          "href": "https://www.president.ir/fa/"
+        },
+        {
+          "title": "استانداری همدان",
+          "href": "https://www.ostan-hm.ir/"
+        },
+        {
+          "title": "وزارت علوم، تحقیقات و فناوری",
+          "href": "https://www.msrt.ir/fa"
+        },
+        {
+          "title": "معاونت علمی و فناوری ریاست جمهوری",
+          "href": "http://isti.ir/"
+        },
+        {
+          "title": "پارک علم و فناوری استان همدان",
+          "href": "https://hstp.ir/"
+        },
+        {
+          "title": "دفتر بازرسی و پاسخگویی به شکایات وزارت علوم",
+          "href": "https://erp.msrt.ir/Dashboard"
+        },
+        {
+          "title": "بنیاد نخبگان استان همدان",
+          "href": "https://hamedan.bmn.ir/"
+        },
+        {
+          "title": "صندوق حمایت از پژوهشگران و محققان کشور",
+          "href": "http://insf.org/fa"
+        }
+      ],
+      "social": [
+        {
+          "href": "https://eitaa.com/info_hut",
+          "icon": "https://hut.ac.ir/documents/20123/0/ita.png/57816738-7a77-8050-7115-97721951a5a8?t=1665644463504"
+        },
+        {
+          "href": "https://www.linkedin.com/school/hamedan-university-of-technology/?viewAsMember=true",
+          "icon": "https://hut.ac.ir/documents/38346/233223/linked-in+%282%29.png/bf6f133e-3463-63cc-776c-e866de8545f3?t=1629995530657"
+        },
+        {
+          "href": "https://eitaa.com/hut1326",
+          "icon": "https://hut.ac.ir/documents/38346/233223/ita.png/1a1fc24a-bfa0-18fc-5312-9985944d210e?t=1637662793656"
+        },
+        {
+          "href": "https://www.aparat.com/hut.university",
+          "icon": "https://hut.ac.ir/documents/38346/233223/aparat-icon.png/bd085ee9-1e5a-bab2-326b-766442f86497?t=1629994292839"
+        },
+        {
+          "href": "mailto:info@hut.ac.ir",
+          "icon": "https://hut.ac.ir/documents/38346/233223/gmail.png/f3a0e557-477f-0c60-29c5-72be68724858?t=1637662793716"
+        }
+      ],
+      "utility": [
+        {
+          "title": "کانال ایتا",
+          "href": "https://eitaa.com/info_hut"
+        },
+        {
+          "title": "تماس با دانشگاه",
+          "href": "https://hut.ac.ir/ارتباط-با-ما"
+        },
+        {
+          "title": "نقشه سایت",
+          "href": "https://hut.ac.ir/fa/نقشه-سایت"
+        },
+        {
+          "title": "منشور اخلاق",
+          "href": "https://hut.ac.ir/documents/38165/453653/نظامنامه+اخلاق+آموزش.pdf/4837cfe8-fb35-fe3a-f948-c4a64a3f5081?t=1638600018769"
+        },
+        {
+          "title": "تماس با ما",
+          "href": "https://hut.ac.ir/ارتباط-با-ما"
+        },
+        {
+          "title": "فرم نظام پیشنهادات",
+          "href": "https://hut.ac.ir/فرم نظرات پیشنهادات"
+        },
+        {
+          "title": "نو دانشجویان",
+          "href": "https://edu.hut.ac.ir/ngs1403"
+        },
+        {
+          "title": "انجمن دانش آموختگان",
+          "href": "https://hut.ac.ir/web/دانش-آموختگان"
+        },
+        {
+          "title": "درگاه های پرداخت",
+          "href": "https://hut.ac.ir/انتخاب-منبع-درآمد"
+        }
+      ],
+      "loginMenu": [
+        {
+          "title": "سامانه ادوبی کانکت",
+          "href": "http://lms.hut.ac.ir/"
+        },
+        {
+          "title": "آموزش های آزاد و مجازی",
+          "href": "https://academics.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه درس افزار",
+          "href": "http://ec.hut.ac.ir/"
+        }
+      ],
+      "lastUpdated": "13 10 2026 - 07:18:05"
+    },
+    "sitemap": {
+      "url": "https://hut.ac.ir/fa/نقشه-سایت",
+      "title": "نقشه سایت - پرتال اصلی دانشگاه صنعتی همدان - پرتال دانشگاه صنعتی همدان",
+      "headings": [],
+      "links": [
+        {
+          "title": "دانشگـاه",
+          "href": "https://hut.ac.ir/fa/معرفی-دانشگاه"
+        },
+        {
+          "title": "دانشگاه",
+          "href": "https://hut.ac.ir/fa/دانشگاه"
+        },
+        {
+          "title": "اعضای هیات علمی",
+          "href": "https://hut.ac.ir/fa/اعضای-هیات-علمی"
+        },
+        {
+          "title": "فرم‌ها و آئین نامه‌ها",
+          "href": "https://hut.ac.ir/fa/university-forms"
+        },
+        {
+          "title": "ارتباط با ما",
+          "href": "https://hut.ac.ir/fa/ارتباط-با-ما-جدید"
+        },
+        {
+          "title": "دفترچه تلفن",
+          "href": "https://hut.ac.ir/fa/تلفن-داخلی"
+        },
+        {
+          "title": "کنگره شهداء مهندس استان همدان",
+          "href": "https://hut.ac.ir/fa/کنگره-شهداء-مهندس-استان-همدان"
+        },
+        {
+          "title": "حوزه ریاست",
+          "href": "https://hut.ac.ir/fa/حوزه-ریاست"
+        },
+        {
+          "title": "رئیس دانشگاه",
+          "href": "https://hut.ac.ir/fa/رئیس-دانشگاه1"
+        },
+        {
+          "title": "ارتباط با ریاست دانشگاه",
+          "href": "https://hut.ac.ir/fa/connect-us"
+        },
+        {
+          "title": "رئیس دفتر ریاست",
+          "href": "https://hut.ac.ir/fa/رئیس-دفتر-ریاست"
+        },
+        {
+          "title": "روسای ادوار دانشگاه",
+          "href": "https://hut.ac.ir/fa/روسای-پیشین-دانشگاه"
+        },
+        {
+          "title": "اداره روابط عمومی",
+          "href": "https://hut.ac.ir/fa/روابط-عمومی"
+        },
+        {
+          "title": "اداره همکاری های علمی بین المللی",
+          "href": "https://hut.ac.ir/fa/اداره-همکاری-های-علمی-بین-المللی"
+        },
+        {
+          "title": "واحد فناوری اطلاعات",
+          "href": "http://it.hut.ac.ir/"
+        },
+        {
+          "title": "نظارت و ارزیابی",
+          "href": "https://hut.ac.ir/fa/نظارت-و-ارزیاب"
+        },
+        {
+          "title": "نهاد نمایندگی مقام معظم رهبری",
+          "href": "http://hamedan.nahad.ir/"
+        },
+        {
+          "title": "امور دانشجویان شاهد و ایثارگر",
+          "href": "https://hut.ac.ir/fa/امور-دانشجویان-شاهد-و-ایثارگر"
+        },
+        {
+          "title": "دبیرخانه جذب هیات علمی",
+          "href": "http://jazb.hut.ac.ir/"
+        },
+        {
+          "title": "هیأت امنا",
+          "href": "https://omana.basu.ac.ir/"
+        },
+        {
+          "title": "دبیرخانه شورای رفاهی",
+          "href": "https://refahi.hut.ac.ir/"
+        },
+        {
+          "title": "مدیریت برنامه ریزی،بودجه، بهره وری و تحول اداری",
+          "href": "https://hut.ac.ir/fa/برنامه-بودجه"
+        },
+        {
+          "title": "معاونت",
+          "href": "https://hut.ac.ir/fa/معاونت-ها"
+        },
+        {
+          "title": "معاونت اداری و مالی",
+          "href": "http://daf.hut.ac.ir/"
+        },
+        {
+          "title": "معاونت آموزشی و پژوهشی",
+          "href": "http://edu.hut.ac.ir/"
+        },
+        {
+          "title": "معاونت دانشجویی و فرهنگی",
+          "href": "http://student.hut.ac.ir/"
+        },
+        {
+          "title": "آموزش",
+          "href": "https://hut.ac.ir/fa/اموزش"
+        },
+        {
+          "title": "معاونت آموزشی",
+          "href": "https://hut.ac.ir/fa/معاونت-آموزشی2"
+        },
+        {
+          "title": "اداره امور خدمات آموزشی",
+          "href": "http://web.hut.ac.ir/web/edu/مدیریت-خدمات-آموزشی"
+        },
+        {
+          "title": "اداره تحصیلات تکمیلی",
+          "href": "http://web.hut.ac.ir/web/edu/اداره-تحصیلات-تکمیلی2"
+        },
+        {
+          "title": "اداره پذیرش و دانش آموختگان",
+          "href": "http://web.hut.ac.ir/web/edu/اداره-دانش-آموختگان"
+        },
+        {
+          "title": "گروه‌های آموزشی",
+          "href": "https://hut.ac.ir/fa/groups"
+        },
+        {
+          "title": "گروه مهندسی برق",
+          "href": "http://ee.hut.ac.ir/"
+        },
+        {
+          "title": "گروه مهندسی پزشکی",
+          "href": "http://bme.hut.ac.ir/"
+        },
+        {
+          "title": "گروه مهندسی کامپیوتر",
+          "href": "http://ce.hut.ac.ir/"
+        },
+        {
+          "title": "گروه مهندسی مکانیک",
+          "href": "http://mech.hut.ac.ir/"
+        },
+        {
+          "title": "گروه مهندسی مواد",
+          "href": "http://materials.hut.ac.ir/"
+        },
+        {
+          "title": "گروه مهندسی معدن",
+          "href": "http://me.hut.ac.ir/"
+        },
+        {
+          "title": "گروه مهندسی شیمی",
+          "href": "http://chemeng.hut.ac.ir/"
+        },
+        {
+          "title": "گروه آموزشی علوم پایه",
+          "href": "http://bs.hut.ac.ir/"
+        },
+        {
+          "title": "آموزش آزاد",
+          "href": "https://hut.ac.ir/fa/آموزش-آزاد"
+        },
+        {
+          "title": "آموزش مجازی",
+          "href": "https://hut.ac.ir/fa/آموزش-مجازی"
+        },
+        {
+          "title": "سامانه مرکز آموزش آزاد و مجازی",
+          "href": "http://academics.hut.ac.ir/"
+        },
+        {
+          "title": "پژوهش",
+          "href": "https://hut.ac.ir/fa/پژوهش"
+        },
+        {
+          "title": "مدیریت پژوهشی",
+          "href": "https://hut.ac.ir/fa/معاون-پژوهشی-جدید"
+        },
+        {
+          "title": "اداره امور پژوهشی",
+          "href": "https://edu.hut.ac.ir/مدیریت-پژوهشی"
+        },
+        {
+          "title": "مجله انرژی پایدار و هوش مصنوعی",
+          "href": "https://enai.hut.ac.ir/"
+        },
+        {
+          "title": "دفتر ارتباط با صنعت",
+          "href": "http://industry.hut.ac.ir/"
+        },
+        {
+          "title": "مرکز رشد، فناوری و کارآفرینی",
+          "href": "https://hut.ac.ir/web/roshd"
+        },
+        {
+          "title": "اداره انتشارات",
+          "href": "http://press.hut.ac.ir/"
+        },
+        {
+          "title": "کتابخانه مرکزی",
+          "href": "http://library.hut.ac.ir/"
+        },
+        {
+          "title": "آزمایشگاه",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه"
+        },
+        {
+          "title": "آزمایشگاه مهندسی کامپیوتر",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-مهندسی-کامپیوتر"
+        },
+        {
+          "title": "آزمایشگاه مهندسی پزشکی",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-مهندسی-پزشکی"
+        },
+        {
+          "title": "آزمایشگاه مهندسی برق",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-مهندسی-برق"
+        },
+        {
+          "title": "آزمایشگاه مهندسی مکانیک",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-مهندسی-مکانیک"
+        },
+        {
+          "title": "آزمایشگاه مهندسی مواد",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-مهندسی-مواد"
+        },
+        {
+          "title": "آزمایشگاه مهندسی شیمی",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-مهندسی-شیمی"
+        },
+        {
+          "title": "آزمایشگاه مهندسی معدن",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-مهندسی-معدن"
+        },
+        {
+          "title": "آزمایشگاه علوم پایه",
+          "href": "https://hut.ac.ir/fa/آزمایشگاه-علوم-پایه"
+        },
+        {
+          "title": "آزمایشگاه مرکزی",
+          "href": "http://lab.hut.ac.ir/"
+        },
+        {
+          "title": "دانشجویی‌فرهنگی",
+          "href": "https://hut.ac.ir/fa/دانشجویی-فرهنگی"
+        },
+        {
+          "title": "معاونت دانشجویی و فرهنگی",
+          "href": "https://hut.ac.ir/fa/معاونت-دانشجویی-جدید"
+        },
+        {
+          "title": "مدیر امور دانشجویی",
+          "href": "http://web.hut.ac.ir/web/student/مدیریت-امور-دانشجویی"
+        },
+        {
+          "title": "مدیر امور فرهنگی",
+          "href": "http://web.hut.ac.ir/web/student/مدیر-امور-فرهنگی"
+        },
+        {
+          "title": "اداره تربیت بدنی",
+          "href": "http://web.hut.ac.ir/web/student/اداره-تربیت-بدنی"
+        },
+        {
+          "title": "مرکز مشاوره وسبک زندگی",
+          "href": "http://counseling.hut.ac.ir/"
+        },
+        {
+          "title": "شورای انضباطی",
+          "href": "https://student.hut.ac.ir/شورای-انضباطی"
+        },
+        {
+          "title": "مدیریت امور دانشجویی",
+          "href": "https://hut.ac.ir/fa/مدیریت-امور-دانشجویی-جدید"
+        },
+        {
+          "title": "خدمات رفاهی دانشجویی",
+          "href": "https://student.hut.ac.ir/خدمات-رفاهی-دانشجویی"
+        },
+        {
+          "title": "اداره خوابگاه دانشجویی",
+          "href": "https://student.hut.ac.ir/اداره-خوابگاه-ها"
+        },
+        {
+          "title": "اداره تغذیه",
+          "href": "https://student.hut.ac.ir/اداره-تغذیه"
+        },
+        {
+          "title": "مدیریت امور فرهنگی",
+          "href": "https://hut.ac.ir/fa/مدیریت-امور-فرهنگی1"
+        },
+        {
+          "title": "کانون‌های فرهنگی و هنری",
+          "href": "https://student.hut.ac.ir/کانون-های-فرهنگی"
+        },
+        {
+          "title": "انجمن‌های علمی",
+          "href": "https://student.hut.ac.ir/انجمن-های-علمی-صنعتی"
+        },
+        {
+          "title": "تشکل‌های دانشجویی",
+          "href": "https://student.hut.ac.ir/tashakol"
+        },
+        {
+          "title": "پایگاه نشریات دانشجویی",
+          "href": "https://hut.ac.ir/fa/پایگاه-نشریات-دانشجویی"
+        },
+        {
+          "title": "اداری و مالی",
+          "href": "https://hut.ac.ir/fa/اداری-و-مالی"
+        },
+        {
+          "title": "معاونت اداری و مالی",
+          "href": "https://hut.ac.ir/fa/معاونت-اداری-و-مالی1"
+        },
+        {
+          "title": "معاونت اداری مالی",
+          "href": "https://hut.ac.ir/fa/معاونت-اداری-مالی"
+        },
+        {
+          "title": "مدیریت امور اداری",
+          "href": "https://daf.hut.ac.ir/مدیریت-اداری-و-پشتیبانی"
+        },
+        {
+          "title": "مدیریت امور مالی",
+          "href": "https://daf.hut.ac.ir/مدیریت-امور-مالی"
+        },
+        {
+          "title": "سامانه‌ها",
+          "href": "https://hut.ac.ir/fa/سامانه-ها"
+        },
+        {
+          "title": "کارکنان",
+          "href": "https://hut.ac.ir/fa/سامانه-های-کارکنان-و-اساتید"
+        },
+        {
+          "title": "سامانه اتوماسیون اداری",
+          "href": "https://eoffice.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه فیش حقوقی",
+          "href": "http://192.168.3.230:88/auth/login"
+        },
+        {
+          "title": "سامانه تغذیه",
+          "href": "http://nutrition.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه ورود و خروج",
+          "href": "http://kasra.hut.ac.ir/Lego.Web/Kevlar/Account/Login"
+        },
+        {
+          "title": "سامانه ایمیل",
+          "href": "http://mail.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه ارزیابی عملکرد",
+          "href": "http://arzyabi.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه آموزش کارکنان",
+          "href": "http://ste.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه آموزش آزاد و مجازی",
+          "href": "https://academics.hut.ac.ir/"
+        },
+        {
+          "title": "دانشجو",
+          "href": "https://hut.ac.ir/fa/سامانه-های-دانشجویی"
+        },
+        {
+          "title": "سامانه گلستان",
+          "href": "http://golestan.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه صندوق رفاه",
+          "href": "https://swf.ir/"
+        },
+        {
+          "title": "سامانه کتابخانه دیجیتال",
+          "href": "http://elibrary.hut.ac.ir/diglibguest/WebUI/Index.aspx"
+        },
+        {
+          "title": "سامانه تمدید و رزرو کتاب",
+          "href": "http://simorgh.hut.ac.ir/simwebclt/WebAccess/SimWebPortal.dll/CircPage"
+        },
+        {
+          "title": "هیات علمی",
+          "href": "https://hut.ac.ir/fa/هیات-علمی"
+        },
+        {
+          "title": "پورتال اساتید",
+          "href": "https://hut.ac.ir/fa/پورتال-اساتید"
+        },
+        {
+          "title": "دانشگاه",
+          "href": "https://hut.ac.ir/fa/دانشگاه2"
+        }
+      ],
+      "text": "دانشگـاه دانشگاه اعضای هیات علمی فرم‌ها و آئین نامه‌ها ارتباط با ما دفترچه تلفن کنگره شهداء مهندس استان همدان حوزه ریاست رئیس دانشگاه ارتباط با ریاست دانشگاه رئیس دفتر ریاست روسای ادوار دانشگاه اداره روابط عمومی اداره همکاری های علمی بین المللی واحد فناوری اطلاعات نظارت و ارزیابی نهاد نمایندگی مقام معظم رهبری امور دانشجویان شاهد و ایثارگر دبیرخانه جذب هیات علمی هیأت امنا دبیرخانه شورای رفاهی مدیریت برنامه ریزی،بودجه، بهره وری و تحول اداری معاونت معاونت اداری و مالی معاونت آموزشی و پژوهشی معاونت دانشجویی و فرهنگی آموزش معاونت آموزشی اداره امور خدمات آموزشی اداره تحصیلات تکمیلی اداره پذیرش و دانش آموختگان گروه‌های آموزشی گروه مهندسی برق گروه مهندسی پزشکی گروه مهندسی کامپیوتر گروه مهندسی مکانیک گروه مهندسی مواد گروه مهندسی معدن گروه مهندسی شیمی گروه آموزشی علوم پایه آموزش آزاد آموزش مجازی سامانه مرکز آموزش آزاد و مجازی پژوهش مدیریت پژوهشی اداره امور پژوهشی مجله انرژی پایدار و هوش مصنوعی دفتر ارتباط با صنعت مرکز رشد، فناوری و کارآفرینی اداره انتشارات کتابخانه مرکزی آزمایشگاه آزمایشگاه مهندسی کامپیوتر آزمایشگاه مهندسی پزشکی آزمایشگاه مهندسی برق آزمایشگاه مهندسی مکانیک آزمایشگاه مهندسی مواد آزمایشگاه مهندسی شیمی آزمایشگاه مهندسی معدن آزمایشگاه علوم پایه آزمایشگاه مرکزی دانشجویی‌فرهنگی معاونت دانشجویی و فرهنگی مدیر امور دانشجویی مدیر امور فرهنگی اداره تربیت بدنی مرکز مشاوره وسبک زندگی شورای انضباطی مدیریت امور دانشجویی خدمات رفاهی دانشجویی اداره خوابگاه دانشجویی اداره تغذیه مدیریت امور فرهنگی کانون‌های فرهنگی و هنری انجمن‌های علمی تشکل‌های دانشجویی پایگاه نشریات دانشجویی اداری و مالی معاونت اداری و مالی معاونت اداری مالی مدیریت امور اداری مدیریت امور مالی سامانه‌ها کارکنان سامانه اتوماسیون اداری سامانه فیش حقوقی سامانه تغذیه سامانه ورود و خروج سامانه ایمیل سامانه ارزیابی عملکرد سامانه آموزش کارکنان سامانه آموزش آزاد و مجازی دانشجو سامانه گلستان سامانه تغذیه سامانه صندوق رفاه سامانه کتابخانه دیجیتال سامانه تمدید و رزرو کتاب سامانه آموزش آزاد و مجازی هیات علمی پورتال اساتید دانشگاه"
+    },
+    "contact": {
+      "url": "https://hut.ac.ir/ارتباط-با-ما",
+      "title": "ارتباط با ما - پرتال اصلی دانشگاه صنعتی همدان - پرتال دانشگاه صنعتی همدان",
+      "headings": [
+        "ارتباط با ما"
+      ],
+      "links": [],
+      "text": "ارتباط با ما جهت پاسخگویی سریع واحد مرتبط را به درستی انتخاب کنید. ارتباط با دانشگاه صنعتی همدان همدان، بلوار شهید فهمیده، خیابان مردم 081-38411000 081-38411520 info@hut.ac.ir 6516913733"
+    },
+    "forms": {
+      "url": "https://hut.ac.ir/university-forms",
+      "title": "فرم‌ها و آئین نامه‌ها - پرتال اصلی دانشگاه صنعتی همدان - پرتال دانشگاه صنعتی همدان",
+      "headings": [
+        "آئین نامه ها و فرم های دانشجویی",
+        "آیین نامه ها و فرم های کارشناسی",
+        "راهنمای پایان نامه کارشناسی",
+        "آیین نامه ها و فرم های کارشناسی ارشد",
+        "راهنمای پایان نامه کارشناسی ارشد",
+        "آیین نامه ها و فرم های داخلی",
+        "آیین نامه های آموزشی",
+        "آیین نامه ها و فرم های خارجی",
+        "آیین نامه ها و فرم های جذب هیآت علمی",
+        "آئین نامه ها و فرم های پژوهشی",
+        "آیین نامه های پژوهشی",
+        "فرم های کنفرانس ها و همایش ها",
+        "فرم های طرح",
+        "فرم های گرنت",
+        "آیین نامه ها و فرم های جذب هیآت علمی",
+        "فرم های فرصت های مطالعاتی"
+      ],
+      "links": [
+        {
+          "title": "راهنمای رزرو منابع",
+          "href": "https://hut.ac.ir/documents/38165/83513/resources-reservation-guide-hut.pdf/0b8eac9e-3dc0-8306-317f-dd98049329df?t=1625552884466"
+        },
+        {
+          "title": "راهنمای نگارش پایان نامه کارشناسی",
+          "href": "https://hut.ac.ir/documents/38165/83513/hut-97-BS_Thesis_Guide.pdf/4b097024-0923-a64c-660b-d5623ba0b78b?t=1625552883826"
+        },
+        {
+          "title": "راهنمای جستجوی منابع",
+          "href": "https://hut.ac.ir/documents/38165/83513/resources-search-guide-hut.pdf/011a4cf7-68ce-c133-09ca-9e68304db0f0?t=1625552883675"
+        },
+        {
+          "title": "راهنمای تمدید منابع",
+          "href": "https://hut.ac.ir/documents/38165/83513/Renewal-resources-Guide.pdf/237f5f5e-1d30-e09e-c231-6898d6f6c00e?t=1625552883562"
+        },
+        {
+          "title": "فرم درخواست استفاده از امکانات آزمایشگاه ها و اتاق پروژه",
+          "href": "https://hut.ac.ir/documents/38165/83513/Application-form-for-the-use-of-laboratory-facilities-and-project-room.pdf/78b0c0d7-0ec4-657e-4295-df0a524a7ba6?t=1625552883371"
+        },
+        {
+          "title": "راهنمای رزرو منابع",
+          "href": "https://hut.ac.ir/documents/38165/83683/resources-reservation-guide-hut.pdf/5ea6aa3c-70fd-ba07-7eb7-d518daf76858?t=1625554606366"
+        },
+        {
+          "title": "راهنمای نگارش پایان نامه کارشناسی",
+          "href": "https://hut.ac.ir/documents/38165/83683/hut-97-MSc_Thesis_Guide.pdf/41edf3db-76fd-5492-ccc8-39063c71a5fb?t=1625554605871"
+        },
+        {
+          "title": "راهنمای جستجوی منابع",
+          "href": "https://hut.ac.ir/documents/38165/83683/resources-search-guide-hut.pdf/490dc8f2-c04f-77a3-6451-6f1a00e4e061?t=1625554605747"
+        },
+        {
+          "title": "راهنمای تمدید منابع",
+          "href": "https://hut.ac.ir/documents/38165/83683/Renewal-resources-Guide.pdf/d0351831-a9fd-0105-dd75-b0905f3d5b9c?t=1625554605653"
+        },
+        {
+          "title": "فرم درخواست استفاده از امکانات آزمایشگاه ها و اتاق پروژه",
+          "href": "https://hut.ac.ir/documents/38165/83683/Application-form-for-the-use-of-laboratory-facilities-and-project-room.pdf/899892db-aae5-8320-3d48-0365f8c653ca?t=1625554605473"
+        },
+        {
+          "title": "مدارک لازم جهت صدور دانشنامه و ریز نمرات تأیید شده",
+          "href": "https://hut.ac.ir/documents/38165/83847/rizNomre.pdf/0ee83ee5-7587-03ff-c8dc-969a755e08a7?t=1625556444667"
+        },
+        {
+          "title": "فرم حضور و غیاب",
+          "href": "https://hut.ac.ir/documents/38165/83847/form2.docx/68700d7f-84c1-a758-4d16-77a17651d9c9?t=1625556444873"
+        },
+        {
+          "title": "سایر آئین نامه ها و دستورالعمل ها",
+          "href": "http://hut.ac.ir/web/hut/instructions"
+        },
+        {
+          "title": "آیین نامه شرکت در همایش ها و کنفرانس ها",
+          "href": "https://hut.ac.ir/documents/38165/83847/conference-participation-for-faculty-members-and-students-hut.pdf/8f850560-ad51-b58e-218b-6f8f2cf61e81?t=1625556444467"
+        },
+        {
+          "title": "آیین نامه ارزیابی طرح های پژوهشی",
+          "href": "ftp://ftp.hut.ac.ir/aeinhut/pajoohesh/"
+        },
+        {
+          "title": "آیین نامه شرکت در همایش های علمی داخلی",
+          "href": "https://hut.ac.ir/documents/38165/83847/sherkat-dar-hamayesh-dakheli.pdf/ae1ce2e9-45d5-7030-7e70-c23c56c2abcc?t=1625570278861"
+        },
+        {
+          "title": "آیین نامه شرکت در همایش های علمی خارجی",
+          "href": "ftp://ftp.hut.ac.ir/aeinhut/pajoohesh/khareji.pdf"
+        },
+        {
+          "title": "آیین نامه اجرایی انتشارات دانشگاه",
+          "href": "ftp://ftp.hut.ac.ir/AeinHUT/pajoohesh/ejraeeEntesharat.pdf"
+        },
+        {
+          "title": "آیین نامه انتخاب و تقدیر از پژوهشگران برتر دانشگاه",
+          "href": "ftp://ftp.hut.ac.ir/AeinHUT/pajoohesh/pajooheshbartar.pdf"
+        },
+        {
+          "title": "روند بررسی پرونده های ارتقاء مرتبه اعضای هیات علمی دانشگاه",
+          "href": "ftp://ftp.hut.ac.ir/AeinHUT/pajoohesh/ertegha.pdf"
+        },
+        {
+          "title": "شیوه‌نامه ارزیابی فعالیت‌های پژوهشی و فناوری دانشگاه صنعتی همدان",
+          "href": "https://hut.ac.ir/documents/38165/83847/shive.pdf/0dc1afe9-adcb-80fb-7872-a3380b7fa763?t=1625570278777s"
+        },
+        {
+          "title": "شیوه نامه آزمایشگاه مرکزی",
+          "href": "https://hut.ac.ir/documents/38165/83847/shive.pdf/0dc1afe9-adcb-80fb-7872-a3380b7fa763?t=1625570278777"
+        },
+        {
+          "title": "شیوه نامه تشکیل هسته پژوهشی",
+          "href": "https://hut.ac.ir/documents/38165/83847/haste-pazhohesh.pdf/192c98b8-c1b0-e737-49ed-efd61a0dea1e?t=1625570278391"
+        },
+        {
+          "title": "آئین‌نامه شرح وظایف کارشناسان آزمایشگاه - مهر شده",
+          "href": "https://hut.ac.ir/documents/38165/83847/sharhe-vazife.pdf/3074a0ae-10ca-7827-fb3d-48ae1d8c64b3?t=1625570278136"
+        },
+        {
+          "title": "آئین‌نامه طرح‌های تقاضامحور - مهرشده",
+          "href": "https://hut.ac.ir/documents/38165/83847/tarhe-taqaza-mehvar.pdf/e0d301cb-c14b-40c6-1a3c-ebffc7b3387f?t=1625570277838"
+        },
+        {
+          "title": "آئین‌نامه شورای فناوری اطلاعات - مهرشده",
+          "href": "https://hut.ac.ir/documents/38165/83847/shoraye-fani.pdf/d0c4ee9d-d7ca-c959-3e6c-660366fd6acf?t=1625570277619"
+        },
+        {
+          "title": "شیوه‌نامه اجرایی هسته‌های پژوهشی - مهرشده",
+          "href": "https://hut.ac.ir/documents/38165/83847/haste-ejraei.pdf/fc93aa13-449d-21e5-1c85-13ce508c92f4?t=1625570277232"
+        },
+        {
+          "title": "شیوه‌نامه فرصت مطالعاتی ارتباط با صنعت - مهرشده",
+          "href": "https://hut.ac.ir/documents/38165/83847/forsat-motaleat.pdf/da1e31a5-f57d-3cc2-7918-4cb952f16225?t=1625570276817"
+        },
+        {
+          "title": "کاربرگ درخواست هزینه شرکت در کارگاه های آموزشی و پژوهشی اعضای هیات علمی دانشگاه",
+          "href": "https://www.hut.ac.ir/documents/38165/83847/forsat-motaleat.pdf/da1e31a5-f57d-3cc2-7918-4cb952f16225?t=1625570276817"
+        },
+        {
+          "title": "کاربرگ درخواست هزینه شرکت درکنفرانس ها و همایش های داخلی (بین المللی یا غیر بین المللی)",
+          "href": "https://hut.ac.ir/documents/38165/83847/کاربرگ+هزینه+های+کنفرانس+هیأت+علمی.doc/cee8876f-709a-a4b3-a755-a60955ad9de5?t=1781073172586"
+        },
+        {
+          "title": "کاربرگ درخواست هزینه شرکت در کنفرانس های خارجی اعضای هیات علمی دانشگاه",
+          "href": "ftp://ftp.hut.ac.ir/aeinhut/pajoohesh/hazineconferancekhareji.doc"
+        },
+        {
+          "title": "کاربرگ درخواست هزینه شرکت درکنفرانس­ها و همایش­های داخلی (بین­ المللی یا غیر بین­ المللی)دانشجویان تحصیلات تکمیلی",
+          "href": "https://hut.ac.ir/documents/38165/83847/کاربرگ+هزینه+های+کنفرانس+دانشجو.docx/037b6d17-6789-5cfe-1adc-c55bae7eb859?t=1781073172237"
+        },
+        {
+          "title": "افزایش کمک هزینه شرکت اعضاء هیأت علمی در همایش های خارجی",
+          "href": "https://hut.ac.ir/documents/38165/83847/afzayesh.docx/467eb055-47d1-3f37-3412-e7958c0b9edd?t=1625573685536"
+        },
+        {
+          "title": "پرسشنامه درخواست اعتبار طرح پژوهشی",
+          "href": "https://hut.ac.ir/documents/38165/83847/porsheshetebar.docx/60755296-187f-4f3f-526d-c9e7f96d2785?t=1625573977828"
+        },
+        {
+          "title": "فرمت گزارش نهایی طرح پژوهشی( فایل word)",
+          "href": "https://hut.ac.ir/documents/38165/83847/final_report.docx/a923c222-aea1-146a-28f0-09b48251ce40?t=1625573977673"
+        },
+        {
+          "title": "فرمت گزارش نهایی طرح پژوهشی (فایل pdf)",
+          "href": "https://hut.ac.ir/documents/38165/83847/final_report.pdf/dafbcef8-308d-d838-a10f-5f881308497b?t=1625573977765"
+        },
+        {
+          "title": "روند تسویه حساب اقساط گرنت پژوهشی",
+          "href": "https://hut.ac.ir/documents/38165/83847/رویه-تسویه-حساب.docx/eb674eee-9bee-30a5-b5b9-7ba07665f976?t=1625574545217"
+        },
+        {
+          "title": "فرم درخواست گرنت پژوهشی",
+          "href": "https://hut.ac.ir/documents/38165/83847/درخواست+گرنت.docx/b738e8d6-4738-b801-cd06-e00206b3f540?t=1781073170976"
+        },
+        {
+          "title": "فرم الف - روکش تسویه حساب گرنت",
+          "href": "https://hut.ac.ir/documents/38165/83847/فرم+الف+-+روکش+تسویه+گرنت.docx/a0a30cc1-9e97-06d5-e484-ae2485058c5c?t=1781073171422"
+        },
+        {
+          "title": "فرم ب - ریز بدون فاکتور",
+          "href": "https://hut.ac.ir/documents/38165/83847/فرم+ب-+ریز+بدون+فاکتور+(1).docx/25b9c09b-5e12-0774-c16a-1941e0ed20fb?t=1781073171863"
+        },
+        {
+          "title": "کاربرگ درخواست اعضای هیات علمی دانشگاه جهت صدور حکم ماموریت پژوهشی",
+          "href": "ftp://ftp.hut.ac.ir/aeinhut/pajoohesh/mamooriatt.doc"
+        },
+        {
+          "title": "کاربرگ درخواست اقساط طرح پژوهشی یا گرنت مربوط به اعضای هیات علمی",
+          "href": "ftp://ftp.hut.ac.ir/aeinhut/pajoohesh/aghsat.doc"
+        },
+        {
+          "title": "کاربرگ فرصت مطالعاتی",
+          "href": "https://hut.ac.ir/documents/38165/83847/forsat-motaleat-2.doc/c362a38c-1548-2f01-dae7-b53bc9c42132?t=1625574853620"
+        },
+        {
+          "title": "گزارش نهایی فرصت مطالعاتی [docx.*]",
+          "href": "https://www.hut.ac.ir/documents/38165/83847/گزارش+نهایی+فرصت+مطالعاتی.docx/7f608e93-07a7-1548-6c56-d072fb4b4bc5?t=1642581709655"
+        }
+      ],
+      "text": "آئین نامه ها و فرم های دانشجویی آیین نامه ها و فرم های کارشناسی راهنمای پایان نامه کارشناسی راهنمای رزرو منابع راهنمای نگارش پایان نامه کارشناسی راهنمای جستجوی منابع راهنمای تمدید منابع فرم درخواست استفاده از امکانات آزمایشگاه ها و اتاق پروژه آیین نامه ها و فرم های کارشناسی ارشد راهنمای پایان نامه کارشناسی ارشد راهنمای رزرو منابع راهنمای نگارش پایان نامه کارشناسی راهنمای جستجوی منابع راهنمای تمدید منابع فرم درخواست استفاده از امکانات آزمایشگاه ها و اتاق پروژه آیین نامه ها و فرم های داخلی آیین نامه های آموزشی آیین نامه برگزاری و غیبت در امتحانات مدارک لازم جهت صدور دانشنامه و ریز نمرات تأیید شده فرم حضور و غیاب سایر آئین نامه ها و دستورالعمل ها آیین نامه شرکت در همایش ها و کنفرانس ها آیین نامه ها و فرم های خارجی آیین نامه ها و فرم های جذب هیآت علمی آئین نامه ها و فرم های پژوهشی آیین نامه های پژوهشی آیین نامه ارزیابی طرح های پژوهشی آیین نامه شرکت در همایش های علمی داخلی آیین نامه شرکت در همایش های علمی خارجی آیین نامه تخصیص اعتبار ویژه پژوهشی(گرنت) دستور العمل اجرایی فعالیت های پژوهشی و خدماتی آیین نامه اجرایی انتشارات دانشگاه آیین نامه انتخاب و تقدیر از پژوهشگران برتر دانشگاه روند بررسی پرونده های ارتقاء مرتبه اعضای هیات علمی دانشگاه شیوه‌نامه ارزیابی فعالیت‌های پژوهشی و فناوری دانشگاه صنعتی همدان شیوه نامه آزمایشگاه مرکزی شیوه نامه تشکیل هسته پژوهشی آئین‌نامه شرح وظایف کارشناسان آزمایشگاه - مهر شده آئین‌نامه طرح‌های تقاضامحور - مهرشده آئین‌نامه شورای فناوری اطلاعات - مهرشده شیوه‌نامه اجرایی هسته‌های پژوهشی - مهرشده شیوه‌نامه فرصت مطالعاتی ارتباط با صنعت - مهرشده فرم های کنفرانس ها و همایش ها کاربرگ درخواست هزینه شرکت در کارگاه های آموزشی و پژوهشی اعضای هیات علمی دانشگاه کاربرگ درخواست هزینه شرکت درکنفرانس ها و همایش های داخلی (بین المللی یا غیر بین المللی) کاربرگ درخواست هزینه شرکت در کنفرانس های خارجی اعضای هیات علمی دانشگاه کاربرگ درخواست هزینه شرکت درکنفرانس­ها و همایش­های داخلی (بین­ المللی یا غیر بین­ المللی)دانشجویان تحصیلات تکمیلی افزایش کمک هزینه شرکت اعضاء هیأت علمی در همایش های خارجی فرم های طرح پرسشنامه درخواست اعتبار طرح پژوهشی فرمت گزارش نهایی طرح پژوهشی( فایل word) فرمت گزارش نهایی طرح پژوهشی (فایل pdf) فرم های گرنت روند تسویه حساب اقساط گرنت پژوهشی فرم درخواست گرنت پژوهشی فرم الف - روکش تسویه حساب گرنت فرم ب - ریز بدون فاکتور آیین نامه ها و فرم های جذب هیآت علمی کاربرگ درخواست اعضای هیات علمی دانشگاه جهت صدور حکم ماموریت پژوهشی کاربرگ درخواست اقساط طرح پژوهشی یا گرنت مربوط به اعضای هیات علمی فرم های فرصت های مطالعاتی کاربرگ فرصت مطالعاتی گزارش نهایی فرصت مطالعاتی [docx.*]"
+    },
+    "student": {
+      "url": "https://student.hut.ac.ir/",
+      "title": "صفحه اصلی معاونت - معاونت دانشجویی و فرهنگی - پرتال دانشگاه صنعتی همدان",
+      "headings": [
+        "اخبار",
+        "درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین المپیاد ورزشی دانشجویان سراسر کشور",
+        "جشن بزرگ عید غدیر خم با عنوان «عید تجدید پیمان در خانه دانش» در...",
+        "نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه دانشگاه صنعتی...",
+        "درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین المپیاد ورزشی...",
+        "جشن بزرگ عید غدیر خم با عنوان «عید تجدید پیمان در خانه دانش» در...",
+        "نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه دانشگاه صنعتی...",
+        "اطلاعیه ها",
+        "اطلاعیه آغاز کلاس‌های تربیت بدنی و ورزش ۱",
+        "طرح احوال پرسی پسا جنگ",
+        "اطلاعیه وام های دانشجویی نیمسال دوم 405-404",
+        "اطلاعیه وام های دانشجویی نیمسال دوم سال تحصیلی 1405-1404 (اطلاعیه شماره 1)",
+        "آغاز ثبت نام وام های ضروری و وام شهریه نیمسال اول 405-404 در سایت صندوق رفاه دانشجویان وزارت علوم (swf.ir ) :",
+        "❇️ اطلاعیه شماره 2 خوابگاه ویژه امتحانات حضوری در شهریورماه 1404",
+        "دستاوردها و افتخارات",
+        "جشنواره رویش ملی 98",
+        "شرکت در سیزدهمین جشنواره ملی حرکت",
+        "کسب مقام مرکز مشاوره فعال کشوری در سال 1399 با..."
+      ],
+      "links": [
+        {
+          "title": "معاونت دانشجویی و فرهنگی",
+          "href": "https://student.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه خوابگاهی جهان گستر",
+          "href": "https://nutrition.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه تغدیه",
+          "href": "http://nutrition.hut.ac.ir/"
+        },
+        {
+          "title": "کانال رسمی اطلاع رسانی معاونت دانشجویی و فرهنگی دانشگاه صنعتی همدان",
+          "href": "https://web.eitaa.com/#@hut1326"
+        },
+        {
+          "title": "سامانه صندوق رفاه دانشجویی",
+          "href": "https://refah.swf.ir/Account/Login/?ReturnUrl=%2F"
+        },
+        {
+          "title": "ادامه خبر",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/درخشش-ورزشکاران-دانشگاه-صنعتی-همدان-در-هفدهمین-ا?redirect=%2F"
+        },
+        {
+          "title": "جشن بزرگ عید غدیر خم با عنوان «عید تجدید پیمان در خانه دانش» در...",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/جشن-بزرگ-عید-غدیر-خم-با-عنوان-«عید-تجدید-پیمان-در-خ?redirect=%2F"
+        },
+        {
+          "title": "نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه دانشگاه صنعتی... نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه با حضور حجت‌الاسلام والمسلمین حاج آقای سبحانی مسئول دفتر نهاد نمایندگی مقام معظم رهبری در دانشگاه، دکتر حسینی تودشکی معاون...",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/نشست-هم‌اندیشی-دبیران-تشکل‌های-دانشجویی-دانشگ?redirect=%2F"
+        },
+        {
+          "title": "سایر اخبار",
+          "href": "https://hut.ac.ir/web/hut/اخبار"
+        },
+        {
+          "title": "اطلاعیه آغاز کلاس‌های تربیت بدنی و ورزش ۱ 2026 09 29 به اطلاع دانشجویان گرامی می‌رساند، کلاس‌های تربیت بدنی و ورزش ۱ از روز شنبه مورخ ۱۱ مهرماه ۱۴۰۵ آغاز خواهد شد. از دانشجویان محترم تقاضا می‌شود با آمادگی لازم و مطابق برنامه اعلام‌شده، در محل برگزاری کلاس حضور داشته باشند. محل برگزاری کلاس، سالن تندرستی دانشگاه، واقع در طبقه منفی یک ساختمان فرشچیان می باشد. اداره تربیت بدنی دانشگاه ​​​​​​​",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/اطلاعیه-آغاز-کلاس‌های-تربیت-بدنی-و-ورزش-۱?redirect=%2F"
+        },
+        {
+          "title": "طرح احوال پرسی پسا جنگ 2026 08 02 ​​​​​​​",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/طرح-احوال-پرسی-پسا-جنگ?redirect=%2F"
+        },
+        {
+          "title": "اطلاعیه وام های دانشجویی نیمسال دوم 405-404 2026 04 15 ✳️ ادامه روند ثبت نام وام های دانشجویی نیمسال دوم 405-404 در سایت صندوق رفاه دانشجویان وزارت علوم (swf.ir ) : 🔴 وام تحصیلی ویژه دانشجویان روزانه تا تاریخ 02/02/1405 🔴 وام مسکن متاهلی جهت دانشجویان روزانه و شبانه (فقط دانشجویان غیر شاغل) تا تاریخ 02/02/1405 🔴 وام ضروری شامل: تولد فرزند ، ازدواج، فوت...",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/-1404-1405-4042-?redirect=%2F"
+        },
+        {
+          "title": "اطلاعیه وام های دانشجویی نیمسال دوم سال تحصیلی 1405-1404 (اطلاعیه شماره 1) 2026 03 23 ✳️ اطلاعیه وام های دانشجویی نیمسال دوم سال تحصیلی 1405-1404 (اطلاعیه شماره 1) ♻️ پیرو بخشنامه شماره 130/19252 صندوق رفاه دانشجویان، ثبت نام وام تحصیلی دانشجویان دوره روزانه و وام ودیعه مسکن متاهلین در نیمسال دوم سال تحصیلی 1405-1404 در سامانه صندوق رفاه به آدرس : 🌐 https://refah.swf.ir تا اتمام اعتبار و حداکثر تا تاریخ...",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/اطلاعیه-وام-های-دانشجویی-نیمسال-دوم-سال-تحصیلی-1405-1404-?redirect=%2F"
+        },
+        {
+          "title": "آغاز ثبت نام وام های ضروری و وام شهریه نیمسال اول 405-404 در سایت صندوق رفاه دانشجویان وزارت علوم (swf.ir ) : 2025 12 07 آغاز ثبت نام وام های ضروری و وام شهریه نیمسال اول 405-404 در سایت صندوق رفاه دانشجویان وزارت علوم (swf.ir ) : وام ضروری شامل: تولد فرزند ، ازدواج، فوت بستگان درجه یک، بیماری های خاص و پر هزینه، حادثه دیده در سوانح وتصادفات، توانخواه (معلولین) و خرید لوازم کمک آموزشی( شامل موبایل . لپ تاب.قلم نوری .ماشین حساب )...",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/آغاز-ثبت-نام-وام-های-ضروری-و-وام-شهریه-نیمسال-اول-405-404-?redirect=%2F"
+        },
+        {
+          "title": "❇️ اطلاعیه شماره 2 خوابگاه ویژه امتحانات حضوری در شهریورماه 1404 2025 08 19 ❇️ اطلاعیه شماره 2 خوابگاه ویژه امتحانات حضوری در شهریورماه 1404 ضمن ابراز خرسندی از حضور مجدد شما دانشجویان عزیز در دانشگاه برای شرکت در امتحانات، لطفاً موارد زیر در خصوص اسکان در خوابگاه های دانشگاه را مد نظر قرار دهید: 🔴 1. با توجه به درخواست های مکرر دانشجویان، پذیرش در خوابگاه دخترانه (مقطع کارشناسی) در بلوک 3 خوابگاه زینب (س) دانشگاه آزاد از روز...",
+          "href": "https://student.hut.ac.ir/fa/web/hut/w/❇️-اطلاعیه-شماره-2-خوابگاه-ویژه-امتحانات-حضوری-در?redirect=%2F"
+        },
+        {
+          "title": "سایر اطلاعیه ها",
+          "href": "https://student.hut.ac.ir/events"
+        },
+        {
+          "title": "جشنواره رویش ملی 98 دومین جشنواره داخلی رویش کانون های فرهنگی و هنری دانشگاه از مورخ ۱۱/۹/۹۸ الی ۱۶/۹/۹۸ با حضور فعال کانون های...",
+          "href": "https://student.hut.ac.ir/fa/w/جشنواره-رویش-ملی-98?redirect=%2F"
+        },
+        {
+          "title": "شرکت در سیزدهمین جشنواره ملی حرکت این جشنواره به صورت مجازی در دانشگاه علم وصنعت تهران به مدت 3 روز برگزار گردید.در این جشنواره کلیه...",
+          "href": "https://student.hut.ac.ir/fa/w/شرکت-در-سیزدهمین-جشنواره-ملی-حرکت?redirect=%2F"
+        },
+        {
+          "title": "کسب مقام مرکز مشاوره فعال کشوری در سال 1399 با... مرکز مشاوره دانشجوئی دانشگاه صنعتی همدان در ارزیابی های دفتر مشاوره و سلامت وزارت علوم، تحقیقات و فناوری در...",
+          "href": "https://student.hut.ac.ir/fa/w/کسب-مقام-مرکز-مشاوره-فعال-کشوری-در-سال-1399-با-دریافت-ت?redirect=%2F"
+        }
+      ],
+      "text": "معاونت دانشجویی و فرهنگی هیچ نتیجه‌ای یافت نشد. سامانه خوابگاهی جهان گستر سامانه تغدیه کانال رسمی اطلاع رسانی معاونت دانشجویی و فرهنگی دانشگاه صنعتی همدان سامانه صندوق رفاه دانشجویی اخبار درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین المپیاد ورزشی دانشجویان سراسر کشور کسب مدال طلای کاراته، مقام پنجم کشتی فرنگی و جایگاه هشتم تیراندازی؛ ورزشکاران دانشگاه صنعتی همدان در هفدهمین المپیاد ورزشی دانشجویان سراسر کشور خوش درخشیدند. ادامه خبر جشن بزرگ عید غدیر خم با عنوان «عید تجدید پیمان در خانه دانش» در... نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه دانشگاه صنعتی... نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه با حضور حجت‌الاسلام والمسلمین حاج آقای سبحانی مسئول دفتر نهاد نمایندگی مقام معظم رهبری در دانشگاه، دکتر حسینی تودشکی معاون... درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین المپیاد ورزشی... کسب مدال طلای کاراته، مقام پنجم کشتی فرنگی و جایگاه هشتم تیراندازی؛ ورزشکاران دانشگاه صنعتی همدان در هفدهمین المپیاد ورزشی دانشجویان سراسر کشور خوش درخشیدند. Continue the news جشن بزرگ عید غدیر خم با عنوان «عید تجدید پیمان در خانه دانش» در... Continue the news نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه دانشگاه صنعتی... نشست هم‌اندیشی دبیران تشکل‌های دانشجویی دانشگاه با حضور حجت‌الاسلام والمسلمین حاج آقای سبحانی مسئول دفتر نهاد نمایندگی مقام معظم رهبری در دانشگاه، دکتر حسینی... Continue the news سایر اخبار اطلاعیه ها اطلاعیه آغاز کلاس‌های تربیت بدنی و ورزش ۱ 2026 09 29 به اطلاع دانشجویان گرامی می‌رساند، کلاس‌های تربیت بدنی و ورزش ۱ از روز شنبه مورخ ۱۱ مهرماه ۱۴۰۵ آغاز خواهد شد. از دانشجویان محترم تقاضا می‌شود با آمادگی لازم و مطابق برنامه اعلام‌شده، در محل برگزاری کلاس حضور داشته باشند. محل برگزاری کلاس، سالن تندرستی دانشگاه، واقع در طبقه منفی یک ساختمان فرشچیان می باشد. اداره تربیت بدنی دانشگاه ​​​​​​​ طرح احوال پرسی پسا جنگ 2026 08 02 ​​​​​​​ اطلاعیه وام های دانشجویی نیمسال دوم 405-404 2026 04 15 ✳️ ادامه روند ثبت نام وام های دانشجویی نیمسال دوم 405-404 در سایت صندوق رفاه دانشجویان وزارت علوم (swf.ir ) : 🔴 وام تحصیلی ویژه دانشجویان روزانه تا تاریخ 02/02/1405 🔴 وام مسکن متاهلی جهت دانشجویان روزانه و شبانه (فقط دانشجویان غیر شاغل) تا تاریخ 02/02/1405 🔴 وام ضروری شامل: تولد فرزند ، ازدواج، فوت... اطلاعیه وام های دانشجویی نیمسال دوم سال تحصیلی 1405-1404 (اطلاعیه شماره 1) 2026 03 23 ✳️ اطلاعیه وام های دانشجویی نیمسال دوم سال تحصیلی 1405-1404 (اطلاعیه شماره 1) ♻️ پیرو بخشنامه شماره 130/19252 صندوق رفاه دانشجویان، ثبت نام وام تحصیلی دانشجویان دوره روزانه و وام ودیعه مسکن متاهلین در نیمسال دوم سال تحصیلی 1405-1404 در سامانه صندوق رفاه به آدرس : 🌐 https://refah.swf.ir تا اتمام اعتبار و حداکثر تا تاریخ... آغاز ثبت نام وام های ضروری و وام شهریه نیمسال اول 405-404 در سایت صندوق رفاه دانشجویان وزارت علوم (swf.ir ) : 2025 12 07 آغاز ثبت نام وام های ضروری و وام شهریه نیمسال اول 405-404 در سایت صندوق رفاه دانشجویان وزارت علوم (swf.ir ) : وام ضروری شامل: تولد فرزند ، ازدواج، فوت بستگان درجه یک، بیماری های خاص و پر هزینه، حادثه دیده در سوانح وتصادفات، توانخواه (معلولین) و خرید لوازم کمک آموزشی( شامل موبایل . لپ تاب.قلم نوری .ماشین حساب )... ❇️ اطلاعیه شماره 2 خوابگاه ویژه امتحانات حضوری در شهریورماه 1404 2025 08 19 ❇️ اطلاعیه شماره 2 خوابگاه ویژه امتحانات حضوری در شهریورماه 1404 ضمن ابراز خرسندی از حضور مجدد شما دانشجویان عزیز در دانشگاه برای شرکت در امتحانات، لطفاً موارد زیر در خصوص اسکان در خوابگاه های دانشگاه را مد نظر قرار دهید: 🔴 1. با توجه به درخواست های مکرر دانشجویان، پذیرش در خوابگاه دخترانه (مقطع کارشناسی) در بلوک 3 خوابگاه زینب (س) دانشگاه آزاد از روز... سایر اطلاعیه ها دستاوردها و افتخارات جشنواره رویش ملی 98 دومین جشنواره داخلی رویش کانون های فرهنگی و هنری دانشگاه از مورخ ۱۱/۹/۹۸ الی ۱۶/۹/۹۸ با حضور فعال کانون های... شرکت در سیزدهمین جشنواره ملی حرکت این جشنواره به صورت مجازی در دانشگاه علم وصنعت تهران به مدت 3 روز برگزار گردید.در این جشنواره کلیه... کسب مقام مرکز مشاوره فعال کشوری در سال 1399 با... مرکز مشاوره دانشجوئی دانشگاه صنعتی همدان در ارزیابی های دفتر مشاوره و سلامت وزارت علوم، تحقیقات و فناوری در... بیشتر بدانید"
+    },
+    "edu": {
+      "url": "https://edu.hut.ac.ir/",
+      "title": "صفحه اصلی معاونت - معاونت آموزشی و پژوهشی - پرتال دانشگاه صنعتی همدان",
+      "headings": [
+        "اخبار",
+        "اطلاعیه غیرحضوری شدن کلاس‌های آموزشی در مقطع کارشناسی در نیمسال...",
+        "برگزاری امتحانات پایان ‌ترم دانشگاه در مقطع کارشناسی در سامانه...",
+        "اطلاعیه ها",
+        "دستاوردها و افتخارات",
+        "چهار عضو هیئت علمی دانشگاه صنعتی همدان در فهرست...",
+        "انتصاب رئیس دانشگاه صنعتی همدان به عضویت شورای...",
+        "انتشار کتاب بین‌المللی پروژه AI FORA با مشارکت...",
+        "تدوین سند جامع مدیریت شهری هوشمند همدان با همکاری...",
+        "انتشار کتاب عضو هیأت علمی دانشگاه صنعتی همدان در...",
+        "درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین...",
+        "نشریه علمی و پژوهشی دانشگاه صنعتی همدان در پایگاه...",
+        "ارتقاء علمی اعضاء هیئت علمی گروه مهندسی پزشکی...",
+        "درخشش دانشجوی دانشگاه صنعتی همدان در رقابت‌های...",
+        "افتخارآفرینی تیم کاراته دختران دانشگاه صنعتی...",
+        "افتخارآفرینی تیم کشتی دانشگاه صنعتی همدان در...",
+        "عضویت آزمایشگاه علوم اعصاب شناختی دانشگاه صنعتی...",
+        "درخشش اعضای هیأت علمی دانشگاه صنعتی همدان در...",
+        "منتخبین آموزشی دانشگاه صنعتی همدان در سال تحصیلی...",
+        "درخشش دانشجوی دانشگاه صنعتی همدان در انتخابی تیم...",
+        "ارتقاء علمی عضو هیات علمی گروه مهندسی برق دانشگاه...",
+        "پذیرش و چاپ 2 مقاله در مجله‌های Applied Energy و...",
+        "مجله دانشگاه صنعتی همدان موفق به کسب رتبۀ « ب » ...",
+        "✳️ انتخاب عضو هیات علمی گروه مهندسی پزشکی دانشگاه...",
+        "تیم بدمینتون دختران دانشگاه صنعتی همدان با کسب..."
+      ],
+      "links": [
+        {
+          "title": "تقویم آموزشی",
+          "href": "https://www.hut.ac.ir/wp-content/uploads/2021/08/4001-تقویم-آموزشی.pdf"
+        },
+        {
+          "title": "سامانه گلستان",
+          "href": "http://golestan.hut.ac.ir/home/Default.htm"
+        },
+        {
+          "title": "کتابخانه مرکزی",
+          "href": "http://library.hut.ac.ir/"
+        },
+        {
+          "title": "آزمایشگاه مرکزی",
+          "href": "http://lab.hut.ac.ir/"
+        },
+        {
+          "title": "سامانه درس افزار",
+          "href": "https://ec.hut.ac.ir/"
+        },
+        {
+          "title": "ادوبی کانکت",
+          "href": "https://lms.hut.ac.ir/"
+        },
+        {
+          "title": "اطلاعیه غیرحضوری شدن کلاس‌های آموزشی در مقطع کارشناسی در نیمسال... Continue the news",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/اطلاعیه-غیرحضوری-شدن-کلاس‌های-آموزشی-در-مقطع-کا?redirect=%2F"
+        },
+        {
+          "title": "برگزاری امتحانات پایان ‌ترم دانشگاه در مقطع کارشناسی در سامانه... Continue the news",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/برگزاری-امتحانات-پایان-‌ترم-دانشگاه-در-مقطع-کار?redirect=%2F"
+        },
+        {
+          "title": "سایر اخبار",
+          "href": "https://edu.hut.ac.ir/news"
+        },
+        {
+          "title": "اطلاعیه ثبت عنوان پروژه کارشناسی نیمسال 4051",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/اطلاعیه-ثبت-عنوان-پروژه-کارشناسی-نیمسال-4051?redirect=%2F"
+        },
+        {
+          "title": "اطلاعیه معرفی به استاد نیمسال 4051",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/-4051?redirect=%2F"
+        },
+        {
+          "title": "اطلاعیه دفاع دانشجویان کارشناسی ارشد",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/اطلاعیه-دفاع-دانشجویان-کارشناسی-ارشد-3?redirect=%2F"
+        },
+        {
+          "title": "اطلاعیه آغاز کلاس‌های تربیت بدنی و ورزش ۱",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/اطلاعیه-آغاز-کلاس‌های-تربیت-بدنی-و-ورزش-۱?redirect=%2F"
+        },
+        {
+          "title": "سایر اطلاعیه ها",
+          "href": "https://edu.hut.ac.ir/events"
+        },
+        {
+          "title": "چهار عضو هیئت علمی دانشگاه صنعتی همدان در فهرست...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/چهار-عضو-هیئت-علمی-دانشگاه-صنعتی-همدان-در-فهرست-دا?redirect=%2F"
+        },
+        {
+          "title": "انتصاب رئیس دانشگاه صنعتی همدان به عضویت شورای... به گزارش روابط عمومی دانشگاه صنعتی همدان، دکتر محمود پری‌پور، رئیس دانشگاه صنعتی همدان، به عضویت شورای علمی...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/انتصاب-رئیس-دانشگاه-صنعتی-همدان-به-عضویت-شورای-عل?redirect=%2F"
+        },
+        {
+          "title": "انتشار کتاب بین‌المللی پروژه AI FORA با مشارکت... کتاب بین‌المللی Participatory Modelling and Simulation to Improve AI-based Public Social Services: Scientific...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/انتشار-کتاب-بین‌المللی-پروژه-ai-fora-با-مشارکت-عضو-هیئ?redirect=%2F"
+        },
+        {
+          "title": "تدوین سند جامع مدیریت شهری هوشمند همدان با همکاری... تدوین سند جامع مدیریت شهری هوشمند همدان با مشارکت این دانشگاه در دستور کار قرار گرفت؛ طرحی که با هدف گذار از...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/تدوین-سند-جامع-مدیریت-شهری-هوشمند-همدان-با-همکاری-?redirect=%2F"
+        },
+        {
+          "title": "انتشار کتاب عضو هیأت علمی دانشگاه صنعتی همدان در... کتاب «Failure Mechanism of Rock Materials Containing Pre-existing Notch» تألیف دکتر وهاب سرفرازی، عضو هیأت...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/انتشار-کتاب-عضو-هیأت-علمی-دانشگاه-صنعتی-همدان-در-ا?redirect=%2F"
+        },
+        {
+          "title": "درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین... کسب مدال طلای کاراته، مقام پنجم کشتی فرنگی و جایگاه هشتم تیراندازی؛ ورزشکاران دانشگاه صنعتی همدان در هفدهمین...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/درخشش-ورزشکاران-دانشگاه-صنعتی-همدان-در-هفدهمین-ا?redirect=%2F"
+        },
+        {
+          "title": "نشریه علمی و پژوهشی دانشگاه صنعتی همدان در پایگاه... نشریه علمی و پژوهشی «انرژی پایدار و هوش مصنوعی» Sustainable Energy and Artificial Intelligence متعلق به...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/نشریه-علمی-و-پژوهشی-دانشگاه-صنعتی-همدان-در-پایگاه-?redirect=%2F"
+        },
+        {
+          "title": "ارتقاء علمی اعضاء هیئت علمی گروه مهندسی پزشکی...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/ارتقاء-علمی-اعضاء-هیئت-علمی-گروه-مهندسی-پزشکی-دان?redirect=%2F"
+        },
+        {
+          "title": "درخشش دانشجوی دانشگاه صنعتی همدان در رقابت‌های... 🔴 محمدرضا اسمعیلی‌خانی، دانشجوی دانشگاه صنعتی همدان، در ترکیب تیم ملی دانشجویان ایران در رقابت‌های جهانی برزیل...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/درخشش-دانشجوی-دانشگاه-صنعتی-همدان-در-رقابت‌های-?redirect=%2F"
+        },
+        {
+          "title": "افتخارآفرینی تیم کاراته دختران دانشگاه صنعتی...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/-768?redirect=%2F"
+        },
+        {
+          "title": "افتخارآفرینی تیم کشتی دانشگاه صنعتی همدان در...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/افتخارآفرینی-تیم-کشتی-دانشگاه-صنعتی-همدان-در-مسا?redirect=%2F"
+        },
+        {
+          "title": "عضویت آزمایشگاه علوم اعصاب شناختی دانشگاه صنعتی... آزمایشگاه علوم اعصاب شناختی گروه مهندسی پزشکی دانشگاه صنعتی همدان به عضویت شبکه آزمایشگاهی کشور...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/عضویت-آزمایشگاه-علوم-اعصاب-شناختی-دانشگاه-صنعتی-?redirect=%2F"
+        },
+        {
+          "title": "درخشش اعضای هیأت علمی دانشگاه صنعتی همدان در...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/درخشش-اعضای-هیأت-علمی-دانشگاه-صنعتی-همدان-در-انتخ?redirect=%2F"
+        },
+        {
+          "title": "منتخبین آموزشی دانشگاه صنعتی همدان در سال تحصیلی... معاونت آموزشی و پژوهشی دانشگاه صنعتی همدان، همزمان با هفته معلم، روز بزرگداشت مقام استاد و دهه سرآمدی...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/منتخبین-آموزشی-دانشگاه-صنعتی-همدان-در-سال-تحصیلی-?redirect=%2F"
+        },
+        {
+          "title": "درخشش دانشجوی دانشگاه صنعتی همدان در انتخابی تیم... به گزارش روابط عمومی دانشگاه صنعتی همدان، محمدرضا اسمعیل‌خانی، دانشجوی رشته مهندسی برق این دانشگاه، با کسب...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/درخشش-دانشجوی-دانشگاه-صنعتی-همدان-در-انتخابی-تیم-?redirect=%2F"
+        },
+        {
+          "title": "ارتقاء علمی عضو هیات علمی گروه مهندسی برق دانشگاه... به گزارش دفتر روابط عمومی دانشگاه صنعتی همدان، دکتر شعیب بابایی توسکی، عضو هیأت علمی گروه مهندسی برق دانشگاه...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/ارتقاء-علمی-عضو-هیات-علمی-گروه-مهندسی-برق-دانشگاه-?redirect=%2F"
+        },
+        {
+          "title": "پذیرش و چاپ 2 مقاله در مجله‌های Applied Energy و... دکتر پژمان بیات و دکتر پیمان بیات اعضای هیات علمی گروه مهندسی برق قدرت دانشگاه صنعتی همدان، موفق به چاپ 2...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/پذیرش-و-چاپ-2-مقاله-در-مجله‌های-applied-energy-و-international-journal-of-hydrogen-energy-در-پایگ?redirect=%2F"
+        },
+        {
+          "title": "مجله دانشگاه صنعتی همدان موفق به کسب رتبۀ « ب » ...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/مجله-دانشگاه-صنعتی-همدان-موفق-به-کسب-رتبۀ-«-ب »-عل?redirect=%2F"
+        },
+        {
+          "title": "✳️ انتخاب عضو هیات علمی گروه مهندسی پزشکی دانشگاه...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/✳️-انتخاب-عضو-هیات-علمی-گروه-مهندسی-پزشکی-دانشگا?redirect=%2F"
+        },
+        {
+          "title": "تیم بدمینتون دختران دانشگاه صنعتی همدان با کسب...",
+          "href": "https://edu.hut.ac.ir/fa/web/hut/w/تیم-بدمینتون-دختران-دانشگاه-صنعتی-همدان-با-کسب-مق?redirect=%2F"
+        }
+      ],
+      "text": "معاونت آموزشی و پژوهشی تقویم آموزشی سامانه گلستان کتابخانه مرکزی آزمایشگاه مرکزی سامانه درس افزار ادوبی کانکت اخبار اطلاعیه غیرحضوری شدن کلاس‌های آموزشی در مقطع کارشناسی در نیمسال... Continue the news برگزاری امتحانات پایان ‌ترم دانشگاه در مقطع کارشناسی در سامانه... Continue the news سایر اخبار اطلاعیه ها اطلاعیه ثبت عنوان پروژه کارشناسی نیمسال 4051 اطلاعیه معرفی به استاد نیمسال 4051 اطلاعیه دفاع دانشجویان کارشناسی ارشد اطلاعیه آغاز کلاس‌های تربیت بدنی و ورزش ۱ سایر اطلاعیه ها دستاوردها و افتخارات چهار عضو هیئت علمی دانشگاه صنعتی همدان در فهرست... انتصاب رئیس دانشگاه صنعتی همدان به عضویت شورای... به گزارش روابط عمومی دانشگاه صنعتی همدان، دکتر محمود پری‌پور، رئیس دانشگاه صنعتی همدان، به عضویت شورای علمی... انتشار کتاب بین‌المللی پروژه AI FORA با مشارکت... کتاب بین‌المللی Participatory Modelling and Simulation to Improve AI-based Public Social Services: Scientific... تدوین سند جامع مدیریت شهری هوشمند همدان با همکاری... تدوین سند جامع مدیریت شهری هوشمند همدان با مشارکت این دانشگاه در دستور کار قرار گرفت؛ طرحی که با هدف گذار از... انتشار کتاب عضو هیأت علمی دانشگاه صنعتی همدان در... کتاب «Failure Mechanism of Rock Materials Containing Pre-existing Notch» تألیف دکتر وهاب سرفرازی، عضو هیأت... درخشش ورزشکاران دانشگاه صنعتی همدان در هفدهمین... کسب مدال طلای کاراته، مقام پنجم کشتی فرنگی و جایگاه هشتم تیراندازی؛ ورزشکاران دانشگاه صنعتی همدان در هفدهمین... نشریه علمی و پژوهشی دانشگاه صنعتی همدان در پایگاه... نشریه علمی و پژوهشی «انرژی پایدار و هوش مصنوعی» Sustainable Energy and Artificial Intelligence متعلق به... ارتقاء علمی اعضاء هیئت علمی گروه مهندسی پزشکی... درخشش دانشجوی دانشگاه صنعتی همدان در رقابت‌های... 🔴 محمدرضا اسمعیلی‌خانی، دانشجوی دانشگاه صنعتی همدان، در ترکیب تیم ملی دانشجویان ایران در رقابت‌های جهانی برزیل... افتخارآفرینی تیم کاراته دختران دانشگاه صنعتی... افتخارآفرینی تیم کشتی دانشگاه صنعتی همدان در... عضویت آزمایشگاه علوم اعصاب شناختی دانشگاه صنعتی... آزمایشگاه علوم اعصاب شناختی گروه مهندسی پزشکی دانشگاه صنعتی همدان به عضویت شبکه آزمایشگاهی کشور... درخشش اعضای هیأت علمی دانشگاه صنعتی همدان در... منتخبین آموزشی دانشگاه صنعتی همدان در سال تحصیلی... معاونت آموزشی و پژوهشی دانشگاه صنعتی همدان، همزمان با هفته معلم، روز بزرگداشت مقام استاد و دهه سرآمدی... درخشش دانشجوی دانشگاه صنعتی همدان در انتخابی تیم... به گزارش روابط عمومی دانشگاه صنعتی همدان، محمدرضا اسمعیل‌خانی، دانشجوی رشته مهندسی برق این دانشگاه، با کسب... ارتقاء علمی عضو هیات علمی گروه مهندسی برق دانشگاه... به گزارش دفتر روابط عمومی دانشگاه صنعتی همدان، دکتر شعیب بابایی توسکی، عضو هیأت علمی گروه مهندسی برق دانشگاه... پذیرش و چاپ 2 مقاله در مجله‌های Applied Energy و... دکتر پژمان بیات و دکتر پیمان بیات اعضای هیات علمی گروه مهندسی برق قدرت دانشگاه صنعتی همدان، موفق به چاپ 2... مجله دانشگاه صنعتی همدان موفق به کسب رتبۀ « ب » ... ✳️ انتخاب عضو هیات علمی گروه مهندسی پزشکی دانشگاه... تیم بدمینتون دختران دانشگاه صنعتی همدان با کسب... بیشتر بدانید"
+    },
+    "english": {
+      "url": "https://en.hut.ac.ir/en",
+      "title": "HUT - Hamadan University of Technology - پرتال دانشگاه صنعتی همدان",
+      "headings": [
+        "HUT News",
+        "Hamadan University of Technology Faculty Member Publishes in Prestigious Journal",
+        "The inaugural issue of \"Sustainable Energy and Artificial...",
+        "Dr. Rasval Baghbani selected as a featured reviewer for the...",
+        "Hamadan University of Technology Professor Appointed Associate...",
+        "Three faculty members of Hamadan University of Technology have...",
+        "Signing of a cooperation memorandum between Hamadan University...",
+        "The Biomedical Engineering program with a focus on Bioelectric...",
+        "Announcement of Hamedan University of Technology's Advancement...",
+        "Setting up the Atomic Force Microscope (AFM) in the central...",
+        "On the occasion of Research and Technology Week, top...",
+        "Student electronic sports skills Olympiad was held",
+        "Hamadan University of Technology accepts PhD students in...",
+        "Hamadan University of Technology Faculty Member Publishes in...",
+        "The inaugural issue of \"Sustainable Energy and Artificial...",
+        "Dr. Rasval Baghbani selected as a featured reviewer for the...",
+        "Hamadan University of Technology Professor Appointed Associate...",
+        "Three faculty members of Hamadan University of Technology have...",
+        "Signing of a cooperation memorandum between Hamadan University...",
+        "The Biomedical Engineering program with a focus on Bioelectric...",
+        "Announcement of Hamedan University of Technology's Advancement...",
+        "Setting up the Atomic Force Microscope (AFM) in the central...",
+        "On the occasion of Research and Technology Week, top...",
+        "Student electronic sports skills Olympiad was held",
+        "Hamadan University of Technology accepts PhD students in...",
+        "Achievements And Honors",
+        "The professors of Hamedan University of Technology are in the list of top two percent scientists in the world Dr....",
+        "The success of Hamedan University of Technology graduates in national mobile programming competitions",
+        "Professors of Hamedan University of Technology became senior members of IEEE",
+        "Hamedan University of Technology's master was elected to the executive board of the international computational..."
+      ],
+      "links": [
+        {
+          "title": "HONG KONG PHD fellowship scheme",
+          "href": "https://en.hut.ac.ir/en/w/scholarship-of-republic-of-serbia-ministry-of-education?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Scholarship of Republic of Serbia -Ministry of Education",
+          "href": "https://en.hut.ac.ir/en/w/call-for-asia-pacific-space-cooperation-organization-apsco-?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "International Book Fair",
+          "href": "https://en.hut.ac.ir/en/w/ifsi?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "The beautiful city of Hamadan",
+          "href": "https://en.hut.ac.ir/en/w/china-apply-extended?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Apply At HUT",
+          "href": "https://en.hut.ac.ir/en/apply"
+        },
+        {
+          "title": "Courses",
+          "href": "https://en.hut.ac.ir/en/courses"
+        },
+        {
+          "title": "Departments",
+          "href": "https://en.hut.ac.ir/en/departmets"
+        },
+        {
+          "title": "More",
+          "href": "https://en.hut.ac.ir/en/w/the-inaugural-issue-of-sustainable-energy-and-artificial-intelligence-a-specialized-journal-has-been-published-?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "The inaugural issue of \"Sustainable Energy and Artificial...",
+          "href": "https://en.hut.ac.ir/en/w/dr-rasval-baghbani-selected-as-a-featured-reviewer-for-the-ieee-transactions-on-instrumentation-and-measurement-journal?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Dr. Rasval Baghbani selected as a featured reviewer for the...",
+          "href": "https://en.hut.ac.ir/en/w/hamadan-university-of-technology-professor-appointed-associate-editor-of-prestigious-journal?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Hamadan University of Technology Professor Appointed Associate...",
+          "href": "https://en.hut.ac.ir/en/w/three-faculty-members-of-hamadan-university-of-technology-have-been-listed-among-the-top-1-and-2-percent-of-scientists-in-the-world-in-the-latest-rankings?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Three faculty members of Hamadan University of Technology have...",
+          "href": "https://en.hut.ac.ir/en/w/signing-of-a-cooperation-memorandum-between-hamadan-university-of-technology-and-d8-international-university-?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Signing of a cooperation memorandum between Hamadan University... Hamadan University of technology and the D8 International University signed a memorandum of understanding collaborating and strengthen and develop research interactions.",
+          "href": "https://en.hut.ac.ir/en/w/the-biomedical-engineering-program-with-a-focus-on-bioelectric-has-been-launched-at-the-specialized-doctoral-level-at-hamedan-university-of-technology-?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "The Biomedical Engineering program with a focus on Bioelectric... A specialized doctoral program in Biomedical Engineering with a focus on Bioelectricity has been launched at Hamedan University of Technology.",
+          "href": "https://en.hut.ac.ir/en/w/setting-up-the-atomic-force-microscope-afm-in-the-central-laboratory-of-hamedan-university-of-technolog-1?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Announcement of Hamedan University of Technology's Advancement...",
+          "href": "https://en.hut.ac.ir/en/w/setting-up-the-atomic-force-microscope-afm-in-the-central-laboratory-of-hamedan-university-of-technology-?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Setting up the Atomic Force Microscope (AFM) in the central...",
+          "href": "https://en.hut.ac.ir/en/w/on-the-occasion-of-research-and-technology-week-top-researchers-of-hamedan-university-of-technology-were-introduced-and-appreciated-?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "On the occasion of Research and Technology Week, top...",
+          "href": "https://en.hut.ac.ir/en/w/student-electronic-sports-skills-olympiad-was-he-1?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Student electronic sports skills Olympiad was held Student electronic sports skills Olympiad was held",
+          "href": "https://en.hut.ac.ir/en/w/student-electronic-sports-skills-olympiad-was-held?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Hamadan University of Technology accepts PhD students in... Hamadan University of Technology accepts PhD students in nanochemistry",
+          "href": "https://en.hut.ac.ir/en/w/hamadan-university-of-technology-accepts-phd-students-in-nanochemistry?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "The professors of Hamedan University of Technology are in the list of top two percent scientists in the world Dr.... The professors of Hamedan University of Technology are in the list of top two... 4761",
+          "href": "https://en.hut.ac.ir/en/w/the-professors-of-hamedan-university-of-technology-are-in-the-list-of-top-two-percent-scientists-in-the-world-dr.-momeni-and-dr.-mousavizare-are-present-in-the-list-of-the-world-s-top-two-percent-scientists-announced-in-september-of-this-year-by-the-elsev?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "The success of Hamedan University of Technology graduates in national mobile programming competitions The success of Hamedan University of Technology graduates in national mobile... 5033",
+          "href": "https://en.hut.ac.ir/en/w/the-success-of-hamedan-university-of-technology-graduates-in-national-mobile-programming-competitions?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Professors of Hamedan University of Technology became senior members of IEEE Professors of Hamedan University of Technology became senior members of IEEE 4859",
+          "href": "https://en.hut.ac.ir/en/w/professors-of-hamedan-university-of-technology-became-senior-members-of-ieee-2?redirect=%2Fen%2Fhome"
+        },
+        {
+          "title": "Hamedan University of Technology's master was elected to the executive board of the international computational... Hamedan University of Technology's master was elected to the executive board... 4894",
+          "href": "https://en.hut.ac.ir/en/w/hamedan-university-of-technology-s-master-was-elected-to-the-executive-board-of-the-international-computational-modeling-network-in-social-sciences?redirect=%2Fen%2Fhome"
+        }
+      ],
+      "text": "Our university offers a variety of courses and opportunities. Choose your own and enjoy! HONG KONG PHD fellowship scheme Scholarship of Republic of Serbia -Ministry of Education International Book Fair The beautiful city of Hamadan Apply At HUT Courses Departments HUT News Hamadan University of Technology Faculty Member Publishes in Prestigious Journal More The inaugural issue of \"Sustainable Energy and Artificial... Dr. Rasval Baghbani selected as a featured reviewer for the... Hamadan University of Technology Professor Appointed Associate... Three faculty members of Hamadan University of Technology have... Signing of a cooperation memorandum between Hamadan University... Hamadan University of technology and the D8 International University signed a memorandum of understanding collaborating and strengthen and develop research interactions. The Biomedical Engineering program with a focus on Bioelectric... A specialized doctoral program in Biomedical Engineering with a focus on Bioelectricity has been launched at Hamedan University of Technology. Announcement of Hamedan University of Technology's Advancement... Setting up the Atomic Force Microscope (AFM) in the central... On the occasion of Research and Technology Week, top... Student electronic sports skills Olympiad was held Student electronic sports skills Olympiad was held Hamadan University of Technology accepts PhD students in... Hamadan University of Technology accepts PhD students in nanochemistry Hamadan University of Technology Faculty Member Publishes in... Continue the news The inaugural issue of \"Sustainable Energy and Artificial... Continue the news Dr. Rasval Baghbani selected as a featured reviewer for the... Continue the news Hamadan University of Technology Professor Appointed Associate... Continue the news Three faculty members of Hamadan University of Technology have... Continue the news Signing of a cooperation memorandum between Hamadan University... Hamadan University of technology and the D8 International University signed a memorandum of understanding collaborating and strengthen and develop research... Continue the news The Biomedical Engineering program with a focus on Bioelectric... A specialized doctoral program in Biomedical Engineering with a focus on Bioelectricity has been launched at Hamedan University of Technology. Continue the news Announcement of Hamedan University of Technology's Advancement... Continue the news Setting up the Atomic Force Microscope (AFM) in the central... Continue the news On the occasion of Research and Technology Week, top... Continue the news Student electronic sports skills Olympiad was held Student electronic sports skills Olympiad was held Continue the news Hamadan University of Technology accepts PhD students in... Hamadan University of Technology accepts PhD students in nanochemistry Continue the news Library Center Innovation Center Central Laboratory The Central Library of Hamedan University of Technology was established at the same time as the establishment of the university in 1385 with the aim of collecting scientific and educational resources and disseminating the information needed by students and professors, in order to strengthen the educational and research programs of the university. This library is located on the ground floor of the university building. The software used in the library is Simorgh software, which library members can use to search for needed resources, and reserve or renew books, through the computers located in the library or the university website, or through the Internet at simorgh.hut.ac .ir, use this software. In the entrance section of the library, there is a box called the book return box so that members can put their returned books in it during non-office hours. The return of the books in the library software will be on the next working day. The creativity and innovation center in order to foster the emergence of creativity and promote innovation by using the capacities and faci"
+    }
+  },
+  "serviceAudit": [
+    {
+      "name": "سامانه اتوماسیون اداری",
+      "href": "https://eoffice.hut.ac.ir/",
+      "audience": "staff",
+      "notes": []
+    },
+    {
+      "name": "سامانه فیش حقوقی",
+      "href": "http://192.168.3.230:88/auth/login",
+      "audience": "staff",
+      "notes": [
+        "plain HTTP",
+        "private IP: unreachable off-campus"
+      ]
+    },
+    {
+      "name": "سامانه تغذیه",
+      "href": "http://nutrition.hut.ac.ir/",
+      "audience": "staff",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه ورود و خروج",
+      "href": "http://kasra.hut.ac.ir/Lego.Web/Kevlar/Account/Login",
+      "audience": "staff",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه ایمیل",
+      "href": "http://mail.hut.ac.ir/",
+      "audience": "staff",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه ارزیابی عملکرد",
+      "href": "http://arzyabi.hut.ac.ir/",
+      "audience": "staff",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه آموزش کارکنان",
+      "href": "http://ste.hut.ac.ir/",
+      "audience": "staff",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه آموزش آزاد و مجازی",
+      "href": "https://academics.hut.ac.ir/",
+      "audience": "staff",
+      "notes": []
+    },
+    {
+      "name": "سامانه گلستان",
+      "href": "http://golestan.hut.ac.ir/",
+      "audience": "student",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه تغذیه",
+      "href": "http://nutrition.hut.ac.ir/",
+      "audience": "student",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه صندوق رفاه",
+      "href": "https://swf.ir/",
+      "audience": "student",
+      "notes": [
+        "external domain"
+      ]
+    },
+    {
+      "name": "سامانه کتابخانه دیجیتال",
+      "href": "http://elibrary.hut.ac.ir/diglibguest/WebUI/Index.aspx",
+      "audience": "student",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه تمدید و رزرو کتاب",
+      "href": "http://simorgh.hut.ac.ir/simwebclt/WebAccess/SimWebPortal.dll/CircPage",
+      "audience": "student",
+      "notes": [
+        "plain HTTP"
+      ]
+    },
+    {
+      "name": "سامانه آموزش آزاد و مجازی",
+      "href": "https://academics.hut.ac.ir/",
+      "audience": "student",
+      "notes": []
+    },
+    {
+      "name": "پورتال اساتید",
+      "href": "https://hut.ac.ir/پورتال-اساتید",
+      "audience": "faculty",
+      "notes": []
+    }
+  ]
+}

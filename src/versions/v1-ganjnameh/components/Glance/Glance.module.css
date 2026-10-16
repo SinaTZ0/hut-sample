@@ -1,0 +1,29 @@
+.band {
+  background: var(--limestone);
+  border-block: 1px solid var(--rule);
+  padding: var(--space-xl) var(--gutter);
+}
+
+.sentence {
+  max-width: 34em;
+  margin-inline: auto;
+  font-family: var(--font-body);
+  font-size: clamp(1.125rem, 0.9rem + 1.2vw, 1.75rem);
+  line-height: 2;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--text-muted);
+}
+
+.stat {
+  color: var(--granite);
+  white-space: nowrap;
+}
+
+.num {
+  font-family: var(--font-display);
+  font-size: 1.6em;
+  font-weight: 800;
+  color: var(--lapis);
+  line-height: 1;
+}
