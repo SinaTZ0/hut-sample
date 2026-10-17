@@ -49,6 +49,8 @@ The output is 1254–1672 px PNG. Process it in the scratchpad, not in the proje
 
 Each version lives in `src/versions/vN-<name>/`, is registered in `src/versions/registry.ts`, and renders the shared content from `src/content/`. Versions own their look; they never own data. See `docs/project-guide.md` §7 for the steps to add one.
 
+When a version's work is finished, always take a full-page screenshot at 1440 px and store it as `screenshots/vN-<name>.png`, as the last step of the work.
+
 ## Checks before committing
 
 ```sh
