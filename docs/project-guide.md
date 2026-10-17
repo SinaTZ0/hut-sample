@@ -46,6 +46,8 @@ pnpm preview        # serve the production build
 
 A small floating bar on every version page switches between versions and keeps the `?today=` parameter. It belongs to the review tooling, not to any design (`src/app/VersionBar.tsx`).
 
+Next to it, the **توکن‌ها** button opens a token editor (`src/app/TokenPanel.tsx`). It reads the custom properties declared on the version root, groups them into tabs (colour, type, size, other), lists the most-referenced ones first, and writes edits as inline properties on the root, so tokens derived from a palette colour follow it. Colours get a native picker. Edits persist per version in `localStorage`; "کپی CSS" copies them as a rule to paste into `tokens.css`.
+
 ---
 
 ## 3. Folder map
@@ -67,6 +69,7 @@ src/
     routes.tsx                "/" + one lazy route per registered version
     Shell.tsx                 <Outlet/> + VersionBar + ScrollRestoration
     VersionBar.tsx            reviewer switcher
+    TokenPanel.tsx            reviewer token editor
   pages/VersionGallery/       the "/" page
   content/                    ◀ all university data lives here
   shared/                     behaviour shared by versions (no styling)
