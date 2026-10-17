@@ -1,0 +1,25 @@
+.main:focus {
+  outline: none;
+}
+
+/* The rug: compartments on the warp, with a narrow frame around the whole page. */
+.rug {
+  display: grid;
+  gap: var(--gap);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: var(--gap) var(--frame) var(--frame);
+}
+
+/* The woven border (حاشیه): one seamless repeat of the generated band, tinted from CSS. */
+.border {
+  block-size: 34px;
+  background-color: var(--weld);
+  -webkit-mask: url(./assets/border.webp) center / auto 100% repeat-x;
+  mask: url(./assets/border.webp) center / auto 100% repeat-x;
+}
+
+.borderBand {
+  padding-block: 8px;
+  background: var(--madder-deep);
+}

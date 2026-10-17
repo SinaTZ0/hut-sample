@@ -104,4 +104,16 @@ export const versions: VersionMeta[] = [
     fonts: 'Amiri / Vazirmatn',
     load: () => import('./v7-ebnesina'),
   },
+  {
+    id: 'v8-qali',
+    slug: 'v8',
+    name: 'قالی',
+    nameEn: 'Qali',
+    emphasis: 'اول همه‌چیز در یک نگاه',
+    concept:
+      'قالی روستایی همدان با رنگ‌های روناس، نیل و اسپرک: صفحه تار نیلی است و هر بخش خانه‌ای (خشتی) است که بی‌فاصله روی آن بافته شده. صفحه نخست زمینه قالی است: نام دانشگاه، عکس تمام‌رنگ، مهلت بعدی و شش سامانه روزانه، با حاشیه بافته در بالا.',
+    swatches: ['#9B1C2E', '#1B2A63', '#0E1638', '#F2B320', '#FFFFFF'],
+    fonts: 'Reem Kufi / Noto Sans Arabic',
+    load: () => import('./v8-qali'),
+  },
 ]

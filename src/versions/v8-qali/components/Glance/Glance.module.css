@@ -1,0 +1,161 @@
+/*
+ *   ┌ 6 figures (3×2) ─────────────┐┌ spotlight ┐
+ *   ├ departments: title | 8 cells ┤│           │
+ */
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+  grid-template-areas:
+    'stats spotlight'
+    'departments spotlight';
+  gap: var(--gap);
+}
+
+.stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  padding: 16px var(--pad);
+  background: var(--indigo);
+  color: var(--on-dark-muted);
+}
+
+.stat dd {
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--weld);
+}
+
+.stat dt {
+  font-weight: 700;
+}
+
+.spotlight {
+  grid-area: spotlight;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  color: var(--heading);
+  text-decoration: none;
+}
+
+.spotlight img {
+  inline-size: 100%;
+  flex: 1;
+  min-block-size: 200px;
+  object-fit: cover;
+}
+
+.spotlightBody {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px var(--pad);
+  border-block-start: 6px solid var(--weld);
+}
+
+.spotlightDate {
+  font-size: var(--step--2);
+  font-weight: 700;
+  color: var(--madder);
+}
+
+.spotlightTitle {
+  font-size: var(--step-1);
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.spotlight:hover .spotlightTitle {
+  color: var(--madder);
+  text-decoration: underline;
+}
+
+.departments {
+  grid-area: departments;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
+  gap: var(--gap);
+}
+
+.deptTitle {
+  display: flex;
+  font-size: var(--step-1);
+}
+
+.deptTitle a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  inline-size: 100%;
+  padding: 14px 16px;
+  background: var(--weld);
+  color: var(--on-accent);
+  text-decoration: none;
+}
+
+.deptTitle a:hover {
+  background: var(--white);
+}
+
+.deptList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.dept {
+  display: flex;
+  align-items: center;
+  block-size: 100%;
+  padding: 12px 14px;
+  background: var(--madder);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dept:hover {
+  background: var(--madder-deep);
+  box-shadow: inset 0 -4px 0 var(--weld);
+}
+
+@media (max-width: 1080px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'stats'
+      'departments'
+      'spotlight';
+  }
+
+  .spotlight img {
+    flex: none;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 760px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .departments {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deptList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

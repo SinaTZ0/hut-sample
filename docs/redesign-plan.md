@@ -447,6 +447,71 @@ an empty poster frame, the header's magnifier hides below 440px in favour of «�
 the light/dark toggle (`data-theme`, remembered in `localStorage`) only changes the parchment, never
 the night bands.
 
+### V8 Qali (قالی): the Hamedan village rug
+
+*Concept:* V4 was judged too pale: mist sections, a teal wash over the photograph and wide empty
+margins. V8 takes V4's brief (a photographic front door with the daily systems one tap away) and
+answers it with full-strength colour and no empty page. The subject is the **Hamedan village rug**:
+madder (روناس), indigo (نیل) and weld yellow (اسپرک), knotted on a square grid. The page is
+the indigo **warp**. Every block is a compartment, as in a *khesti* (panel-design) rug, laid on it
+with a 6px gap. Section headings sit in the warp instead of on panels of their own, so there are no
+section margins. The photograph is shown in full colour, with no wash.
+
+The first screen is the rug's **field**: the name on madder with the medallion bled off its corner,
+the campus photo, the next deadline on weld and the six daily systems in one row. All of these are
+visible at 1440×900 without scrolling. **The memorable element is the woven border (حاشیه)**, a
+generated band of stepped diamonds, hooks and stars, tinted weld on deep madder. It runs above the
+hero and above the footer, and nowhere else.
+
+```
+┌ indigo bar: [▣ emblem] دانشگاه صنعتی همدان   دانشگاه▾ آموزش▾ پژوهش▾ زندگی▾ سامانه‌ها   🔍 تماس EN [ورود به پرتال] ┐
+╞══ woven border (weld on madder-deep) ═══════════════════════════════════════════════════════════╡
+│ ┌ madder field (5/12) ───────┐┌ campus photo, full colour (7/12) ─────────────────────────┐     │
+│ │ medallion bled off corner  ││                                                           │     │
+│ │ دانشگاه صنعتی / همدان(weld) ││                                                           │     │
+│ │ mission · [آشنایی] [نودانشجو]││                                                           │     │
+│ └────────────────────────────┘└───────────────────────────────────────────────────────────┘     │
+│ ┌ weld: ۵۹ روز دیگر ┐┌گلستان┐┌درس‌افزار┐┌تغذیه┐┌کلاس┐┌رفاه┐┌خوابگاه┐┌همه ۱۵┐  (3/12 | 9/12)    │
+│ تازه‌های دانشگاه (in the warp)                                                       همه اخبار │
+│ ┌ lead story (white) ┐┌ 3 stories (white, thumbs) ┐┌ اطلاعیه‌ها on madder [tabs] ┐               │
+│ تقویم آموزشی: indigo panel, kilim strip at true scale + 7 milestone compartments                │
+│ دانشگاه در یک نگاه: 6 figures (weld on indigo) │ graduation spotlight; weld cell + 8 madder depts │
+│ پژوهش و دستاوردها: lead achievement │ 3 smaller │ research units on indigo                       │
+│ رویدادها، دوره‌ها و همراهی: 4 courses │ welcome on weld │ feedback + counselling on madder        │
+╞══ woven border ═════════════════════════════════════════════════════════════════════════════════╡
+└ indigo footer: brand + social · links · student systems · staff systems · contact · affiliates ─┘
+```
+
+| Token | Value | Role |
+|---|---|---|
+| madder | `#9B1C2E` | hero field, announcements, departments, help, "all systems" |
+| indigo | `#1B2A63` | header, service cells, term panel, figures, research units, footer |
+| warp | `#0E1638` | page background, the 6px gaps, section headings sit on it |
+| weld | `#F2B320` | the border, section titles, deadline, primary buttons, focus ring |
+| white | `#FFFFFF` | reading compartments (stories, achievements, courses) |
+| Type | Reem Kufi (name, section titles, figures, service names) · Noto Sans Arabic (body and headlines) | |
+
+**The term as a kilim:** the semester runs as one woven strip whose stripes span milestone to
+milestone at true scale: madder once passed, weld while under way, indigo still to come. A white
+thread marks today. Under it, the same milestones sit as an even row of compartments, so the
+dates stay readable when stripes are narrow; the next one is dyed weld with «N روز دیگر».
+
+| Asset | Where it is used | Treatment |
+|---|---|---|
+| `border.webp` | above the hero and above the footer | one seamless repeat cropped from a generated strip (period found by autocorrelation), luminance → alpha, `mask` tinted weld |
+| `medallion.webp` | bled off the inline-end corner of the hero field | luminance → alpha, tinted madder-deep on madder (a dye-on-dye watermark) |
+
+**What is deliberately different from V4**, which it is built from: saturated dye colours instead of
+mist and pine washes; panels that touch on a dark warp instead of light sections with large padding;
+the photo shown at full colour beside the name rather than under a gradient; the service rail
+woven into the hero's grid with the deadline as its first cell; square corners and no shadows; and a
+Kufic display face plus Noto Sans Arabic instead of Vazirmatn throughout. There is no light/dark toggle.
+The design is a dark warp with bright compartments in either case.
+
+**Departures from the content:** long news headlines use the body face at weight 800, since Reem
+Kufi is hard to read over three lines. The spotlight card is the graduation announcement, as in V4.
+Staff systems keep their own footer column.
+
 ### Self-review against generic defaults
 
 None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, calendar ink with a single red for today, Alvand's pine slopes with wheat gold, four of the seven walls Herodotus gives Ecbatana, the granite and turquoise glass of the Baba Taher tower, and the travertine, midnight and manuscript gold of the Avicenna tower.
@@ -456,6 +521,8 @@ V6 is the one to keep checking, because it answers the same brief as V4 and coul
 V5 is worth the same check, because it was built from a profile of V4 and could have come out as a recolour of it. The things that make it a different design rather than a variant: the single light-to-dark crossover, the horizon bar in place of the service rail, a second typeface carrying the headings, two accents split by job, and no kicker above any heading.
 
 V7 is the sharpest version of this risk, because it was copied directly from V6's files rather than built from a profile of it, so it had to earn its differences line by line instead of starting from a blank page. The things that make it a different design rather than a recolour: the section order itself changes (research and achievement lead, not news), the dark bands are night instead of daylit granite, the accent is warm gold instead of cool glass, a manuscript serif replaces the geometric one, and the one generated silhouette — the tower — appears as a drawn figure, not only as a repeating texture.
+
+V8 is the one most at risk of reading as a "bento grid" (the current default of content chopped into tiles). It avoids that with square corners, no shadows, compartments that touch on a coloured warp rather than float on a page, fills that change with the job of each compartment (madder for announcements and help, indigo for systems and figures, weld for the one thing to act on, white for reading), and seams that deliberately do not line up between rows, like courses of knots.
 
 ---
 

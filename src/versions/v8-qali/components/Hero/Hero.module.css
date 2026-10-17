@@ -1,0 +1,281 @@
+/*
+ * Desktop: field (start) | photo (end), then the deadline and the services in one row.
+ * Twelve columns; the seams of the two rows are offset like courses of knots.
+ *   ┌ field (5) ──┐┌ photo (7) ─────────────┐
+ *   └─────────────┘└────────────────────────┘
+ *   ┌ deadline (3) ┐┌ s1 ┐┌ s2 ┐┌ s3 ┐┌ s4 ┐┌ s5 ┐┌ s6 ┐┌ all ┐  (9)
+ */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-areas:
+    'field field field field field photo photo photo photo photo photo photo'
+    'deadline deadline deadline services services services services services services services services services';
+  gap: var(--gap);
+}
+
+.field {
+  grid-area: field;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: var(--pad);
+  padding-block: clamp(28px, 4vw, 56px) var(--pad);
+  overflow: hidden;
+  background: var(--madder);
+  color: var(--white);
+}
+
+/* Rug medallion, cropped by the field's edge, under the text. */
+.field::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset-block-start: -18%;
+  inset-inline-end: -26%;
+  inline-size: 78%;
+  aspect-ratio: 1;
+  background-color: var(--madder-deep);
+  -webkit-mask: url(../../assets/medallion.webp) center / contain no-repeat;
+  mask: url(../../assets/medallion.webp) center / contain no-repeat;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--step-5);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+.title span:last-child {
+  color: var(--weld);
+}
+
+.mission {
+  max-inline-size: 42ch;
+  font-size: var(--step-1);
+  line-height: 1.8;
+  color: var(--on-red-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--weld);
+  color: var(--on-accent);
+}
+
+.primary:hover {
+  background: var(--white);
+}
+
+.secondary {
+  box-shadow: inset 0 0 0 2px var(--white);
+  color: var(--white);
+}
+
+.secondary:hover {
+  background: var(--white);
+  color: var(--madder);
+}
+
+.photo {
+  grid-area: photo;
+  min-block-size: clamp(320px, 38vw, 560px);
+  background: var(--indigo);
+}
+
+.photo img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* next deadline */
+.deadline {
+  grid-area: deadline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px var(--pad);
+  background: var(--weld);
+  color: var(--on-accent);
+  text-decoration: none;
+}
+
+.deadline:hover .deadlineWhat strong {
+  text-decoration: underline;
+}
+
+.deadlineWhen {
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.deadlineWhat {
+  font-size: var(--step--1);
+  line-height: 1.6;
+}
+
+.deadlineWhat strong {
+  font-size: var(--step-1);
+  font-weight: 800;
+}
+
+.deadlineDate {
+  display: block;
+  font-weight: 600;
+}
+
+/* daily systems */
+.services {
+  grid-area: services;
+}
+
+.serviceList {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) minmax(0, 0.8fr);
+  gap: var(--gap);
+  block-size: 100%;
+}
+
+.service,
+.all {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  block-size: 100%;
+  padding: 16px 14px;
+  background: var(--indigo);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.service:hover {
+  background: var(--indigo-2);
+  box-shadow: inset 0 -4px 0 var(--weld);
+}
+
+.serviceIcon {
+  margin-block-end: 8px;
+  color: var(--weld);
+}
+
+.serviceName {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.serviceDesc {
+  font-size: var(--step--2);
+  line-height: 1.6;
+  color: var(--on-dark-muted);
+}
+
+.all {
+  justify-content: flex-end;
+  gap: 8px;
+  background: var(--madder);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.all svg {
+  color: var(--weld);
+}
+
+.all:hover {
+  background: var(--madder-deep);
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      'field photo'
+      'deadline deadline'
+      'services services';
+  }
+
+  .deadline {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .serviceList {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* six systems + a double-width "all" cell fill two whole rows */
+  .serviceList > li:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'field'
+      'photo'
+      'deadline'
+      'services';
+  }
+
+  .field::before {
+    inline-size: 120%;
+    inset-inline-end: -55%;
+  }
+
+  .photo {
+    min-block-size: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .deadline {
+    gap: 14px;
+  }
+
+  .serviceList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .serviceDesc {
+    display: none;
+  }
+
+  .all {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

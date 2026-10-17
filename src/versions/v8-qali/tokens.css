@@ -1,0 +1,80 @@
+/*
+ * V8 "Qali": design tokens.
+ * The dyes of a Hamedan village rug: madder red, indigo and weld yellow, at full strength.
+ * The page is the indigo warp; every block is a compartment (khesti) laid on it with a narrow
+ * gap, so there is no empty page between sections. Reem Kufi for display, Noto Sans Arabic for text.
+ */
+[data-version='v8'] {
+  /* palette */
+  --madder: #9b1c2e;
+  --madder-deep: #6b0f1e;
+  --indigo: #1b2a63;
+  --indigo-2: #26387f;
+  --indigo-deep: #0e1638;
+  --weld: #f2b320;
+  --weld-deep: #8a5a00;
+  --white: #ffffff;
+  --ink: #14182b;
+
+  /* roles */
+  --warp: var(--indigo-deep);
+  --surface: var(--white);
+  --text: var(--ink);
+  --text-muted: #474c63;
+  --heading: var(--indigo);
+  --link: var(--madder);
+  --line: #d9dbe5;
+  --on-dark: #ffffff;
+  --on-dark-muted: #c9cfe6;
+  --on-red-muted: #f4cfd3;
+  --accent: var(--weld);
+  --on-accent: var(--indigo-deep);
+  --focus: var(--weld);
+
+  /* type */
+  --font-display: 'Reem Kufi Variable', 'Noto Sans Arabic Variable', system-ui, sans-serif;
+  --font: 'Noto Sans Arabic Variable', system-ui, sans-serif;
+  --step--2: 0.75rem;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-2: 1.375rem;
+  --step-3: clamp(1.5rem, 1.25rem + 0.8vw, 1.875rem);
+  --step-4: clamp(2rem, 1.5rem + 1.6vw, 2.75rem);
+  --step-5: clamp(2.75rem, 1.6rem + 4vw, 5.5rem);
+
+  /* space: the gap is the warp showing between compartments */
+  --gap: 6px;
+  --pad: clamp(16px, 1.8vw, 28px);
+  --frame: clamp(6px, 1vw, 14px);
+  --max: 1480px;
+
+  --skip-bg: var(--weld);
+  --skip-fg: var(--indigo-deep);
+
+  min-height: 100dvh;
+  background: var(--warp);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--step-0);
+  line-height: 1.75;
+  color-scheme: light;
+}
+
+:where([data-version='v8']) :focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+:where([data-version='v8']) a {
+  color: var(--link);
+  text-underline-offset: 0.3em;
+}
+
+:where([data-version='v8']) h1,
+:where([data-version='v8']) h2,
+:where([data-version='v8']) h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.35;
+}

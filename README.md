@@ -5,7 +5,7 @@ Every version reads the same typed content, so new versions can sit beside the e
 
 ```sh
 pnpm install
-pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3, /v4, /v5, /v6, /v7
+pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3, /v4, /v5, /v6, /v7, /v8
 pnpm build && pnpm preview
 node scripts/scrape/scrape.mjs            # refresh the archive from the live site
 node scripts/scrape/scrape.mjs --offline  # re-parse archive/raw only
@@ -25,6 +25,7 @@ The scraped reference material is in [`archive/INVENTORY.md`](archive/INVENTORY.
 | `/v5` | Hegmataneh (هگمتانه) | A section through the mound: dusk sky, a horizon bar carrying today, then one crossing from the surface strata into the deep ones |
 | `/v6` | Baba Taher (بابا طاهر) | Granite and glass: stone bands carrying a girih weave, and a «میز خدمت» slab cut into the hero that searches every system |
 | `/v7` | Ibn Sina (بوعلی سینا) | Research-first: the «میز خدمت» slab still docks on the hero, but achievements and research units follow right after it; midnight bands carry the Avicenna tower's ribs, manuscript gold marks what's worth stopping for |
+| `/v8` | Qali (قالی) | The Hamedan village rug: madder, indigo and weld compartments laid edge to edge on an indigo warp, a woven border over the hero, and the name, photo, next deadline and six daily systems all on the first screen |
 
 Add `?today=1405-09-28` to any URL to preview the calendar widgets on another day of the term.
 
@@ -53,6 +54,7 @@ src/
     v5-hegmataneh/
     v6-babataher/         + assets/ — the generated girih, granite, contour and seal artwork
     v7-ebnesina/          + assets/ — the generated tower, ribs, granite, contour and seal artwork
+    v8-qali/              + assets/ — the generated rug border and medallion
   pages/VersionGallery/  index page comparing versions
   app/                   router, shell, reviewer version bar
 ```

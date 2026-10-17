@@ -1,0 +1,130 @@
+.panel {
+  padding: var(--pad);
+  background: var(--indigo);
+  color: var(--white);
+}
+
+.term {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* kilim strip */
+.strip {
+  position: relative;
+  display: flex;
+  gap: 3px;
+  block-size: 30px;
+  margin-block: 26px 22px;
+}
+
+.stripe {
+  flex-basis: 0;
+  min-inline-size: 6px;
+  background: var(--indigo-2);
+  /* weft stripes: a fine repeating rib so the band reads as woven, not as a progress bar */
+  background-image: repeating-linear-gradient(90deg, transparent 0 5px, rgb(255 255 255 / 0.07) 5px 6px);
+}
+
+.stripe[data-status='past'] {
+  background-color: var(--madder);
+}
+
+.stripe[data-status='current'] {
+  background-color: var(--weld);
+}
+
+.today {
+  position: absolute;
+  inset-block: -10px;
+  inset-inline-start: calc(var(--at) * 100%);
+  inline-size: 4px;
+  translate: 50% 0;
+  background: var(--white);
+}
+
+.todayLabel {
+  position: absolute;
+  inset-block-end: 100%;
+  inset-inline-start: 50%;
+  translate: 50% -2px;
+  padding: 0 6px;
+  background: var(--white);
+  color: var(--indigo-deep);
+  font-size: var(--step--2);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* milestones */
+.stops {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: var(--gap);
+}
+
+.stop {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px;
+  background: var(--indigo-deep);
+  border-block-start: 6px solid var(--indigo-2);
+}
+
+.stop[data-status='past'] {
+  border-block-start-color: var(--madder);
+  color: var(--on-dark-muted);
+}
+
+.stop[data-status='current'],
+.stop[data-next] {
+  background: var(--weld);
+  border-block-start-color: var(--white);
+  color: var(--on-accent);
+}
+
+.day {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.month {
+  font-size: var(--step--2);
+  font-weight: 600;
+}
+
+.label {
+  margin-block-start: 6px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.flag {
+  align-self: flex-start;
+  margin-block-start: 8px;
+  padding: 2px 8px;
+  background: var(--indigo-deep);
+  color: var(--weld);
+  font-size: var(--step--2);
+  font-weight: 800;
+}
+
+.source {
+  margin-block-start: 14px;
+  font-size: var(--step--1);
+}
+
+.source a {
+  color: var(--weld);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .stops {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,188 @@
+.footer {
+  background: var(--indigo);
+  color: var(--on-dark-muted);
+  font-size: var(--step--1);
+}
+
+.inner {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: clamp(28px, 3vw, 44px) var(--frame) 20px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+}
+
+.markBox {
+  display: grid;
+  place-items: center;
+  inline-size: 48px;
+  block-size: 48px;
+  background: var(--madder);
+  box-shadow: inset 0 0 0 3px var(--madder), inset 0 0 0 4px var(--weld);
+}
+
+.mark {
+  color: var(--white);
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 700;
+}
+
+.nameEn {
+  font-size: 0.6875rem;
+  color: var(--on-dark-muted);
+}
+
+.about {
+  margin-block: 14px;
+  max-inline-size: 36ch;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--indigo-deep);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: var(--weld);
+  color: var(--on-accent);
+}
+
+.colTitle {
+  margin-block-end: 10px;
+  padding-block-end: 6px;
+  border-block-end: 3px solid var(--weld);
+  font-size: var(--step-1);
+  color: var(--white);
+}
+
+.list {
+  display: grid;
+  gap: 4px;
+}
+
+.list a,
+.contact a,
+.affiliates a {
+  color: var(--on-dark-muted);
+  text-decoration: none;
+}
+
+.list a:hover,
+.contact a:hover,
+.affiliates a:hover {
+  color: var(--weld);
+  text-decoration: underline;
+}
+
+.internal {
+  font-size: var(--step--2);
+}
+
+.contact {
+  display: grid;
+  gap: 8px;
+  font-style: normal;
+}
+
+.contact p {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.contact svg {
+  flex: none;
+  margin-block-start: 4px;
+  color: var(--weld);
+}
+
+.fax {
+  flex-wrap: wrap;
+  column-gap: 16px;
+}
+
+.contactMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-block-start: 10px;
+  font-weight: 800;
+  color: var(--weld);
+  text-decoration: none;
+}
+
+.contactMore:hover {
+  text-decoration: underline;
+}
+
+.affiliates {
+  margin-block-start: 28px;
+  padding-block-start: 18px;
+  border-block-start: 1px solid var(--indigo-2);
+}
+
+.affiliates ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-block-start: 22px;
+  padding-block-start: 14px;
+  border-block-start: 1px solid var(--indigo-2);
+  font-size: var(--step--2);
+}
+
+@media (max-width: 1080px) {
+  .columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brandCol {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

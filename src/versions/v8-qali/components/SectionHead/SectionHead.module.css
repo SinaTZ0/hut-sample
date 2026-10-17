@@ -1,0 +1,28 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 22px 2px 10px;
+}
+
+.title {
+  font-size: var(--step-3);
+  color: var(--weld);
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.more:hover {
+  color: var(--weld);
+  text-decoration: underline;
+}
