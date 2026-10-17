@@ -272,11 +272,97 @@ and the radii are 4–12px, so the blocks read as cut, not as cards.
 block to its headline instead of showing a blank frame. There is no theme switch: the page already
 crosses into its own night at the halfway mark.
 
+### V6 Baba Taher (بابا طاهر): granite and glass
+
+*Concept:* built as a second answer to the brief V4 answered — the university's own front door,
+read as a *governance* site — rather than as a variation on it. The subject is the Baba Taher tower
+on the north edge of Hamedan: an octagonal drum of grey Alvand granite, twelve plain columns, and
+turquoise glass set between them. A modern building made out of old geometry, which is what this
+page tries to be.
+
+The one thing V6 does that none of the others do: **its dark bands are a material, not a fill.**
+They carry a photographic granite grain with a girih weave over it, so the page reads as stone and
+paper rather than as colour blocks. The artwork is generated and lives in `src/versions/v6-babataher/assets/`;
+none of it is content. Every photograph on the page is still the university's own.
+
+The memorable element is **«میز خدمت»**, a granite slab cut into the bottom edge of the hero. Where
+V4 docks six tiles and V5 docks a horizon bar, V6 docks a *desk*: a live search over every system in
+`services` (via `useServiceSearch`), the six daily ones already laid out beneath it, and the next
+deadline on a hairline below. The first screen therefore carries no slogan and no statistics — only
+the name, and the one object that does work.
+
+```
+┌ strip (granite-950): • پایگاه رسمی دانشگاه صنعتی همدان      تماس با ما  [ورود به پرتال] ┐
+│ [■ emblem] دانشگاه صنعتی همدان  دانشگاه▾ آموزش▾ پژوهش▾ زندگی▾ سامانه‌ها │ 🔍 ☀ EN      │
+├──────── campus under Alvand, granite wash from the inline-start, girih at 4% ───────────┤
+│ 📍 همدان، در دامنه الوند                                                                 │
+│ دانشگاه صنعتی همدان          (Kufi, white)                                               │
+│ Hamedan University of Technology                                                         │
+│ mission, one sentence   ·   [آشنایی با دانشگاه] [راهنمای نودانشجویان ↗]   ▌ریشه در دانش │
+│                                                                           ▌نگاه به آینده │
+│ ╔═══ میز خدمت — granite slab, turquoise top edge, straddles the photo's bottom edge ═══╗│
+│ ║ میز خدمت  [🔍 نام سامانه یا کاری که دارید ………]            همه سامانه‌ها ←            ║│
+│ ║ گلستان │ درس‌افزار │ رزرو غذا │ کلاس مجازی │ صندوق رفاه │ خوابگاه   (live results)   ║│
+│ ║ ─────────────────────────────────────────────────────────────────────────────────── ║│
+│ ║ 📅 مهلت بعدی  حذف تک‌درس  ۲۴ تا ۲۵ آذر · ۵۹ روز دیگر            تقویم آموزشی ←      ║│
+│ ╚══════════════════════════════════════════════════════════════════════════════════════╝│
+├─ bone ─ تازه‌های دانشگاه ────────────────────────────────────────────────────────────────┤
+│  lead story with its photo │ two smaller │ اطلاعیه‌ها, tabbed, with date stamps         │
+├─ bone-alt ─ تقویم آموزشی دانشگاه ───────────────────────────────────────────────────────┤
+│  term line to scale, 7 milestones, today and the next deadline in turquoise             │
+├─ GRANITE BAND (stone + girih + seal watermark) ─ دانشگاه صنعتی همدان در یک نگاه ────────┤
+│  mission · 6 figures │ campus-life photo · ۸ گروه آموزشی                                │
+│  ── Alvand's two summits as a contour drawing, bled across the foot of the band ──      │
+├─ bone ─ دستاوردها و افتخارات ───────────────────────────────────────────────────────────┤
+│  one lead card tall │ two stacked beside it                                             │
+├─ bone-alt ─ رویدادها و دوره‌های آموزشی ─────────────────────────────────────────────────┤
+│  three course/event rows │ granite panel: 4 research units + a seal watermark           │
+├─ bone ─ به جمع ما خوش آمدید ────────────────────────────────────────────────────────────┤
+│  granite half (new students, departments) │ light half (feedback · counselling)         │
+└ footer (granite-950 + girih): brand · links · student systems · staff systems · contact ┘
+```
+
+| Token | Value | Role |
+|---|---|---|
+| granite-950 | `#14181B` | utility strip, hero ground, footer |
+| granite-900 | `#1D2328` | the institution band, the welcome block |
+| granite-850 / -800 | `#232B31` / `#2A3238` | the service desk, and the tiles cut into it |
+| firouzeh | `#1AA69C` | **the glass** — the only accent: primary buttons, the figures, today, the rule under each heading |
+| firouzeh-deep | `#0A635D` | the same accent as text on a light ground (6.35:1) |
+| bone / bone-2 | `#F4F2EE` / `#EAE7E1` | the paper sections |
+| Type | Noto Kufi Arabic (headings, 700) + Vazirmatn (everything else) | |
+
+**Generated design assets** (`assets/`, made with the image tool, then reduced to tintable
+white-on-alpha WebP so CSS can colour them):
+
+| File | Where it is used | Opacity |
+|---|---|---|
+| `girih.webp` | utility strip, hero, every granite band, footer | 4–4.5% |
+| `granite.jpg` | the material of every dark surface, `mix-blend-mode: overlay` | 30–34% |
+| `contour.webp` | Alvand's summits across the foot of the institution band | 13% |
+| `seal-1…4.webp` | one medallion per dark surface, bled off a corner as a watermark | 6–10% |
+
+The four seals came out of one generated 2×2 sheet, split and trimmed with `sharp`.
+
+**What is deliberately different from V4**, which it answers rather than extends: the dark bands are
+photographic stone instead of flat pine; the accent is cool turquoise instead of a warm metal,
+because it is the glass of the tower rather than a wheat field; the docked object searches instead of
+listing; headings are Kufi and carry a short turquoise rule rather than a kicker above them; and the
+radii drop from 10–22px to 3–10px, so every block reads as cut rather than as a card.
+
+**Departures from the content:** the open-education entry still has no poster, so that row keeps its
+headline instead of an empty frame. Below 440px the header's magnifier is hidden, because the same
+search sits in «میز خدمت» a few hundred pixels further down and the brand name set in Kufi needs the
+room. A sun/moon button switches to a dark theme (`data-theme="dark"`, remembered in `localStorage`);
+the granite bands stay stone in both.
+
 ### Self-review against generic defaults
 
-None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, calendar ink with a single red for today, Alvand's pine slopes with wheat gold, and four of the seven walls Herodotus gives Ecbatana.
+None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, calendar ink with a single red for today, Alvand's pine slopes with wheat gold, four of the seven walls Herodotus gives Ecbatana, and the granite and turquoise glass of the Baba Taher tower.
 
-V5 is the one to keep checking, because it was built from a profile of V4 and could have come out as a recolour of it. The things that make it a different design rather than a variant: the single light-to-dark crossover, the horizon bar in place of the service rail, a second typeface carrying the headings, two accents split by job, and no kicker above any heading.
+V6 is the one to keep checking, because it answers the same brief as V4 and could have come out as a recolour of it. The things that make it a different design rather than a variant: the dark bands are a photographic material instead of a flat fill, the docked object searches instead of listing, the accent is the tower's cool glass instead of a warm metal, Kufi carries the headings, and the radii are small enough that nothing reads as a card.
+
+V5 is worth the same check, because it was built from a profile of V4 and could have come out as a recolour of it. The things that make it a different design rather than a variant: the single light-to-dark crossover, the horizon bar in place of the service rail, a second typeface carrying the headings, two accents split by job, and no kicker above any heading.
 
 ---
 

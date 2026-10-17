@@ -80,4 +80,16 @@ export const versions: VersionMeta[] = [
     fonts: 'Noto Naskh Arabic / Vazirmatn',
     load: () => import('./v5-hegmataneh'),
   },
+  {
+    id: 'v6-babataher',
+    slug: 'v6',
+    name: 'بابا طاهر',
+    nameEn: 'Baba Taher',
+    emphasis: 'اول کار امروز مراجعه‌کننده',
+    concept:
+      'سنگ و شیشه، به تقلید از برج هشت‌ضلعی بابا طاهر: نوارهای تیره صفحه بافت واقعی سنگ گرانیت دارند و گره‌چینی بر آن نشسته است، و «میز خدمت» مثل تخته‌سنگی بر لبه پایینی عکس نشسته که جست‌وجوی زنده سامانه‌ها، سامانه‌های روزمره و مهلت بعدی را با هم نگه می‌دارد.',
+    swatches: ['#14181B', '#1D2328', '#1AA69C', '#EAE7E1', '#F4F2EE'],
+    fonts: 'Noto Kufi Arabic / Vazirmatn',
+    load: () => import('./v6-babataher'),
+  },
 ]

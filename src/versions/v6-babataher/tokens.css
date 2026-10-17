@@ -1,0 +1,132 @@
+/*
+ * V6 "Baba Taher": design tokens.
+ *
+ * The subject is the Baba Taher tower in Hamedan — an octagonal drum of grey Alvand
+ * granite, twelve plain columns, and turquoise glass between them. A modern building
+ * made out of old geometry, which is what a university front door should be.
+ *
+ * So: granite is the material (a real stone texture on the dark bands, not a flat
+ * fill), girih is the ornament, and firouzeh turquoise is the glass — the only
+ * accent, and nothing gets it except actions and time.
+ *
+ * Radii are small on purpose: stone is cut, not rounded.
+ */
+[data-version='v6'] {
+  /* palette — granite */
+  --granite-950: #14181b;
+  --granite-900: #1d2328;
+  --granite-850: #232b31;
+  --granite-800: #2a3238;
+  --granite-700: #3a454c;
+  --granite-400: #94a1a8;
+
+  /* palette — the glass */
+  --firouzeh: #1aa69c;
+  --firouzeh-bright: #3fcfc2;
+  --firouzeh-deep: #0a635d;
+
+  /* palette — paper */
+  --bone: #f4f2ee;
+  --bone-2: #eae7e1;
+  --paper: #ffffff;
+  --ink: #1a1f22;
+
+  /* roles */
+  --bg: var(--bone);
+  --bg-alt: #faf9f7;
+  --surface: var(--paper);
+  --surface-2: var(--bone-2);
+  --chip: #e4eceb;
+  --text: var(--ink);
+  --text-muted: #5f6b70;
+  --heading: var(--granite-900);
+  --link: var(--firouzeh-deep);
+  --line: #dcd8d1;
+  --line-strong: #c4bfb6;
+  --band: var(--granite-900);
+  --band-deep: var(--granite-950);
+  --on-band: #eef1f2;
+  --on-band-muted: var(--granite-400);
+  --accent: var(--firouzeh);
+  --on-accent: #06211f;
+  /* turquoise as text on a light ground needs the deep tone to clear AA */
+  --accent-text: var(--firouzeh-deep);
+  --accent-on-band: var(--firouzeh-bright);
+  --focus: var(--firouzeh);
+  --shadow: 0 1px 2px rgb(20 24 27 / 0.05), 0 10px 28px -14px rgb(20 24 27 / 0.22);
+
+  /* type — Kufi for headings, Vazirmatn for everything that has a job */
+  --font-display: 'Noto Kufi Arabic Variable', 'Vazirmatn Variable', system-ui, sans-serif;
+  --font: 'Vazirmatn Variable', 'Vazirmatn', system-ui, sans-serif;
+  --step--2: 0.75rem;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-2: 1.3125rem;
+  --step-3: clamp(1.4rem, 1.15rem + 0.9vw, 1.875rem);
+  --step-4: clamp(1.625rem, 1.25rem + 1.5vw, 2.375rem);
+  --step-5: clamp(2.25rem, 1.5rem + 3.2vw, 4rem);
+
+  /* space */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 40px;
+  --space-xl: clamp(56px, 7vw, 96px);
+  --gutter: clamp(16px, 4vw, 40px);
+  --max: 1240px;
+
+  /* stone is cut, not rounded */
+  --radius-s: 3px;
+  --radius: 6px;
+  --radius-l: 10px;
+
+  --skip-bg: var(--granite-950);
+  --skip-fg: var(--bone);
+
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--step-0);
+  line-height: 1.8;
+  color-scheme: light;
+}
+
+[data-version='v6'][data-theme='dark'] {
+  --bg: #111517;
+  --bg-alt: #141a1d;
+  --surface: #1b2225;
+  --surface-2: #171e21;
+  --chip: #1d2c2c;
+  --text: #e4e9ea;
+  --text-muted: #9aa6ab;
+  --heading: #eef2f3;
+  --link: var(--firouzeh-bright);
+  --line: #2a3237;
+  --line-strong: #3a454c;
+  --band: #171d21;
+  --band-deep: #0e1214;
+  --accent-text: var(--firouzeh-bright);
+  --focus: var(--firouzeh-bright);
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 10px 28px -14px rgb(0 0 0 / 0.6);
+  color-scheme: dark;
+}
+
+/* Headings are the one place the Kufi appears. */
+:where([data-version='v6']) :is(h1, h2, h3) {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+:where([data-version='v6']) :focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+:where([data-version='v6']) a {
+  color: var(--link);
+  text-underline-offset: 0.3em;
+}

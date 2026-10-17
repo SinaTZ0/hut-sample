@@ -5,7 +5,7 @@ Every version reads the same typed content, so new versions can sit beside the e
 
 ```sh
 pnpm install
-pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3, /v4, /v5
+pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3, /v4, /v5, /v6
 pnpm build && pnpm preview
 node scripts/scrape/scrape.mjs            # refresh the archive from the live site
 node scripts/scrape/scrape.mjs --offline  # re-parse archive/raw only
@@ -23,6 +23,7 @@ The scraped reference material is in [`archive/INVENTORY.md`](archive/INVENTORY.
 | `/v3` | Taqvim (تقویم) | Live semester timeline and a sticky "now" rail |
 | `/v4` | Alvand (الوند) | Photographic hero with the daily systems docked under it; pine and wheat-gold, light/dark |
 | `/v5` | Hegmataneh (هگمتانه) | A section through the mound: dusk sky, a horizon bar carrying today, then one crossing from the surface strata into the deep ones |
+| `/v6` | Baba Taher (بابا طاهر) | Granite and glass: stone bands carrying a girih weave, and a «میز خدمت» slab cut into the hero that searches every system |
 
 Add `?today=1405-09-28` to any URL to preview the calendar widgets on another day of the term.
 
@@ -49,6 +50,7 @@ src/
     v3-taqvim/
     v4-alvand/
     v5-hegmataneh/
+    v6-babataher/         + assets/ — the generated girih, granite, contour and seal artwork
   pages/VersionGallery/  index page comparing versions
   app/                   router, shell, reviewer version bar
 ```

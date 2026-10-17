@@ -41,7 +41,7 @@ pnpm preview        # serve the production build
 | URL | What |
 |---|---|
 | `/` | Gallery of all registered versions |
-| `/v1` … `/v5` | The versions |
+| `/v1` … `/v6` | The versions |
 | `?today=1405-09-28` | Pretend today is that Jalali date (calendar widgets, the V3 timeline, "next deadline") |
 
 A small floating bar on every version page switches between versions and keeps the `?today=` parameter. It belongs to the review tooling, not to any design (`src/app/VersionBar.tsx`).

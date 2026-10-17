@@ -1,0 +1,254 @@
+.wrap {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  /* the slab is cut into the hero: it sits half on the photograph, half on the page */
+  margin-block-start: clamp(-130px, -10vw, -88px);
+  position: relative;
+  z-index: 2;
+}
+
+/* A block of granite, with the turquoise glass along its top edge. */
+.desk {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: var(--space-m) clamp(16px, 3vw, 32px) var(--space-s);
+  border-radius: var(--radius);
+  border-block-start: 3px solid var(--accent);
+  background-color: var(--granite-850);
+  color: var(--on-band);
+  box-shadow: 0 24px 60px -28px rgb(20 24 27 / 0.75);
+}
+
+.desk::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url(../../assets/granite.jpg);
+  background-size: 280px;
+  opacity: 0.34;
+  mix-blend-mode: overlay;
+}
+
+.desk::after {
+  content: '';
+  position: absolute;
+  inset-block-start: -40px;
+  inset-inline-end: -40px;
+  z-index: -1;
+  inline-size: 260px;
+  aspect-ratio: 1;
+  background-image: url(../../assets/seal-1.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.06;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.deskTitle {
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.field {
+  position: relative;
+  flex: 1;
+  min-inline-size: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  inset-inline-start: 14px;
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.input {
+  inline-size: 100%;
+  min-block-size: 48px;
+  padding-block: 10px;
+  padding-inline: 44px 16px;
+  border: 1px solid rgb(255 255 255 / 0.2);
+  border-radius: var(--radius-s);
+  background: rgb(255 255 255 / 0.07);
+  color: #fff;
+  font: inherit;
+  font-family: var(--font);
+}
+
+.input::placeholder {
+  color: var(--granite-400);
+}
+
+.input:hover {
+  border-color: rgb(255 255 255 / 0.35);
+}
+
+.input::-webkit-search-cancel-button {
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+.all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.all svg {
+  color: var(--accent);
+}
+
+.all:hover {
+  text-decoration: underline;
+}
+
+.status {
+  font-size: var(--step--2);
+  color: var(--granite-400);
+}
+
+.status:not(:empty) {
+  margin-block-start: var(--space-s);
+}
+
+/*
+ * Six systems across on a wide screen, two on a phone. auto-fill, not auto-fit, so a
+ * single search result stays one tile wide instead of stretching across the slab.
+ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr));
+  gap: 1px;
+  margin-block-start: var(--space-s);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  block-size: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgb(255 255 255 / 0.09);
+  border-radius: var(--radius-s);
+  background: var(--granite-800);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.18s, border-color 0.18s;
+}
+
+.item:hover {
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.item:hover {
+  background: var(--granite-700);
+}
+
+.itemIcon {
+  color: var(--accent);
+}
+
+.itemTitle {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.itemDesc {
+  font-size: var(--step--2);
+  line-height: 1.65;
+  color: var(--granite-400);
+}
+
+.internal {
+  margin-block-start: 2px;
+  font-size: var(--step--2);
+  color: var(--firouzeh-bright);
+}
+
+/* The one line of time on the first screen, on its own below a hairline. */
+.deadline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  margin-block-start: var(--space-s);
+  padding-block-start: var(--space-s);
+  border-block-start: 1px solid rgb(255 255 255 / 0.14);
+  font-size: var(--step--1);
+}
+
+.deadlineIcon {
+  color: var(--accent);
+}
+
+.deadlineLabel {
+  color: var(--granite-400);
+}
+
+.deadlineName {
+  font-weight: 700;
+  color: #fff;
+}
+
+.cohort {
+  color: var(--granite-400);
+}
+
+.when {
+  color: var(--granite-400);
+}
+
+.days {
+  color: var(--firouzeh-bright);
+  font-weight: 700;
+}
+
+.calendarLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-inline-start: auto;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendarLink svg {
+  color: var(--accent);
+}
+
+.calendarLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 860px) {
+  .wrap {
+    margin-block-start: -48px;
+  }
+
+  .deskTitle {
+    font-size: var(--step-1);
+  }
+
+  .calendarLink {
+    margin-inline-start: 0;
+  }
+}
