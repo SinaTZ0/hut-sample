@@ -1,0 +1,130 @@
+.block + .block {
+  margin-block-start: var(--space-xl);
+}
+
+/* ── research units ──────────────────────────────────────────────── */
+
+.units {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-s);
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  block-size: 100%;
+  padding: var(--space-m);
+  border: 1px solid var(--deep-line);
+  border-radius: var(--radius);
+  background: var(--deep-surface);
+  color: var(--on-deep);
+  text-decoration: none;
+  transition: border-color 0.16s, background-color 0.16s;
+}
+
+.unit:hover {
+  border-color: var(--night-600);
+  background: var(--night-600);
+}
+
+.unitIcon {
+  color: var(--lapis-200);
+  margin-block-end: var(--space-s);
+}
+
+.unitName {
+  font-weight: 700;
+}
+
+.unitDesc {
+  font-size: var(--step--1);
+  color: var(--on-deep-muted);
+}
+
+/* ── achievements ────────────────────────────────────────────────── */
+
+.achievements {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: var(--space-l);
+  align-items: start;
+}
+
+.leadLink {
+  display: block;
+  text-decoration: none;
+  color: var(--on-deep);
+}
+
+.leadImage {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.leadBody {
+  display: block;
+  padding-block-start: var(--space-s);
+}
+
+.leadTitle {
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: #fff;
+}
+
+.leadLink:hover .leadTitle,
+.other:hover .otherTitle {
+  color: var(--saffron);
+}
+
+.leadSummary,
+.otherSummary {
+  display: block;
+  margin-block-start: 6px;
+  max-inline-size: 60ch;
+  font-size: var(--step--1);
+  color: var(--on-deep-muted);
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+}
+
+.others > li + li {
+  margin-block-start: var(--space-m);
+  padding-block-start: var(--space-m);
+  border-block-start: 1px solid var(--deep-line);
+}
+
+.other {
+  display: block;
+  text-decoration: none;
+  color: var(--on-deep);
+}
+
+.otherTitle {
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .units {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .achievements {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .units {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

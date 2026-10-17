@@ -1,0 +1,94 @@
+.block {
+  margin-block-start: var(--space-xl);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-m);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+  border: 1px solid var(--deep-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--deep-surface);
+  text-decoration: none;
+  color: var(--on-deep);
+  transition: border-color 0.16s;
+}
+
+.item:hover {
+  border-color: var(--saffron);
+}
+
+.image {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: var(--space-m);
+}
+
+/* no poster: the card gives the whole block to the headline instead of a blank frame */
+.bodyOnly {
+  flex: 1;
+  justify-content: center;
+  gap: 12px;
+  padding-block: var(--space-l);
+  border-inline-start: 3px solid var(--lapis-200);
+}
+
+.bodyOnly .title {
+  font-size: var(--step-2);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--step--2);
+}
+
+.category {
+  padding: 2px 8px;
+  border-radius: var(--radius-s);
+  background: var(--night-600);
+  font-weight: 600;
+}
+
+.date {
+  color: var(--on-deep-muted);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.item:hover .title {
+  color: var(--saffron);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

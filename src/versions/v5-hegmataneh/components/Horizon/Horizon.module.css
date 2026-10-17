@@ -1,0 +1,133 @@
+/*
+ * The one object on this page that breaks the grid: it is pulled up so it straddles
+ * the bottom edge of the hero photograph.
+ */
+.wrap {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  margin-inline: auto;
+  margin-block-start: clamp(-76px, -7vw, -56px);
+  padding-inline: var(--gutter);
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--lift-deep);
+  overflow: hidden;
+}
+
+/* today, in the one hot colour the first screen is allowed */
+.date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px var(--space-m);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.day {
+  font-size: var(--step-4);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.when {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+
+.month {
+  font-weight: 600;
+}
+
+.weekday {
+  color: #5a3a0d;
+}
+
+.term {
+  display: flex;
+  align-items: center;
+  padding: 14px var(--space-m);
+  border-inline-end: 1px solid var(--line-soft);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  flex: 1;
+  min-inline-size: 0;
+  padding: 14px var(--space-m);
+}
+
+.nextLabel {
+  font-size: var(--step--2);
+  font-weight: 700;
+  color: var(--accent-text);
+}
+
+.nextTitle {
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.cohort,
+.nextWhen {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px var(--space-m);
+  border-inline-start: 1px solid var(--line-soft);
+  font-size: var(--step--1);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.link:hover {
+  background: var(--clay);
+}
+
+@media (max-width: 900px) {
+  .term {
+    border-inline-end: none;
+    border-block-end: 1px solid var(--line-soft);
+    inline-size: 100%;
+  }
+
+  .date {
+    inline-size: 100%;
+  }
+
+  .next,
+  .link {
+    inline-size: 100%;
+    border-inline-start: none;
+  }
+
+  .link {
+    border-block-start: 1px solid var(--line-soft);
+    justify-content: space-between;
+  }
+}

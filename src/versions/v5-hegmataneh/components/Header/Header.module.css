@@ -1,0 +1,416 @@
+.header {
+  position: relative;
+  z-index: 20;
+}
+
+/* ── bedrock strip ───────────────────────────────────────────────── */
+
+.strip {
+  background: var(--night-950);
+  color: var(--on-deep-muted);
+  font-size: var(--step--2);
+}
+
+.stripInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px var(--space-m);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: 6px var(--gutter);
+}
+
+.stripLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.strip a {
+  color: var(--on-deep-muted);
+  text-decoration: none;
+}
+
+.strip a:hover {
+  color: #fff;
+}
+
+/* `.strip a` above would otherwise win on specificity; this is why it is not just `.login`. */
+.strip .login {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 12px;
+  border-radius: var(--radius-s);
+  background: var(--night-800);
+  color: var(--on-deep);
+  font-weight: 600;
+}
+
+.strip .login:hover {
+  background: var(--night-600);
+  color: #fff;
+}
+
+/* ── main bar ────────────────────────────────────────────────────── */
+
+.bar {
+  background: var(--surface);
+  border-block-end: 1px solid var(--line);
+}
+
+.barInner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: 10px var(--gutter);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.markBox {
+  display: grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  border-radius: var(--radius-s);
+  background: var(--night-900);
+  color: #fff;
+  flex: none;
+}
+
+.mark {
+  --logo-size: 28px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--heading);
+  white-space: nowrap;
+}
+
+.nameEn {
+  font-size: 0.6875rem;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ── navigation ──────────────────────────────────────────────────── */
+
+.nav {
+  flex: 1;
+  min-inline-size: 0;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: var(--step-0);
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--radius-s);
+}
+
+.navLink:hover {
+  background: var(--clay);
+}
+
+.navLink[aria-expanded='true'] {
+  background: var(--clay);
+  color: var(--lapis);
+}
+
+.chevron {
+  color: var(--text-muted);
+}
+
+/* ── mega panel ──────────────────────────────────────────────────── */
+
+.panel {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 100%;
+  background: var(--surface);
+  border-block-end: 1px solid var(--line);
+  box-shadow: var(--lift);
+}
+
+.panelInner {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) repeat(3, minmax(0, 3fr));
+  gap: var(--space-l);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: var(--space-l) var(--gutter);
+}
+
+.panelIntro {
+  padding-inline-end: var(--space-m);
+  border-inline-end: 1px solid var(--line);
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.panelTitle {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: var(--heading);
+  margin-block-end: 6px;
+}
+
+.panelMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-block-start: var(--space-s);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.panelMore:hover {
+  text-decoration: underline;
+}
+
+.groupTitle {
+  font-family: var(--font);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--lapis);
+  margin-block-end: 10px;
+}
+
+.groupTitle a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.panelGroup li {
+  margin-block-end: 6px;
+}
+
+.panelGroup a {
+  font-size: var(--step--1);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.panelGroup a:hover {
+  color: var(--lapis);
+  text-decoration: underline;
+}
+
+/* ── tools ───────────────────────────────────────────────────────── */
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-inline-start: auto;
+}
+
+.tool {
+  display: grid;
+  place-items: center;
+  inline-size: 40px;
+  block-size: 40px;
+  border: none;
+  border-radius: var(--radius-s);
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.tool:hover {
+  background: var(--clay);
+}
+
+.lang {
+  padding: 8px 10px;
+  border-radius: var(--radius-s);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.lang:hover {
+  background: var(--clay);
+}
+
+.menuButton {
+  display: none;
+}
+
+/* ── service search ──────────────────────────────────────────────── */
+
+.searchWrap {
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  inset-block-start: calc(100% + 8px);
+  inset-inline-end: 0;
+  inline-size: min(380px, calc(100vw - 2 * var(--gutter)));
+  padding: var(--space-s);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--lift);
+}
+
+.searchLabel {
+  display: block;
+  font-size: var(--step--1);
+  font-weight: 600;
+  margin-block-end: 8px;
+}
+
+.searchInput {
+  inline-size: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  background: var(--dust);
+  font: inherit;
+  color: var(--text);
+}
+
+.results {
+  margin-block-start: 10px;
+  max-block-size: 50vh;
+  overflow-y: auto;
+}
+
+.result {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px;
+  border-radius: var(--radius-s);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.result:hover {
+  background: var(--clay);
+}
+
+.resultIcon {
+  flex: none;
+  margin-block-start: 2px;
+  color: var(--lapis);
+}
+
+.resultTitle {
+  display: block;
+  font-weight: 600;
+}
+
+.resultDesc {
+  display: block;
+  font-size: var(--step--2);
+  color: var(--text-muted);
+}
+
+.empty {
+  padding: 8px;
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+/* ── mobile ──────────────────────────────────────────────────────── */
+
+@media (max-width: 1000px) {
+  .menuButton {
+    display: grid;
+  }
+
+  .nav {
+    position: absolute;
+    inset-inline: 0;
+    inset-block-start: 100%;
+    background: var(--surface);
+    border-block-end: 1px solid var(--line);
+    box-shadow: var(--lift);
+    padding: var(--space-s) var(--gutter);
+  }
+
+  .nav[data-open='false'] {
+    display: none;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navLink {
+    inline-size: 100%;
+    justify-content: space-between;
+  }
+
+  .panel {
+    position: static;
+    box-shadow: none;
+    border-block-end: none;
+    background: var(--dust);
+    border-radius: var(--radius-s);
+  }
+
+  .panelInner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-m);
+    padding: var(--space-s);
+  }
+
+  .panelIntro {
+    padding-inline-end: 0;
+    border-inline-end: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .nameEn {
+    display: none;
+  }
+
+  .name {
+    font-size: var(--step-0);
+    white-space: normal;
+  }
+}

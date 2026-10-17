@@ -5,13 +5,14 @@ Every version reads the same typed content, so new versions can sit beside the e
 
 ```sh
 pnpm install
-pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3
+pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3, /v4, /v5
 pnpm build && pnpm preview
 node scripts/scrape/scrape.mjs            # refresh the archive from the live site
 node scripts/scrape/scrape.mjs --offline  # re-parse archive/raw only
 ```
 
 The audit, information architecture, wireframes and tokens are in [`docs/redesign-plan.md`](docs/redesign-plan.md).
+What "good" means here — the taste profile the newest version was built from — is in [`docs/design-profile.md`](docs/design-profile.md).
 How the code fits together, and how to add a version step by step, is in [`docs/project-guide.md`](docs/project-guide.md).
 The scraped reference material is in [`archive/INVENTORY.md`](archive/INVENTORY.md).
 
@@ -20,6 +21,8 @@ The scraped reference material is in [`archive/INVENTORY.md`](archive/INVENTORY.
 | `/v1` | Ganjnameh (گنج‌نامه) | University identity and student gateway as twin carved tablets |
 | `/v2` | Lalejin (لالجین) | Student service mosaic with live search |
 | `/v3` | Taqvim (تقویم) | Live semester timeline and a sticky "now" rail |
+| `/v4` | Alvand (الوند) | Photographic hero with the daily systems docked under it; pine and wheat-gold, light/dark |
+| `/v5` | Hegmataneh (هگمتانه) | A section through the mound: dusk sky, a horizon bar carrying today, then one crossing from the surface strata into the deep ones |
 
 Add `?today=1405-09-28` to any URL to preview the calendar widgets on another day of the term.
 
@@ -44,6 +47,8 @@ src/
     v1-ganjnameh/        index.tsx · tokens.css · fonts.ts · components/<Name>/<Name>.tsx + .module.css
     v2-lalejin/
     v3-taqvim/
+    v4-alvand/
+    v5-hegmataneh/
   pages/VersionGallery/  index page comparing versions
   app/                   router, shell, reviewer version bar
 ```

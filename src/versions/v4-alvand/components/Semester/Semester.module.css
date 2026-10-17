@@ -1,0 +1,196 @@
+.card {
+  padding: 26px 32px 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+  background: var(--surface);
+}
+
+.cardHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-block-end: 20px;
+  border-block-end: 1px solid var(--line);
+}
+
+.term {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.term svg {
+  color: var(--link);
+}
+
+.source {
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: var(--chip);
+  font-size: var(--step--2);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.source:hover {
+  text-decoration: underline;
+}
+
+/* timeline */
+.line {
+  --dot: 14px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  padding-block-start: 28px;
+}
+
+.stop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.day {
+  font-size: var(--step-2);
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--heading);
+}
+
+.month {
+  font-size: var(--step--2);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Full column width, so the connector can run from this dot's centre to the next one. */
+.track {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  inline-size: 100%;
+  margin-block: 16px 12px;
+}
+
+.stop[data-link] .track::before {
+  content: '';
+  position: absolute;
+  inset-block-start: calc(var(--dot) / 2 - 1px);
+  inset-inline: 50% -50%;
+  block-size: 2px;
+  background: var(--line-strong);
+}
+
+.stop[data-link='done'] .track::before {
+  background: var(--link);
+}
+
+.dot {
+  position: relative;
+  inline-size: var(--dot);
+  block-size: var(--dot);
+  border: 2px solid var(--link);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.label {
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.flag {
+  margin-block-start: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: var(--step--2);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.stop[data-status='past'] .dot {
+  background: var(--link);
+}
+
+.stop[data-status='past'] .day,
+.stop[data-status='past'] .label {
+  color: var(--text-muted);
+}
+
+.stop[data-status='current'] .dot,
+.stop[data-next] .dot {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+/* Narrow screens: the line turns vertical, the dot column runs down the inline-start edge. */
+@media (max-width: 760px) {
+  .card {
+    padding: 20px 18px 24px;
+  }
+
+  .line {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    padding-block-start: 20px;
+  }
+
+  .stop {
+    display: grid;
+    grid-template-columns: var(--dot) auto minmax(0, 1fr);
+    grid-template-areas:
+      'track label label'
+      'track day month'
+      'track flag flag';
+    column-gap: 14px;
+    align-items: baseline;
+    justify-items: start;
+    padding-block-end: 20px;
+    text-align: start;
+  }
+
+  .track {
+    grid-area: track;
+    align-self: stretch;
+    inline-size: var(--dot);
+    margin: 0;
+    padding-block-start: 8px;
+  }
+
+  .stop[data-link] .track::before {
+    inset-block: calc(8px + var(--dot) / 2) -28px;
+    inset-inline: calc(var(--dot) / 2 - 1px) auto;
+    inline-size: 2px;
+    block-size: auto;
+  }
+
+  .label {
+    grid-area: label;
+    font-size: var(--step-0);
+  }
+
+  .day {
+    grid-area: day;
+    font-size: var(--step-0);
+  }
+
+  .month {
+    grid-area: month;
+  }
+
+  .flag {
+    grid-area: flag;
+    justify-self: start;
+    margin-block-start: 4px;
+  }
+}

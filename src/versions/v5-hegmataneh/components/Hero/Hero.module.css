@@ -1,0 +1,124 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  background: var(--night-950);
+  color: var(--on-deep);
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 62%;
+  /* the source frame is already dusk-dark; lifting it keeps Alvand's ridge visible under the wash */
+  filter: brightness(1.75) saturate(0.9) contrast(1.05);
+}
+
+/*
+ * The wash only deepens the sky behind the name and the ground under the horizon bar.
+ * The middle of the frame — the ridge and the lit campus — is left alone.
+ */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to bottom, rgb(20 27 48 / 0.72) 0%, rgb(20 27 48 / 0.18) 50%, rgb(20 27 48 / 0.6) 100%),
+    linear-gradient(to left, rgb(20 27 48 / 0.8) 0%, rgb(20 27 48 / 0.38) 45%, rgb(20 27 48 / 0.05) 80%);
+}
+
+.inner {
+  max-width: var(--max);
+  margin-inline: auto;
+  /* bottom padding leaves room for the horizon bar that overlaps this edge */
+  padding: clamp(72px, 10vw, 136px) var(--gutter) clamp(88px, 9vw, 120px);
+}
+
+.title {
+  max-inline-size: 14ch;
+  font-size: var(--step-5);
+  font-weight: 700;
+  line-height: 1.35;
+  color: #fff;
+}
+
+/* `dir="ltr"` on an RTL page: without a shrink-to-fit box it would align to the far left. */
+.nameEn {
+  inline-size: max-content;
+  max-inline-size: 100%;
+  margin-block-start: 10px;
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  color: #c3cadd;
+}
+
+.mission {
+  max-inline-size: 48ch;
+  margin-block-start: var(--space-m);
+  font-size: var(--step-1);
+  line-height: 1.95;
+  color: #e7e9f2;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block-start: var(--space-l);
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-block-size: 46px;
+  padding: 8px 22px;
+  border-radius: var(--radius-s);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.18s, border-color 0.18s;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.primary:hover {
+  background: var(--saffron-soft);
+}
+
+.secondary {
+  border: 1px solid rgb(255 255 255 / 0.4);
+  color: #fff;
+}
+
+.secondary:hover {
+  border-color: #fff;
+  background: rgb(255 255 255 / 0.08);
+}
+
+.place {
+  display: flex;
+  inline-size: max-content;
+  align-items: center;
+  gap: 6px;
+  margin-block-end: var(--space-s);
+  font-size: var(--step--2);
+  color: #c3cadd;
+}
+
+.place svg {
+  color: var(--lapis-200);
+}
+
+@media (max-width: 760px) {
+  .photo {
+    object-position: center 58%;
+  }
+}

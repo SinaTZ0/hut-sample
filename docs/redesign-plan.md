@@ -82,9 +82,9 @@ Two lanes, both visible from the first screen. Neither is buried under the other
 
 ---
 
-## 3. Three design directions
+## 3. Design directions
 
-All three versions use the same content and IA. They differ in **which audience the first screen serves** and in visual language. Each one spends its boldness on a single element.
+All versions use the same content and IA. They differ in **which audience the first screen serves** and in visual language. Each one spends its boldness on a single element.
 
 ### V1 Ganjnameh (گنج‌نامه): public-first, authoritative
 
@@ -177,9 +177,106 @@ All three versions use the same content and IA. They differ in **which audience 
 
 Use `?today=1405-09-28` (any Jalali date) to see V3 and the deadline widgets on another day of the term.
 
+### V4 Alvand (الوند): the university's own front door
+
+*Concept:* built from a reference mock-up (`example/localhost_5176_.png`). It reads like a conventional, polished institutional homepage: a full-bleed photograph of the campus under Alvand behind a pine-teal wash, with the name set large in white and **wheat gold**. The memorable element is the **service rail docked over the bottom edge of the hero**, which puts the six daily systems one tap from the first screen. The rest of the page alternates light sections with pine bands.
+
+```
+┌ strip (pine-950): • پایگاه رسمی دانشگاه صنعتی همدان                تماس با ما  ورود به پرتال ┐
+│ [■ emblem] دانشگاه صنعتی همدان   دانشگاه▾ آموزش▾ پژوهش▾ زندگی▾ سامانه‌ها   │ 🔍  ☀  EN     │
+├──────────── campus + Alvand photograph, pine gradient from inline-start ────────────────────┤
+│                         ── دانش، فناوری، آینده    📍 همدان، در دامنه الوند                   │
+│                              دانشگاه صنعتی                                                   │
+│                              همدان (gold)                    ▌ریشه در دانش                   │
+│ [آشنایی با دانشگاه ←] [راهنمای نودانشجویان ↗]                ▌نگاه به آینده                  │
+│ 📅 اطلاع‌رسانی آموزشی  حذف تک‌درس · ۲۴ تا ۲۵ آذر · ۵۹ روز دیگر              مشاهده تقویم ← │
+│ ┌ golestan ┬ courseware ┬ nutrition ┬ lms ┬ welfare ┬ dorm ┐  (white rail, overlaps hero) │
+│ تازه‌های دانشگاه: featured story (text | photo) + 2 cards  │ اطلاعیه‌ها [tabs] date chips    │
+│ تقویم آموزشی: 7 milestones evenly spaced, done = filled, next = gold + «N روز دیگر»          │
+│ ── pine band: در یک نگاه · mission · 6 gold figures │ campus-life photo · 8 departments ──   │
+│ دستاوردها: lead card │ 2 side cards                                                         │
+│ pine panel: رویدادها و دوره‌ها + research units │ growth / open-ed list with thumbnails     │
+│ welcome split card: pine-700 (new students, departments) │ feedback · counselling          │
+└ footer (pine-950): brand + social · links · student systems · staff systems · contact · affiliates ┘
+```
+
+| Token | Value | Role |
+|---|---|---|
+| pine-950 | `#0B2F32` | utility strip, footer |
+| pine-900 | `#103D40` | hero wash, glance band, learning panel, active tab |
+| pine-700 | `#1B6A64` | links, welcome card |
+| wheat gold | `#E7BC65` | primary buttons, figures, "next deadline" flag, kicker dash (`#9A6B14` as text on light) |
+| mist | `#F6F8F5` | page (alternate sections `#FBFCFA`) |
+| Type | Vazirmatn only, 800–900 for headings | |
+
+A sun/moon button in the header switches to a dark theme (`data-theme="dark"` on the version root, remembered in `localStorage`). The pine bands stay dark in both themes.
+
+**Departures from the reference:** the nav uses the shared IA (`زندگی دانشجویی`, `سامانه‌ها`) rather than the mock-up's labels. The mock-up's video card becomes a photo card for the graduation announcement, because the content has no video. Its "website visit statistics" footer band is replaced by the affiliates list, because there is no visitor-counter data. The announcements panel gained category tabs, staff systems got their own footer column, and the eight departments appear in the glance band, all to meet the content checklist in the project guide.
+
+### V5 Hegmataneh (هگمتانه): the section through the mound
+
+*Concept:* the first version built from a written taste profile rather than a reference mock-up — see
+[`design-profile.md`](design-profile.md), which reads V4 as the brief. Hegmataneh, the excavated mound
+of ancient Ecbatana, sits in the middle of Hamedan with the city stacked inside it in layers. The page
+is a section through it: the **dusk photograph is the sky**, a **horizon bar** lies across its bottom
+edge carrying the only three facts that change daily, and below that the page crosses from light to
+dark exactly once — surface strata for everything that changes, deep strata for everything that
+doesn't, down to the bedrock of the footer.
+
+Herodotus describes Ecbatana as seven concentric walls, each a colour. Four of them are the palette.
+
+```
+┌ strip (night-950): • پایگاه رسمی دانشگاه          تماس با ما  [ورود به پرتال] ┐
+│ [■ emblem] دانشگاه صنعتی همدان  دانشگاه▾ آموزش▾ …   │  🔍  EN                 │
+├──────── campus at dusk under Alvand, indigo wash from the inline-start ───────┤
+│ 📍 همدان، در دامنه الوند                                                       │
+│ دانشگاه صنعتی همدان          (Naskh, ivory)                                    │
+│ Hamedan University of Technology                                               │
+│ mission, two lines  ·  [آشنایی با دانشگاه ←] [راهنمای نودانشجویان ↗]          │
+│ ┌ ۲۵ مهر ۱۴۰۵ ┬ هفته ۵ از ۲۰ نیم‌سال ┬ مهلت بعدی: حذف تک‌درس… ┬ تقویم ← ┐ ← HORIZON │
+│   (saffron)      straddles the bottom edge of the photograph                   │
+├─ surface, dust ──────────────── سامانه‌های روزمره ────────────────────────────┤
+│  one tall dark block (گلستان) + six quiet blocks on one sand field            │
+├─ surface, clay ──────────────── اطلاعیه‌ها ───────────────────────────────────┤
+│  tabbed list with date stamps  │  the one announcement with a poster          │
+├─ surface, dust ──────────────── خبرها ────────────────────────────────────────┤
+│  lead story, photo + summary   │  two kept short                              │
+├─ surface, clay ──────────────── تقویم نیم‌سال ────────────────────────────────┤
+│  term strip to scale with today on it, then 7 milestone rows (2 columns)      │
+├━━━━━━━━━━━━━ THE CROSSOVER: saffron notch on the seam ━━━━━━━━━━━━━━━━━━━━━━━┤
+├─ deep, night-900 ────────────── دانشگاه صنعتی همدان ──────────────────────────┤
+│  mission · 6 figures (ivory)  │  campus-life photo   ·  ۸ گروه آموزشی         │
+├─ deep, night-950 ────────────── پژوهش و فناوری · دستاوردها · رویدادها ────────┤
+│  6 units (3×2) · lead achievement + 2 · 3 event cards (one without a poster)  │
+│  ┌ تازه رسیده‌اید؟ — the one light block below the crossover, saffron top edge ┐│
+└ footer (night-950): brand · links · student systems · staff systems · contact ┘
+```
+
+| Token | Value | Role | Wall |
+|---|---|---|---|
+| night-950 | `#141B30` | utility strip, deepest stratum, footer | black |
+| night-900 | `#1C2543` | hero wash, institution band, lead service block | blue |
+| night-800 | `#243054` | raised surfaces on the deep strata | blue |
+| lapis | `#2B4CA8` | **structure**: links, tabs, icons, labels (`#A8BDF2` on the deep strata) | blue |
+| saffron | `#D9822B` | **time and action only**: today, the next deadline, the primary button, the crossover notch (`#9A5611` as text on light) | orange |
+| dust / clay | `#FAF7F1` / `#EFE9DC` | the two surface strata | white |
+| Type | Noto Naskh Arabic (headings, 700) + Vazirmatn (everything structural) | | |
+
+**What is deliberately different from V4**, which it is a sibling of: the tonal plan crosses once
+instead of alternating four times; the photograph is the sky rather than a backdrop for the name; the
+docked object is a single horizon bar rather than a six-tile rail; the accent is split by job across
+two colours instead of one gold doing everything; headings are a second typeface and carry no kicker;
+and the radii are 4–12px, so the blocks read as cut, not as cards.
+
+**Departures from the content:** the open-education entry has no poster, so that event card gives the
+block to its headline instead of showing a blank frame. There is no theme switch: the page already
+crosses into its own night at the halfway mark.
+
 ### Self-review against generic defaults
 
-None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, and calendar ink with a single red for today.
+None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, calendar ink with a single red for today, Alvand's pine slopes with wheat gold, and four of the seven walls Herodotus gives Ecbatana.
+
+V5 is the one to keep checking, because it was built from a profile of V4 and could have come out as a recolour of it. The things that make it a different design rather than a variant: the single light-to-dark crossover, the horizon bar in place of the service rail, a second typeface carrying the headings, two accents split by job, and no kicker above any heading.
 
 ---
 

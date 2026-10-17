@@ -43,6 +43,10 @@ const paths: Record<IconName, string> = {
   flask: 'M9 3h6M10 3v6L4.5 19a1.4 1.4 0 0 0 1.2 2h12.6a1.4 1.4 0 0 0 1.2-2L14 9V3M7.5 14h9',
   industry: 'M3 21V11l5 3V11l5 3V5h4l1 9 3 1v6zM7 18h2m3 0h2m3 0h2',
   growth: 'M12 21v-8m0 0C12 8 9 5 4 5c0 5 3 8 8 8Zm0 0c0-4 2.5-6.5 7-6.5 0 4-2.5 6.5-7 6.5Z',
+  bell: 'M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0',
+  sun: 'M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-13v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4',
+  moon: 'M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z',
+  chevron: 'M6 9l6 6 6-6',
 }
 
 interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'name'> {

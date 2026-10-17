@@ -1,0 +1,56 @@
+.main:focus {
+  outline: none;
+}
+
+/* Centred content column used by every stratum. */
+.container {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+/* ── surface strata: everything that changes ───────────────────────── */
+
+.surface {
+  background: var(--bg);
+}
+
+.clay {
+  background: var(--bg-clay);
+}
+
+/* ── the crossover and the deep strata: everything permanent ───────── */
+
+.deep {
+  background: var(--deep);
+  color: var(--on-deep);
+}
+
+.deeper {
+  background: var(--deep-alt);
+  color: var(--on-deep);
+}
+
+/*
+ * The one seam the page draws: the ground changing colour, with a saffron
+ * notch at the start of the line to mark where the surface ends.
+ */
+.crossover {
+  position: relative;
+  block-size: 1px;
+  background: var(--deep-line);
+}
+
+.crossover::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: clamp(56px, 12vw, 140px);
+  block-size: 3px;
+  background: var(--accent);
+}

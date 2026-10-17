@@ -56,4 +56,28 @@ export const versions: VersionMeta[] = [
     fonts: 'Vazirmatn',
     load: () => import('./v3-taqvim'),
   },
+  {
+    id: 'v4-alvand',
+    slug: 'v4',
+    name: 'الوند',
+    nameEn: 'Alvand',
+    emphasis: 'اول چهره دانشگاه',
+    concept:
+      'عکس دانشگاه در دامنه الوند با پوشش سبز کاج و طلایی گندم، و نوار سامانه‌های روزانه که زیر آن پهلو گرفته است؛ سپس اخبار، خط نیم‌سال، دانشگاه در یک نگاه و خوش‌آمد به نودانشجویان.',
+    swatches: ['#0B2F32', '#103D40', '#1B6A64', '#E7BC65', '#F6F8F5'],
+    fonts: 'Vazirmatn',
+    load: () => import('./v4-alvand'),
+  },
+  {
+    id: 'v5-hegmataneh',
+    slug: 'v5',
+    name: 'هگمتانه',
+    nameEn: 'Hegmataneh',
+    emphasis: 'اول امروزِ دانشگاه',
+    concept:
+      'برش عمودی تپه هگمتانه: آسمان شامگاهی دانشگاه بالا، نوار افق که امروز و مهلت بعدی را روی لبه عکس نگه می‌دارد، لایه‌های روشن سطح برای آنچه هر روز عوض می‌شود و لایه‌های عمیق نیلی برای آنچه نمی‌شود.',
+    swatches: ['#141B30', '#1C2543', '#D9822B', '#EFE9DC', '#FAF7F1'],
+    fonts: 'Noto Naskh Arabic / Vazirmatn',
+    load: () => import('./v5-hegmataneh'),
+  },
 ]

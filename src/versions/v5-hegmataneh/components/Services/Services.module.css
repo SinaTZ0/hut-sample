@@ -1,0 +1,121 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  /* the gaps are the mortar: one sand field behind, blocks laid on it */
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.leadCell {
+  grid-row: span 2;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  block-size: 100%;
+  padding: var(--space-m);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--text);
+  transition: background-color 0.16s;
+}
+
+.item:hover {
+  background: var(--clay);
+}
+
+.icon {
+  color: var(--lapis);
+  margin-block-end: 6px;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.desc {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+/* the most-used system gets the tall block and the only saffron in this band */
+.lead {
+  justify-content: flex-start;
+  padding: var(--space-l) var(--space-m);
+  background: var(--night-900);
+  color: var(--on-deep);
+  /* a lapis ring would vanish into this block, the one dark cell in a light band */
+  --focus: var(--lapis-200);
+}
+
+.lead:hover {
+  background: var(--night-800);
+}
+
+.leadIcon {
+  color: var(--lapis-200);
+  margin-block-end: var(--space-s);
+}
+
+.lead .title {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: #fff;
+}
+
+.lead .desc {
+  color: var(--on-deep-muted);
+}
+
+.go {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-block-start: auto;
+  padding-block-start: var(--space-m);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--saffron);
+}
+
+.staff {
+  margin-block-start: var(--space-m);
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .leadCell {
+    grid-row: auto;
+    grid-column: span 2;
+  }
+
+  .lead {
+    padding: var(--space-m);
+  }
+
+  .go {
+    margin-block-start: var(--space-s);
+    padding-block-start: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .leadCell {
+    grid-column: auto;
+  }
+}

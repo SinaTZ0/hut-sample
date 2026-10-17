@@ -1,0 +1,130 @@
+/*
+ * V5 "Hegmataneh": design tokens.
+ * Herodotus describes Ecbatana — the Hegmataneh mound in the middle of Hamedan — as seven
+ * concentric walls, each a colour. This page uses four of them: white (the dust and clay of the
+ * surface strata), blue (the night indigo of the deep strata), orange (saffron, the one hot colour)
+ * and black (the bedrock the page ends on).
+ *
+ * The page crosses from light to dark exactly once, at the institution band: everything that
+ * changes sits above the crossover, everything permanent below it.
+ * Headings are Noto Naskh Arabic; everything structural is Vazirmatn.
+ */
+[data-version='v5'] {
+  /* the white wall: surface strata */
+  --dust: #faf7f1;
+  --clay: #efe9dc;
+  --ivory: #fffdf8;
+  --sand: #ded5c4;
+  --sand-soft: #e9e2d4;
+  --ink: #221f1a;
+  --ink-soft: #5d574b;
+
+  /* the blue wall: deep strata */
+  --night-950: #141b30;
+  --night-900: #1c2543;
+  --night-800: #243054;
+  --night-600: #3b4a7d;
+  --lapis: #2b4ca8;
+  --lapis-700: #24408f;
+  --lapis-200: #a8bdf2;
+
+  /* the orange wall: time, and the single primary action */
+  --saffron: #d9822b;
+  --saffron-soft: #e9a358;
+  /* saffron as text on light surfaces needs a darker tone for AA */
+  --saffron-deep: #9a5611;
+
+  /* roles */
+  --bg: var(--dust);
+  --bg-clay: var(--clay);
+  --surface: var(--ivory);
+  --text: var(--ink);
+  --text-muted: var(--ink-soft);
+  --heading: #1a1812;
+  --link: var(--lapis);
+  --line: var(--sand);
+  --line-soft: var(--sand-soft);
+
+  /* on the deep strata */
+  --deep: var(--night-900);
+  --deep-alt: var(--night-950);
+  --on-deep: #f3f1ec;
+  --on-deep-muted: #a9b3ce;
+  --deep-surface: var(--night-800);
+  --deep-line: #2f3b63;
+  --link-deep: var(--lapis-200);
+
+  --accent: var(--saffron);
+  --on-accent: #1a1005;
+  --accent-text: var(--saffron-deep);
+  --focus: var(--lapis);
+  --focus-deep: var(--lapis-200);
+  --lift: 0 1px 1px rgb(34 31 26 / 0.03), 0 10px 28px -16px rgb(34 31 26 / 0.22);
+  --lift-deep: 0 2px 4px rgb(5 8 18 / 0.35), 0 18px 40px -22px rgb(5 8 18 / 0.75);
+
+  /* type: Naskh carries the headings, Vazirmatn everything that is structure or data */
+  --font-display: 'Noto Naskh Arabic Variable', 'Vazirmatn Variable', serif;
+  --font: 'Vazirmatn Variable', system-ui, sans-serif;
+  --step--2: 0.75rem;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.0625rem;
+  --step-2: 1.3125rem;
+  --step-3: clamp(1.5rem, 1.25rem + 0.9vw, 2rem);
+  --step-4: clamp(1.75rem, 1.35rem + 1.5vw, 2.5rem);
+  --step-5: clamp(2.4rem, 1.5rem + 3.4vw, 4.25rem);
+
+  /* space */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 40px;
+  --space-xl: clamp(56px, 7vw, 96px);
+  --gutter: clamp(16px, 4vw, 40px);
+  --max: 1200px;
+
+  /* squarer than V4: these are blocks cut out of a wall, not cards */
+  --radius-s: 4px;
+  --radius: 8px;
+  --radius-l: 12px;
+
+  --skip-bg: var(--night-950);
+  --skip-fg: var(--dust);
+
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--step-0);
+  line-height: 1.8;
+  color-scheme: light;
+}
+
+:where([data-version='v5']) :focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Inside a deep stratum the lapis ring disappears into the ground. */
+:where([data-version='v5'] [data-deep]) :focus-visible {
+  outline-color: var(--focus-deep);
+}
+
+:where([data-version='v5']) a {
+  color: var(--link);
+  text-underline-offset: 0.3em;
+}
+
+/* Fully wrapped in :where() so a component class still outranks it (see the gotchas table). */
+:where([data-version='v5'] [data-deep]) a {
+  color: var(--link-deep);
+}
+
+/* Naskh sits on a smaller x-height than Vazirmatn; headings get their own leading. */
+:where([data-version='v5']) h1,
+:where([data-version='v5']) h2,
+:where([data-version='v5']) h3 {
+  font-family: var(--font-display);
+  line-height: 1.5;
+}

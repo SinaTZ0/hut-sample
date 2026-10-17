@@ -1,0 +1,198 @@
+/* Bedrock: the page has been getting deeper since the crossover and stops here. */
+.footer {
+  background: var(--night-950);
+  color: var(--on-deep-muted);
+  font-size: var(--step--1);
+}
+
+.inner {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: var(--space-xl) var(--gutter) var(--space-m);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) repeat(3, minmax(0, 2.4fr)) minmax(0, 3.4fr);
+  gap: var(--space-l);
+}
+
+/* ── brand ───────────────────────────────────────────────────────── */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.markBox {
+  display: grid;
+  place-items: center;
+  inline-size: 48px;
+  block-size: 48px;
+  border-radius: var(--radius-s);
+  background: var(--night-800);
+  color: #fff;
+  flex: none;
+}
+
+.mark {
+  --logo-size: 30px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--on-deep);
+}
+
+.nameEn {
+  font-size: 0.6875rem;
+  letter-spacing: 0.03em;
+}
+
+.about {
+  margin-block-start: var(--space-s);
+  max-inline-size: 42ch;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block-start: var(--space-s);
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border: 1px solid var(--deep-line);
+  border-radius: var(--radius-s);
+  font-size: var(--step--2);
+  text-decoration: none;
+  color: var(--on-deep);
+}
+
+.socialLink:hover {
+  border-color: var(--saffron);
+}
+
+/* ── link columns ────────────────────────────────────────────────── */
+
+.colTitle {
+  font-family: var(--font);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--on-deep);
+  padding-block-end: 10px;
+  margin-block-end: 12px;
+  border-block-end: 1px solid var(--deep-line);
+}
+
+.list li,
+.affiliates li {
+  margin-block-end: 8px;
+}
+
+.footer a {
+  color: var(--on-deep-muted);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.internal {
+  font-size: var(--step--2);
+  color: var(--night-600);
+}
+
+/* ── contact ─────────────────────────────────────────────────────── */
+
+.contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-block-end: 10px;
+  font-style: normal;
+}
+
+.contact svg {
+  flex: none;
+  margin-block-start: 3px;
+  color: var(--lapis-200);
+}
+
+.fax {
+  flex-wrap: wrap;
+  gap: 4px var(--space-s);
+  font-size: var(--step--2);
+}
+
+.contactMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+/* ── affiliates ──────────────────────────────────────────────────── */
+
+.affiliates {
+  margin-block-start: var(--space-xl);
+}
+
+.affiliates ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px var(--space-m);
+  font-size: var(--step--2);
+}
+
+/* ── bottom ──────────────────────────────────────────────────────── */
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px var(--space-m);
+  margin-block-start: var(--space-l);
+  padding-block-start: var(--space-s);
+  border-block-start: 1px solid var(--deep-line);
+  font-size: var(--step--2);
+}
+
+.place {
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 1000px) {
+  .columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brandCol {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .brandCol {
+    grid-column: auto;
+  }
+}

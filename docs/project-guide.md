@@ -1,7 +1,8 @@
 # Project guide
 
 How this project is put together and how to extend it, especially how to add a new design version.
-For the design rationale (audit, information architecture, the three concepts) see [`redesign-plan.md`](redesign-plan.md).
+For the design rationale (audit, information architecture, the concepts) see [`redesign-plan.md`](redesign-plan.md),
+and for the taste the versions are judged against, [`design-profile.md`](design-profile.md).
 
 ---
 
@@ -40,7 +41,7 @@ pnpm preview        # serve the production build
 | URL | What |
 |---|---|
 | `/` | Gallery of all registered versions |
-| `/v1`, `/v2`, `/v3` | The versions |
+| `/v1` … `/v5` | The versions |
 | `?today=1405-09-28` | Pretend today is that Jalali date (calendar widgets, the V3 timeline, "next deadline") |
 
 A small floating bar on every version page switches between versions and keeps the `?today=` parameter. It belongs to the review tooling, not to any design (`src/app/VersionBar.tsx`).
@@ -158,7 +159,9 @@ The example below adds **v4**. Replace `v4-hegmataneh` with your concept name.
 
 ### Step 1: Decide the concept before writing code
 
-Write these down (and later add them to `redesign-plan.md`):
+Read [`design-profile.md`](design-profile.md) first: it records which design decisions this project
+keeps making, and a new version is expected to hold to it. Then write these down (and later add them
+to `redesign-plan.md`):
 
 - **Which audience does the first screen serve?** V1 serves visitors, V2 serves students' services and V3 serves the semester's timing. A new version should answer this differently, or answer it in a clearly different way.
 - **One memorable element.** V1 has the carved tablets, V2 the tile mosaic and V3 the to-scale timeline. Keep everything else quiet.

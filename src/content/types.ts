@@ -67,6 +67,10 @@ export type IconName =
   | 'flask'
   | 'industry'
   | 'growth'
+  | 'bell'
+  | 'sun'
+  | 'moon'
+  | 'chevron'
 
 export interface Service {
   id: string
