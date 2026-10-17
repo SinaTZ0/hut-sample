@@ -1,0 +1,196 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--granite-950);
+  color: var(--on-band);
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+/* Granite wash: dense behind the name, thinning over the mountain. */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(to left, rgb(18 23 38 / 0.95) 0%, rgb(18 23 38 / 0.82) 36%, rgb(18 23 38 / 0.4) 72%, rgb(18 23 38 / 0.55) 100%),
+    linear-gradient(to top, rgb(18 23 38 / 0.9) 0%, transparent 46%);
+}
+
+/* The same ribs that run through the bands, barely there. */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(../../assets/ribs.webp);
+  background-size: 300px;
+  opacity: 0.04;
+}
+
+/* The Avicenna tower, drawn tall against the band where the photograph thins out. */
+.tower {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: clamp(0px, 4vw, 64px);
+  z-index: -1;
+  inline-size: clamp(160px, 20vw, 280px);
+  background-image: url(../../assets/tower.webp);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+@media (max-width: 860px) {
+  .tower {
+    display: none;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'place place'
+    'copy motto';
+  align-items: end;
+  gap: var(--space-m) var(--space-l);
+  max-width: var(--max);
+  margin-inline: auto;
+  /* the service desk overlaps the bottom edge, so the band keeps room under the copy */
+  padding: var(--space-xl) var(--gutter) clamp(96px, 11vw, 150px);
+}
+
+.place {
+  grid-area: place;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-block-end: var(--space-l);
+  font-size: var(--step--2);
+  letter-spacing: 0.01em;
+  color: var(--granite-400);
+}
+
+.place svg {
+  color: var(--accent);
+}
+
+.copy {
+  grid-area: copy;
+  max-inline-size: 620px;
+}
+
+.title {
+  font-size: var(--step-5);
+  font-weight: 700;
+  line-height: 1.35;
+  color: #fff;
+}
+
+.titleEn {
+  margin-block-start: var(--space-xs);
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  color: var(--granite-400);
+}
+
+.lede {
+  margin-block-start: var(--space-m);
+  max-inline-size: 54ch;
+  font-size: var(--step-1);
+  line-height: 1.9;
+  color: #dde3e5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block-start: var(--space-l);
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-block-size: 48px;
+  padding: 10px 24px;
+  border-radius: var(--radius-s);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.primary:hover {
+  background: var(--gold-bright);
+}
+
+.secondary {
+  border: 1px solid rgb(255 255 255 / 0.45);
+  color: #fff;
+}
+
+.secondary:hover {
+  border-color: #fff;
+  background: rgb(255 255 255 / 0.08);
+}
+
+/* The one aspirational line on the page, set as a quiet mark against a turquoise edge. */
+.motto {
+  grid-area: motto;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 16px;
+  border-inline-start: 2px solid var(--accent);
+  font-size: var(--step--1);
+  line-height: 1.7;
+  color: var(--granite-400);
+}
+
+.motto strong {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'place'
+      'copy';
+    padding-block-start: var(--space-l);
+  }
+
+  .hero::before {
+    background: linear-gradient(to top, rgb(18 23 38 / 0.96) 0%, rgb(18 23 38 / 0.8) 58%, rgb(18 23 38 / 0.62) 100%);
+  }
+
+  .motto {
+    display: none;
+  }
+
+  .place {
+    margin-block-end: var(--space-m);
+  }
+}

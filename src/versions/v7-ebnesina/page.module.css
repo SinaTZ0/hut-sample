@@ -1,0 +1,18 @@
+.main:focus {
+  outline: none;
+}
+
+/* Centred content column used by every section. */
+.container {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+.alt {
+  background: var(--bg-alt);
+}

@@ -92,4 +92,16 @@ export const versions: VersionMeta[] = [
     fonts: 'Noto Kufi Arabic / Vazirmatn',
     load: () => import('./v6-babataher'),
   },
+  {
+    id: 'v7-ebnesina',
+    slug: 'v7',
+    name: 'بوعلی سینا',
+    nameEn: 'Ibn Sina',
+    emphasis: 'اول پژوهش و دستاورد',
+    concept:
+      'دوازده بال سنگی آرامگاه بوعلی سینا، نماد دانش در همدان: صفحه بلافاصله بعد از میز خدمت به دستاوردها و واحدهای پژوهشی می‌رسد، بندهای شبانه با گره‌چینی برج و طلای کتاب‌آرایی تنها نشانگر چیزی است که ارزش توقف دارد.',
+    swatches: ['#1b2338', '#121726', '#f6f2e7', '#b8903e', '#211f1a'],
+    fonts: 'Amiri / Vazirmatn',
+    load: () => import('./v7-ebnesina'),
+  },
 ]

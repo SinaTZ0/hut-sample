@@ -356,13 +356,106 @@ search sits in «میز خدمت» a few hundred pixels further down and the bra
 room. A sun/moon button switches to a dark theme (`data-theme="dark"`, remembered in `localStorage`);
 the granite bands stay stone in both.
 
+### V7 Ebn-e Sina (بوعلی سینا): research first
+
+*Concept:* every version so far answers "which audience does the first screen serve" with a
+visitor, a student, the semester, or the university's own front door. V7 answers it differently
+again: **research and achievement lead**, right after the service desk. The subject is the Avicenna
+mausoleum on the south edge of Hamedan — Hooshang Seyhoun's 1952 tower, twelve pale ribs fanning up
+from an octagonal drum to a single point, built for a physician who was also a philosopher,
+astronomer and poet. A technical university gets to borrow that figure directly: knowledge is the
+building, not the ornament on it.
+
+The one thing V7 does that none of the others do: **the dark bands are read as night, not stone.**
+Where V6's bands are granite lit from the front, V7's are midnight blue — the sky the tower stands
+against — carrying the same granite grain at low opacity for texture, the tower's ribs as a barely
+visible weave, and the tower itself drawn tall and faint at the edge of the hero photograph. The
+artwork is generated and lives in `src/versions/v7-ebnesina/assets/`; none of it is content. Every
+photograph on the page is still the university's own.
+
+The memorable element is the **ordering**, not a new widget: V7 reuses V6's «میز خدمت» docked
+service slab (the task of finding a system doesn't change by concept), but drops straight into
+دستاوردها و افتخارات and رویدادها و دوره‌های آموزشی before news, the semester, or the university-at-
+a-glance band — so a visitor's first scroll after the service desk is what the university has
+produced, not an announcement feed.
+
+```
+┌ strip (night-deep): • پایگاه رسمی دانشگاه صنعتی همدان         تماس با ما  [ورود به پرتال] ┐
+│ [■ emblem] دانشگاه صنعتی همدان  دانشگاه▾ آموزش▾ پژوهش▾ زندگی▾ سامانه‌ها │ 🔍 ☀ EN      │
+├──────── campus under Alvand, midnight wash, the tower drawn faint at the edge ───────────┤
+│ 📍 همدان، در دامنه الوند                                                                 │
+│ دانشگاه صنعتی همدان          (Amiri, white)                                              │
+│ Hamedan University of Technology                                                         │
+│ mission, one sentence   ·   [آشنایی با دانشگاه] [راهنمای نودانشجویان ↗]   ▌ریشه در دانش │
+│                                                                           ▌نگاه به آینده │
+│ ╔═══ میز خدمت — midnight slab, gold top edge, straddles the photo's bottom edge ══════╗│
+│ ║ میز خدمت  [🔍 نام سامانه یا کاری که دارید ………]            همه سامانه‌ها ←            ║│
+│ ║ گلستان │ درس‌افزار │ رزرو غذا │ کلاس مجازی │ صندوق رفاه │ خوابگاه   (live results)   ║│
+│ ║ ─────────────────────────────────────────────────────────────────────────────────── ║│
+│ ║ 📅 مهلت بعدی  حذف تک‌درس  ۲۴ تا ۲۵ آذر · ۵۹ روز دیگر            تقویم آموزشی ←      ║│
+│ ╚══════════════════════════════════════════════════════════════════════════════════════╝│
+├─ parchment ─ دستاوردها و افتخارات ──────────────────────────────────────────────────────┤
+│  one lead card tall (a flask seal watermark) │ two stacked beside it                     │
+├─ parchment-alt ─ رویدادها و دوره‌های آموزشی ────────────────────────────────────────────┤
+│  three course/event rows │ night panel: 4 research units + an astrolabe seal watermark   │
+├─ bone ─ تازه‌های دانشگاه ────────────────────────────────────────────────────────────────┤
+│  lead story with its photo │ two smaller │ اطلاعیه‌ها, tabbed, with date stamps         │
+├─ bone-alt ─ تقویم آموزشی دانشگاه ───────────────────────────────────────────────────────┤
+│  term line to scale, 7 milestones, today and the next deadline in gold                   │
+├─ NIGHT BAND (midnight + granite grain + ribs + seal) ─ دانشگاه صنعتی همدان در یک نگاه ──┤
+│  mission · 6 figures │ campus-life photo · ۸ گروه آموزشی                                │
+│  ── Alvand's two summits as a contour drawing, bled across the foot of the band ──      │
+├─ parchment ─ به جمع ما خوش آمدید ───────────────────────────────────────────────────────┤
+│  night half (new students, departments) │ light half (feedback · counselling)           │
+└ footer (night-deep + ribs): brand · links · student systems · staff systems · contact  ┘
+```
+
+| Token | Value | Role |
+|---|---|---|
+| night-deep | `#121726` | utility strip, hero ground, footer |
+| night | `#1B2338` | the institution band, the welcome block |
+| night-850 / -800 | `#242E49` / `#2B3655` | the service desk, and the tiles cut into it |
+| gold | `#B8903E` | **manuscript gold** — the only accent: primary buttons, the figures, today, the rule under each heading |
+| gold-deep | `#7D5F24` | the same accent as text on parchment (passes AA) |
+| parchment / parchment-2 | `#F6F2E7` / `#EDE6D3` | the paper sections |
+| Type | Amiri (headings, 700, a manuscript naskh) + Vazirmatn (everything else) | |
+
+**Generated design assets** (`assets/`, made with the image tool, then reduced to tintable
+white-on-alpha WebP so CSS can colour them):
+
+| File | Where it is used | Opacity |
+|---|---|---|
+| `tower.webp` | drawn tall at the inline-end edge of the hero | 16% |
+| `ribs.webp` | utility strip, hero, every night band, footer — the tower's flutes as a weave | 4–4.5% |
+| `granite.jpg` | the material of every dark surface, `mix-blend-mode: overlay` | 30–34% |
+| `contour.webp` | Alvand's summits across the foot of the institution band | 13% |
+| `seal-1…4.webp` | an open book and pen, an astrolabe, an alembic, a twelve-point star — one per dark surface, bled off a corner | 6–10% |
+
+The four seals came out of one generated 2×2 sheet, split and trimmed with `sharp`, replacing V6's
+girih medallions with emblems that read as Ibn Sina's own disciplines — letters, astronomy,
+medicine, geometry — rather than as pure ornament.
+
+**What is deliberately different from V6**, which it is built directly from: the section order moves
+achievements and research ahead of news and the semester; the dark bands read as night instead of
+daylit stone, so the same granite grain sits under a blue wash rather than a grey one; the accent is
+warm manuscript gold instead of cool glass turquoise; headings are Amiri, a serif built for Arabic
+script manuscripts, instead of the geometric Kufi; and the tower appears as its own drawn silhouette
+in the hero, not only as a texture.
+
+**Departures from the content:** same as V6 — the open-education entry keeps its headline instead of
+an empty poster frame, the header's magnifier hides below 440px in favour of «میز خدمت»'s search, and
+the light/dark toggle (`data-theme`, remembered in `localStorage`) only changes the parchment, never
+the night bands.
+
 ### Self-review against generic defaults
 
-None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, calendar ink with a single red for today, Alvand's pine slopes with wheat gold, four of the seven walls Herodotus gives Ecbatana, and the granite and turquoise glass of the Baba Taher tower.
+None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, calendar ink with a single red for today, Alvand's pine slopes with wheat gold, four of the seven walls Herodotus gives Ecbatana, the granite and turquoise glass of the Baba Taher tower, and the travertine, midnight and manuscript gold of the Avicenna tower.
 
 V6 is the one to keep checking, because it answers the same brief as V4 and could have come out as a recolour of it. The things that make it a different design rather than a variant: the dark bands are a photographic material instead of a flat fill, the docked object searches instead of listing, the accent is the tower's cool glass instead of a warm metal, Kufi carries the headings, and the radii are small enough that nothing reads as a card.
 
 V5 is worth the same check, because it was built from a profile of V4 and could have come out as a recolour of it. The things that make it a different design rather than a variant: the single light-to-dark crossover, the horizon bar in place of the service rail, a second typeface carrying the headings, two accents split by job, and no kicker above any heading.
+
+V7 is the sharpest version of this risk, because it was copied directly from V6's files rather than built from a profile of it, so it had to earn its differences line by line instead of starting from a blank page. The things that make it a different design rather than a recolour: the section order itself changes (research and achievement lead, not news), the dark bands are night instead of daylit granite, the accent is warm gold instead of cool glass, a manuscript serif replaces the geometric one, and the one generated silhouette — the tower — appears as a drawn figure, not only as a repeating texture.
 
 ---
 

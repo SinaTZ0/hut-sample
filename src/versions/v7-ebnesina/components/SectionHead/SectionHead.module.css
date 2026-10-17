@@ -1,0 +1,61 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-s) var(--space-l);
+  margin-block-end: var(--space-l);
+}
+
+.title {
+  font-size: var(--step-4);
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--heading);
+}
+
+/* A short length of turquoise under the heading — the glass between the columns. */
+.title::after {
+  content: '';
+  display: block;
+  inline-size: 44px;
+  block-size: 3px;
+  margin-block-start: var(--space-s);
+  background: var(--accent);
+}
+
+.lede {
+  margin-block-start: var(--space-s);
+  max-inline-size: 62ch;
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--step--1);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.more svg {
+  color: var(--accent);
+}
+
+.more:hover {
+  text-decoration: underline;
+}
+
+.head[data-on-band] .title {
+  color: #fff;
+}
+
+.head[data-on-band] .lede {
+  color: var(--on-band-muted);
+}
+
+.head[data-on-band] .more {
+  color: #fff;
+}

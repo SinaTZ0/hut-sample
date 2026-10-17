@@ -17,6 +17,9 @@ importers:
       '@fontsource-variable/vazirmatn':
         specifier: ^5.3.0
         version: 5.3.0
+      '@fontsource/amiri':
+        specifier: ^5.3.0
+        version: 5.3.0
       '@fontsource/lalezar':
         specifier: ^5.3.0
         version: 5.3.0
@@ -65,6 +68,9 @@ packages:
 
   '@fontsource-variable/vazirmatn@5.3.0':
     resolution: {integrity: sha512-ZA68W8JHbMdNzzwjYHUWKB2PH22QpxNEnk0ukcXM+XiqYMV6ZWJZAKuNXcrMR2JjuIAwsfAU3KknCXPI6wXUvw==}
+
+  '@fontsource/amiri@5.3.0':
+    resolution: {integrity: sha512-i4SWJnVIphj8556EdVzNrEG/Qu82k6JXjXTtSUIohx3tHmo2GHw1Kv60TWo+xjk7Yf1Etb2Gskh0lUFclTKyUw==}
 
   '@fontsource/lalezar@5.3.0':
     resolution: {integrity: sha512-ptwEfWP7OlucVaRHpuMo6tfvw9xDcBEoaiIvzSDUb7z5pih+DZIRKLarulkJunVR+DnQ5VaJVjuVVOwrqiq7Cw==}
@@ -623,6 +629,8 @@ snapshots:
   '@fontsource-variable/noto-naskh-arabic@5.3.0': {}
 
   '@fontsource-variable/vazirmatn@5.3.0': {}
+
+  '@fontsource/amiri@5.3.0': {}
 
   '@fontsource/lalezar@5.3.0': {}
 
