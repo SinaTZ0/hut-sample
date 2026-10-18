@@ -1,13 +1,8 @@
 /*
- * Global reset + accessibility hooks shared by every version.
+ * Accessibility hooks and view-transition fixes shared by every version.
+ * The reset comes from Tailwind's preflight (tailwind.css); archived versions add legacy-base.css.
  * Visual identity (colours, type, spacing) lives in each version's tokens.css.
  */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -22,49 +17,6 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #fff;
   color: #1a1a1a;
-}
-
-img,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-img {
-  height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* :where() keeps this at zero specificity so component classes can add padding back. */
-:where(ul[role="list"], ol[role="list"]) {
-  list-style: none;
-  padding: 0;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-  color: inherit;
-}
-
-a {
-  color: inherit;
 }
 
 :target {

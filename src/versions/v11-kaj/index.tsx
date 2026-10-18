@@ -36,11 +36,16 @@ import { NewsSection } from './components/NewsSection/NewsSection'
 import { Semester } from './components/Semester/Semester'
 import { ServiceBar } from './components/ServiceBar/ServiceBar'
 import { Welcome } from './components/Welcome/Welcome'
-import s from './page.module.css'
 
 const tab = (id: NewsTab['id']) => newsTabs.find((t) => t.id === id)!
 const byDateDesc = (a: NewsItem, b: NewsItem) => (b.date ?? '').localeCompare(a.date ?? '')
 const link = (label: string) => utilityLinks.find((l) => l.label === label)!
+
+/** Centred content column used by every section. */
+const container = 'mx-auto max-w-page px-gutter'
+const section = 'py-xl'
+/** The middle run (achievements, courses, welcome) is card-heavy, so it gets more air. */
+const roomy = 'py-[calc(var(--space-xl)+var(--space-m))]'
 
 const CALENDAR_HREF = 'https://hut.ac.ir/web/edu/تقویم-آموزشی'
 const DEPARTMENTS_HREF = 'https://hut.ac.ir/groups'
@@ -123,7 +128,7 @@ export default function KajHome() {
         onToggleTheme={toggleTheme}
       />
 
-      <main id="main" tabIndex={-1} className={s.main}>
+      <main id="main" tabIndex={-1} className="focus:outline-none">
         <Hero
           name={identity.name}
           city={identity.city}
@@ -145,7 +150,7 @@ export default function KajHome() {
 
         {/* When the systems panel opens, these slide down to their new place instead of jumping. */}
         <ViewTransition default="v11-slide">
-          <div className={`${s.container} ${s.section}`}>
+          <div className={`${container} ${section}`}>
             <NewsSection
               featured={featuredStory}
               stories={otherStories}
@@ -158,8 +163,8 @@ export default function KajHome() {
         </ViewTransition>
 
         <ViewTransition default="v11-slide">
-          <div className={s.alt}>
-            <div className={`${s.container} ${s.section}`}>
+          <div className="border-block border-line bg-bg-alt">
+            <div className={`${container} ${section}`}>
               <Semester semester={semester} state={state} calendarHref={CALENDAR_HREF} />
             </div>
           </div>
@@ -175,7 +180,7 @@ export default function KajHome() {
           channel={social.find((so) => so.id === 'aparat')}
         />
 
-        <div className={`${s.container} ${s.roomy}`}>
+        <div className={`${container} ${roomy}`}>
           <Achievements
             lead={leadAchievement}
             others={otherAchievements}
@@ -186,13 +191,13 @@ export default function KajHome() {
           />
         </div>
 
-        <div className={s.alt}>
-          <div className={`${s.container} ${s.roomy}`}>
+        <div className="border-block border-line bg-bg-alt">
+          <div className={`${container} ${roomy}`}>
             <Learning items={learningItems} categories={newsTabs} centre={growthCentre} />
           </div>
         </div>
 
-        <div className={`${s.container} ${s.roomy}`}>
+        <div className={`${container} ${roomy}`}>
           <Welcome
             newStudentsHref={newStudents.href}
             departmentsHref={DEPARTMENTS_HREF}

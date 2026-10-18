@@ -1,0 +1,75 @@
+/*
+ * The reset the gallery, the version bar and every version except V11 were written against: browser defaults
+ * plus a few zeroed margins. Tailwind's preflight (tailwind.css) is global, so this hands the properties it
+ * flattens back to the browser with revert-layer. V11 is excluded; it is built on preflight.
+ *
+ * Inside the base layer, so V11's utilities and the version CSS (unlayered) still win over it. The :where()
+ * scope adds no specificity, so each selector keeps the weight it had before Tailwind.
+ */
+@layer base {
+  :where(:not([data-version='v11'], [data-version='v11'] *)) {
+    margin: revert-layer;
+    padding: revert-layer;
+    border: revert-layer;
+
+    &:is(html) {
+      line-height: revert-layer;
+    }
+
+    &:is(h1, h2, h3, h4, h5, h6) {
+      font-size: revert-layer;
+      font-weight: revert-layer;
+    }
+
+    &:is(h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd) {
+      margin: 0;
+    }
+
+    &:is(b, strong) {
+      font-weight: revert-layer;
+    }
+
+    &:is(small, sub, sup) {
+      font-size: revert-layer;
+      line-height: revert-layer;
+      vertical-align: revert-layer;
+    }
+
+    &:is(code, kbd, samp, pre) {
+      font-family: revert-layer;
+      font-size: revert-layer;
+    }
+
+    &:is(a) {
+      color: inherit;
+      text-decoration: revert-layer;
+    }
+
+    &:is(ul, ol, menu) {
+      list-style: revert-layer;
+    }
+
+    /* Zero specificity so component classes can add padding back. */
+    &:is(ul, ol)[role='list'] {
+      list-style: none;
+      padding: 0;
+    }
+
+    &:is(button, input, select, textarea, optgroup) {
+      font: inherit;
+      color: inherit;
+      background-color: revert-layer;
+      border-radius: revert-layer;
+      letter-spacing: revert-layer;
+    }
+
+    &:is(table) {
+      border-collapse: revert-layer;
+      border-color: revert-layer;
+    }
+
+    &:is(svg) {
+      max-width: 100%;
+    }
+  }
+}

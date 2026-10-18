@@ -1,0 +1,69 @@
+/*
+ * V11 Tailwind theme. `inline` makes every utility emit var(--token) instead of a copy of its value,
+ * so tokens.css stays the single source of truth: the token panel, the dark theme and the
+ * [data-version='v11'] scope keep working. Add a token to tokens.css first, then alias it here.
+ */
+@theme inline {
+  --color-pine-950: var(--pine-950);
+  --color-pine-900: var(--pine-900);
+  --color-pine-700: var(--pine-700);
+  --color-pine-600: var(--pine-600);
+  --color-pine-500: var(--pine-500);
+  --color-pine-wash: var(--pine-wash);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-snow: var(--snow);
+  --color-ink: var(--ink);
+
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-chip: var(--chip);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-heading: var(--heading);
+  --color-link: var(--link);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-band: var(--band);
+  --color-band-deep: var(--band-deep);
+  --color-on-band: var(--on-band);
+  --color-on-band-muted: var(--on-band-muted);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-accent-text: var(--accent-text);
+  --color-focus: var(--focus);
+  --color-accent-wash: var(--accent-wash);
+
+  --font-sans: var(--font);
+
+  --text-step--2: var(--step--2);
+  --text-step--1: var(--step--1);
+  --text-step-0: var(--step-0);
+  --text-step-1: var(--step-1);
+  --text-step-2: var(--step-2);
+  --text-step-3: var(--step-3);
+  --text-step-4: var(--step-4);
+  --text-step-5: var(--step-5);
+
+  --spacing-2xs: var(--space-2xs);
+  --spacing-xs: var(--space-xs);
+  --spacing-s: var(--space-s);
+  --spacing-m: var(--space-m);
+  --spacing-l: var(--space-l);
+  --spacing-xl: var(--space-xl);
+  --spacing-gutter: var(--gutter);
+  --spacing-edge: var(--edge);
+  --spacing-header: var(--header-h);
+
+  --radius-sm: var(--radius-s);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-l);
+
+  --shadow-card: var(--shadow);
+
+  --breakpoint-xs: 25rem;
+
+  --container-page: var(--max);
+}

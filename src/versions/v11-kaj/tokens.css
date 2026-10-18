@@ -41,6 +41,8 @@
   /* gold text on light surfaces needs a darker tone for AA */
   --accent-text: var(--gold-deep);
   --focus: var(--pine-600);
+  /* the milestone that is under way or next */
+  --accent-wash: color-mix(in srgb, var(--accent) 22%, var(--surface));
   --shadow: 0 1px 2px rgb(16 61 64 / 0.04), 0 8px 24px -12px rgb(16 61 64 / 0.12);
 
   /* type */
@@ -103,14 +105,17 @@
   color-scheme: dark;
 }
 
-:where([data-version='v11']) :focus-visible {
-  outline: 2px solid var(--focus);
-  outline-offset: 2px;
-}
+/* in the base layer, so Tailwind utilities on a link or a focused control win over these defaults */
+@layer base {
+  :where([data-version='v11']) :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
 
-:where([data-version='v11']) a {
-  color: var(--link);
-  text-underline-offset: 0.3em;
+  :where([data-version='v11']) a {
+    color: var(--link);
+    text-underline-offset: 0.3em;
+  }
 }
 
 /*

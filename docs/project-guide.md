@@ -65,7 +65,9 @@ scripts/scrape/scrape.mjs     the archiver
 docs/                         this guide + redesign-plan.md
 src/
   main.tsx                    mounts <RouterProvider>
-  index.css                   global reset + a11y hooks (no visual identity)
+  tailwind.css                Tailwind entry (preflight on) + V11's theme alias file
+  legacy-base.css             hands browser defaults back to everything except V11 (gallery, V1–V10)
+  index.css                   a11y hooks + view-transition fix (no visual identity)
   app/
     routes.tsx                "/" + one lazy route per registered version
     Shell.tsx                 <Outlet/> + VersionBar + ScrollRestoration
@@ -152,6 +154,10 @@ Conventions every version follows:
 3. **Element defaults use `:where()`.** For example `:where([data-version='vN']) a { … }`, which has zero specificity so component classes always win. (Without it, `[data-version] a` outranks `.myLink` and you end up reaching for `!important`.)
 4. **Components take data through props.** Only UI words (button labels, headings such as «اطلاعیه‌ها») live inside components.
 5. **One folder per component**, holding a `.tsx` and a `.module.css`. CSS modules keep class names local.
+   **V11 is the exception: it is styled with Tailwind** (utilities in the `.tsx`). It keeps a CSS module only where an element needs a hook for a view transition (`NewsSection.module.css`); the `::view-transition-*` rules and keyframes stay in its `tokens.css`.
+   - Tokens stay in `tokens.css` on `[data-version='v11']` (the token panel reads them there). `theme.css` aliases them for Tailwind with `@theme inline`, so `bg-surface`, `text-heading`, `text-step-2`, `p-gutter`, `rounded-md` and the like resolve to `var(--…)` and follow the panel and the dark theme. Add a token to `tokens.css` first, then alias it in `theme.css`.
+   - Preflight is global. Rules in `tokens.css` that target bare elements (`a`, `:focus-visible`) live in `@layer base`; unlayered CSS beats every utility.
+   - Mobile-first Tailwind breakpoints (`sm` 640, `md` 768, `lg` 1024) plus `xs` (400). Logical utilities only (`ms-*`, `pe-*`, `start-*`, `border-s`, `border-be`), never `left`/`right`.
 6. **Fonts per version.** Import them in `fonts.ts`, not globally, so each route downloads only its own fonts. Use `@fontsource` packages, not Google Fonts, because Google Fonts is unreliable from Iran.
 7. **Heading ids are prefixed** with the version (`v2-news`, `v3-term`) to avoid clashes and keep `aria-labelledby` unique.
 
@@ -429,6 +435,7 @@ node scripts/scrape/scrape.mjs --offline  # re-parse archive/raw without network
 | Symptom | Cause | Fix |
 |---|---|---|
 | Padding on a `<ul role="list">` ignored | The reset selector outranked the module class | The reset now uses `:where(…)`. Keep it that way. |
+| A Tailwind utility on a V11 element is ignored | An unlayered rule (module CSS, `tokens.css`) outranks the utilities layer | Put the rule in `@layer base`, or drop it in favour of a utility |
 | Version link colours overriding component colours | `[data-version] a` beats `.class` | Use `:where([data-version='vN']) a` |
 | Page wider than the phone screen | Grid `1fr` column grew to fit a `nowrap` child | `minmax(0, 1fr)` |
 | Logo invisible on light backgrounds | `logo.png` is white | `<LogoMark>` (CSS mask with `currentColor`) |
