@@ -50,7 +50,7 @@ dd {
 }
 
 /* :where() keeps this at zero specificity so component classes can add padding back. */
-:where(ul[role='list'], ol[role='list']) {
+:where(ul[role="list"], ol[role="list"]) {
   list-style: none;
   padding: 0;
 }
@@ -108,4 +108,13 @@ a {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/*
+ * React's <ViewTransition> sizes ::view-transition to 0×0 so the page stays clickable during an
+ * animation. With the UA's `inset: 0`, an RTL root then places that box at the right edge and every
+ * snapshot is drawn a viewport-width off-screen. Pin it to the left, where the snapshots are measured from.
+ */
+::view-transition {
+  inset: 0 auto auto 0;
 }

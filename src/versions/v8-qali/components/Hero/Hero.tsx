@@ -1,3 +1,4 @@
+import { startTransition, useId, useState, ViewTransition } from 'react'
 import type { Service } from '../../../../content'
 import { ExternalLink } from '../../../../shared/components/ExternalLink'
 import { Icon } from '../../../../shared/components/Icon'
@@ -14,6 +15,8 @@ interface HeroProps {
   aboutHref: string
   newStudentsHref: string
   services: Service[]
+  /** The rest of the student systems, opened below the row by the "all" cell. */
+  moreServices: Service[]
   serviceCount: number
   allServicesHref: string
   calendarHref: string
@@ -33,12 +36,18 @@ export function Hero({
   aboutHref,
   newStudentsHref,
   services,
+  moreServices,
   serviceCount,
   allServicesHref,
   calendarHref,
   next,
 }: HeroProps) {
   const lead = name.replace(city, '').trim()
+  const panelId = useId()
+  const [open, setOpen] = useState(false)
+
+  // A transition, so the panel's <ViewTransition> unrolls it (see v8-unroll in tokens.css).
+  const toggle = () => startTransition(() => setOpen((o) => !o))
 
   return (
     <section aria-labelledby="v8-hero" className={s.hero}>
@@ -90,13 +99,37 @@ export function Hero({
             </li>
           ))}
           <li>
-            <a href={allServicesHref} className={s.all}>
-              همه {faDigits(serviceCount)} سامانه
+            <button type="button" className={s.all} aria-expanded={open} aria-controls={open ? panelId : undefined} onClick={toggle}>
+              {open ? 'بستن فهرست' : <>همه {faDigits(serviceCount)} سامانه</>}
               <Icon name="arrow" size={18} />
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
+
+      {open && (
+        <ViewTransition enter="v8-unroll" exit="v8-unroll">
+          <div id={panelId} className={s.more}>
+            <ul role="list" className={s.moreList}>
+              {moreServices.map((sv) => (
+                <li key={sv.id}>
+                  <ExternalLink href={sv.href} newTab className={s.service}>
+                    <Icon name={sv.icon} size={26} className={s.serviceIcon} />
+                    <span className={s.serviceName}>{sv.short}</span>
+                    <span className={s.serviceDesc}>{sv.description}</span>
+                  </ExternalLink>
+                </li>
+              ))}
+              <li>
+                <a href={allServicesHref} className={s.directory}>
+                  راهنمای همه سامانه‌ها
+                  <Icon name="arrow" size={18} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ViewTransition>
+      )}
     </section>
   )
 }

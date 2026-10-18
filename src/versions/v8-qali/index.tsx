@@ -1,6 +1,6 @@
 import './fonts'
 import './tokens.css'
-import { useMemo } from 'react'
+import { useMemo, ViewTransition } from 'react'
 import {
   achievements,
   affiliates,
@@ -46,6 +46,8 @@ const ABOUT_HREF = navSections.find((n) => n.id === 'about')!.href
 const SERVICES_HREF = navSections.find((n) => n.id === 'services')!.href
 const newStudents = serviceById('new-students')!
 const counseling = serviceById('counseling')!
+const heroServices = topServices.slice(0, 6)
+const moreServices = studentServices.filter((sv) => !heroServices.includes(sv))
 
 // Stories with their own photo (the campus photo is already the hero); the one with a summary leads.
 const stories = newsByCategory('university').filter((n) => n.image && n.image !== identity.images.campus)
@@ -98,23 +100,29 @@ export default function QaliHome() {
             imageAlt={identity.images.campusAlt}
             aboutHref={ABOUT_HREF}
             newStudentsHref={newStudents.href}
-            services={topServices.slice(0, 6)}
+            services={heroServices}
+            moreServices={moreServices}
             serviceCount={studentServices.length}
             allServicesHref={SERVICES_HREF}
             calendarHref="#v8-calendar"
             next={state.nextMilestone}
           />
 
-          <News
-            featured={leadStory}
-            stories={otherStories}
-            notices={notices}
-            categories={newsTabs}
-            allNewsHref={tab('university').moreHref}
-            today={today}
-          />
+          {/* named so they slide when the hero's systems panel opens above them */}
+          <ViewTransition default="v8-slide">
+            <News
+              featured={leadStory}
+              stories={otherStories}
+              notices={notices}
+              categories={newsTabs}
+              allNewsHref={tab('university').moreHref}
+              today={today}
+            />
+          </ViewTransition>
 
-          <Term semester={semester} state={state} calendarHref={CALENDAR_HREF} />
+          <ViewTransition default="v8-slide">
+            <Term semester={semester} state={state} calendarHref={CALENDAR_HREF} />
+          </ViewTransition>
 
           <Glance stats={stats} departments={departments} departmentsHref={DEPARTMENTS_HREF} spotlight={featuredAnnouncement} />
 

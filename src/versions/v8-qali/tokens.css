@@ -78,3 +78,43 @@
   font-weight: 700;
   line-height: 1.35;
 }
+
+/*
+ * View transitions, applied by React's <ViewTransition> through these classes.
+ * v8-unroll: the hero's systems panel is revealed from its top edge like a rug opened on the
+ * floor, and rolls back up on close. v8-slide: sections under it move instead of jumping.
+ */
+::view-transition-group(.v8-unroll),
+::view-transition-group(.v8-slide) {
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+::view-transition-new(.v8-unroll):only-child {
+  animation: v8-unroll 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+::view-transition-old(.v8-unroll):only-child {
+  animation: v8-unroll 0.3s cubic-bezier(0.4, 0, 0.6, 1) reverse both;
+}
+
+@keyframes v8-unroll {
+  from {
+    clip-path: inset(0 0 100% 0);
+    translate: 0 -12px;
+    opacity: 0.4;
+  }
+  to {
+    clip-path: inset(0);
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

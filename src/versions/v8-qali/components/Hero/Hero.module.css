@@ -4,13 +4,15 @@
  *   ┌ field (5) ──┐┌ photo (7) ─────────────┐
  *   └─────────────┘└────────────────────────┘
  *   ┌ deadline (3) ┐┌ s1 ┐┌ s2 ┐┌ s3 ┐┌ s4 ┐┌ s5 ┐┌ s6 ┐┌ all ┐  (9)
+ *   ┌ more (12): the other systems, unrolled by "all" ─────────────┐
  */
 .hero {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-areas:
     'field field field field field photo photo photo photo photo photo photo'
-    'deadline deadline deadline services services services services services services services services services';
+    'deadline deadline deadline services services services services services services services services services'
+    'more more more more more more more more more more more more';
   gap: var(--gap);
 }
 
@@ -163,7 +165,8 @@
 }
 
 .service,
-.all {
+.all,
+.directory {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -198,6 +201,10 @@
 }
 
 .all {
+  inline-size: 100%;
+  border: 0;
+  cursor: pointer;
+  text-align: start;
   justify-content: flex-end;
   gap: 8px;
   background: var(--madder);
@@ -207,12 +214,54 @@
   line-height: 1.4;
 }
 
-.all svg {
+.all svg,
+.directory svg {
   color: var(--weld);
 }
 
-.all:hover {
+/* the arrow points down to the closed panel and up once it is open */
+.all svg {
+  rotate: -90deg;
+  transition: rotate 0.3s ease;
+}
+
+.all[aria-expanded='true'] svg {
+  rotate: 90deg;
+}
+
+.all:hover,
+.all[aria-expanded='true'] {
   background: var(--madder-deep);
+}
+
+/* the other systems, unrolled below the row */
+.more {
+  grid-area: more;
+}
+
+.moreList {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.directory {
+  justify-content: flex-end;
+  gap: 8px;
+  background: var(--weld);
+  color: var(--on-accent);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.directory svg {
+  color: currentColor;
+}
+
+.directory:hover {
+  background: var(--white);
 }
 
 @media (max-width: 1180px) {
@@ -221,7 +270,8 @@
     grid-template-areas:
       'field photo'
       'deadline deadline'
-      'services services';
+      'services services'
+      'more more';
   }
 
   .deadline {
@@ -239,6 +289,15 @@
   .serviceList > li:last-child {
     grid-column: span 2;
   }
+
+  .moreList {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* nine systems + a triple-width directory cell fill three whole rows */
+  .moreList > li:last-child {
+    grid-column: span 3;
+  }
 }
 
 @media (max-width: 760px) {
@@ -248,7 +307,8 @@
       'field'
       'photo'
       'deadline'
-      'services';
+      'services'
+      'more';
   }
 
   .field::before {
@@ -265,7 +325,8 @@
     gap: 14px;
   }
 
-  .serviceList {
+  .serviceList,
+  .moreList {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -273,7 +334,12 @@
     display: none;
   }
 
-  .all {
+  .moreList > li:last-child {
+    grid-column: auto;
+  }
+
+  .all,
+  .directory {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
