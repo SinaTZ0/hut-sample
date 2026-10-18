@@ -27,6 +27,7 @@ import { SkipLink } from '../../shared/components/SkipLink'
 import { useToday } from '../../shared/hooks/useToday'
 import { semesterState } from '../../shared/utils/semester'
 import { Achievements } from './components/Achievements/Achievements'
+import { Arc } from './components/Arc/Arc'
 import { Footer } from './components/Footer/Footer'
 import { Glance } from './components/Glance/Glance'
 import { Header } from './components/Header/Header'
@@ -147,6 +148,9 @@ export default function KajHome() {
             allServicesHref={SERVICES_HREF}
           />
         </Hero>
+        <ViewTransition default="v11-slide">
+          <Arc className="fill-band-deep" />
+        </ViewTransition>
 
         {/* When the systems panel opens, these slide down to their new place instead of jumping. */}
         <ViewTransition default="v11-slide">
