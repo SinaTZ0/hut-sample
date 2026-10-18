@@ -26,24 +26,27 @@ export function ServiceBar({ services, moreServices, serviceCount, allServicesHr
       <h2 id="v11-services-title" className="visually-hidden">
         سامانه‌های پرکاربرد
       </h2>
-      <ul role="list" className={s.bar}>
-        {services.map((sv) => (
-          <li key={sv.id}>
-            <ExternalLink href={sv.href} newTab className={s.item}>
-              <Icon name={sv.icon} size={24} className={s.icon} />
-              <span className={s.title}>{sv.title}</span>
-              <span className={s.desc}>{sv.description}</span>
-            </ExternalLink>
+      {/* its own group, so it slides if the open list ever pushes it down (v11-slide) */}
+      <ViewTransition default="v11-slide">
+        <ul role="list" className={s.bar}>
+          {services.map((sv) => (
+            <li key={sv.id}>
+              <ExternalLink href={sv.href} newTab className={s.item}>
+                <Icon name={sv.icon} size={24} className={s.icon} />
+                <span className={s.title}>{sv.title}</span>
+                <span className={s.desc}>{sv.description}</span>
+              </ExternalLink>
+            </li>
+          ))}
+          <li>
+            <button type="button" className={s.all} aria-expanded={open} aria-controls={open ? panelId : undefined} onClick={toggle}>
+              <Icon name="menu" size={24} className={s.icon} />
+              <span className={s.title}>{open ? 'بستن فهرست' : <>همه {faDigits(serviceCount)} سامانه</>}</span>
+              <Icon name="arrow" size={18} className={s.allArrow} />
+            </button>
           </li>
-        ))}
-        <li>
-          <button type="button" className={s.all} aria-expanded={open} aria-controls={open ? panelId : undefined} onClick={toggle}>
-            <Icon name="menu" size={24} className={s.icon} />
-            <span className={s.title}>{open ? 'بستن فهرست' : <>همه {faDigits(serviceCount)} سامانه</>}</span>
-            <Icon name="arrow" size={18} className={s.allArrow} />
-          </button>
-        </li>
-      </ul>
+        </ul>
+      </ViewTransition>
 
       {open && (
         <ViewTransition enter="v11-open" exit="v11-open">

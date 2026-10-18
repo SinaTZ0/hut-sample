@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { addTransitionType, startTransition, useState, ViewTransition } from 'react'
 import type { JDate, NewsItem, NewsTab } from '../../../../content'
 import { Icon } from '../../../../shared/components/Icon'
 import { Tabs } from '../../../../shared/components/Tabs'
@@ -23,6 +23,11 @@ export function NewsSection({ featured, stories, notices, categories, allNewsHre
   const [active, setActive] = useState<string>(notices[0]?.tab.id ?? '')
   const category = (n: NewsItem) => categories.find((c) => c.id === n.category)
   const current = notices.find((n) => n.tab.id === active) ?? notices[0]
+  const select = (id: string) =>
+    startTransition(() => {
+      addTransitionType('v11-notices')
+      setActive(id)
+    })
 
   return (
     <section aria-labelledby="v11-news">
@@ -57,40 +62,54 @@ export function NewsSection({ featured, stories, notices, categories, allNewsHre
 
           <Tabs
             label="دسته اطلاعیه‌ها"
-            tabs={notices.map((n) => ({ id: n.tab.id, label: n.tab.title }))}
+            tabs={notices.map((n) => ({
+              id: n.tab.id,
+              label: (
+                <>
+                  {n.tab.id === active && (
+                    <ViewTransition name="v11-notice-pill" share="v11-pill">
+                      <span className={s.pill} aria-hidden="true" />
+                    </ViewTransition>
+                  )}
+                  <span className={s.tabLabel}>{n.tab.title}</span>
+                </>
+              ),
+            }))}
             active={active}
-            onChange={setActive}
+            onChange={select}
             classNames={{ list: s.tabs, tab: s.tab }}
           >
             {(_, panelProps) => (
               <div {...panelProps} className={s.tabPanel}>
-                <ul role="list" className={s.notices}>
-                  {current.items.slice(0, 4).map((n) => {
-                    const j = n.date ? isoToJalali(n.date) : undefined
-                    return (
-                      <li key={n.id} className={s.notice}>
-                        {j && (
-                          <span className={s.chip} aria-hidden="true">
-                            <span className={s.chipDay}>{faDigits(j[2])}</span>
-                            <span className={s.chipMonth}>{monthName(j[1])}</span>
-                          </span>
-                        )}
-                        <div className={s.noticeBody}>
-                          <a href={n.href ?? current.tab.moreHref} className={s.noticeTitle}>
-                            {n.title}
-                          </a>
-                          {n.date && j && (
-                            <p className={s.noticeMeta}>
-                              <time dateTime={n.date}>{formatIsoDate(n.date)}</time>
-                              {' · '}
-                              {relativeDays(daysBetween(today, j))}
-                            </p>
+                <ViewTransition key={current.tab.id} enter="v11-notices-in" exit="v11-notices-out">
+                  <ul role="list" className={s.notices}>
+                    {current.items.slice(0, 4).map((n) => {
+                      const j = n.date ? isoToJalali(n.date) : undefined
+                      return (
+                        <li key={n.id} className={s.notice}>
+                          {j && (
+                            <span className={s.chip} aria-hidden="true">
+                              <span className={s.chipDay}>{faDigits(j[2])}</span>
+                              <span className={s.chipMonth}>{monthName(j[1])}</span>
+                            </span>
                           )}
-                        </div>
-                      </li>
-                    )
-                  })}
-                </ul>
+                          <div className={s.noticeBody}>
+                            <a href={n.href ?? current.tab.moreHref} className={s.noticeTitle}>
+                              {n.title}
+                            </a>
+                            {n.date && j && (
+                              <p className={s.noticeMeta}>
+                                <time dateTime={n.date}>{formatIsoDate(n.date)}</time>
+                                {' · '}
+                                {relativeDays(daysBetween(today, j))}
+                              </p>
+                            )}
+                          </div>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </ViewTransition>
               </div>
             )}
           </Tabs>

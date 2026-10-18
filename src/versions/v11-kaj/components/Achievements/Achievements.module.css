@@ -168,33 +168,17 @@
 }
 
 /*
- * research units: one pine slab that closes the section, split like the departments in the glance
- * band: the heading and a way into research on one side, the four units in a 2×2 index on the other.
+ * research units: a light index that closes the section, so the glance band stays the page's one
+ * dark moment. The heading and a way into research on one side, the four units in a 2×2 grid.
  */
 .units {
-  position: relative;
-  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.7fr);
   overflow: hidden;
-  margin-block-start: var(--space-xl);
+  margin-block-start: calc(var(--space-xl) + var(--space-s));
+  border: 1px solid var(--line);
   border-radius: var(--radius-l);
-  background: var(--band);
-  color: var(--on-band);
-  --focus: var(--accent);
-}
-
-/* one contour arc behind the heading, the same survey-map line as the glance band */
-.units::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inline-size: 440px;
-  block-size: 440px;
-  inset-block-end: -300px;
-  inset-inline-start: -170px;
-  border: 1px solid rgb(255 255 255 / 0.08);
-  border-radius: 50%;
+  background: var(--surface);
 }
 
 .unitsIntro {
@@ -203,20 +187,22 @@
   align-items: flex-start;
   gap: var(--space-xs);
   padding: clamp(28px, 4vw, 44px);
+  background: var(--bg-alt);
+  border-inline-end: 1px solid var(--line);
 }
 
 .unitsTitle {
   font-size: var(--step-3);
   font-weight: 800;
   line-height: 1.4;
-  color: #fff;
+  color: var(--heading);
 }
 
 .unitsLede {
   max-inline-size: 30ch;
   font-size: var(--step--1);
   line-height: 2;
-  color: var(--on-band-muted);
+  color: var(--text-muted);
 }
 
 .unitsMore {
@@ -227,7 +213,7 @@
   padding-block-start: var(--space-m);
   font-size: var(--step--1);
   font-weight: 700;
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -241,12 +227,12 @@
 }
 
 /* seams are cell borders, so they land on whole pixels */
-.unitList li {
-  border-inline-start: 1px solid rgb(255 255 255 / 0.14);
+.unitList li:nth-child(even) {
+  border-inline-start: 1px solid var(--line);
 }
 
 .unitList li:nth-child(n + 3) {
-  border-block-start: 1px solid rgb(255 255 255 / 0.14);
+  border-block-start: 1px solid var(--line);
 }
 
 .unit {
@@ -264,7 +250,7 @@
 }
 
 .unit:hover {
-  background: rgb(255 255 255 / 0.05);
+  background: var(--surface-2);
 }
 
 .unit:focus-visible {
@@ -274,31 +260,31 @@
 .unitIcon {
   grid-row: span 2;
   margin-block-start: 2px;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .unitName {
   font-size: var(--step-1);
   font-weight: 800;
   line-height: 1.6;
-  color: #fff;
+  color: var(--heading);
 }
 
 .unitOut {
   grid-row: span 2;
   margin-block-start: 6px;
-  color: var(--on-band-muted);
+  color: var(--text-muted);
   transition: color 0.2s;
 }
 
 .unit:hover .unitOut {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .unitDesc {
   font-size: var(--step--1);
   line-height: 1.9;
-  color: var(--on-band-muted);
+  color: var(--text-muted);
 }
 
 @media (max-width: 960px) {
@@ -306,12 +292,9 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .unitList {
-    border-block-start: 1px solid rgb(255 255 255 / 0.14);
-  }
-
-  .unitList li:nth-child(odd) {
-    border-inline-start: 0;
+  .unitsIntro {
+    border-inline-end: 0;
+    border-block-end: 1px solid var(--line);
   }
 }
 
@@ -320,12 +303,12 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .unitList li {
+  .unitList li:nth-child(even) {
     border-inline-start: 0;
   }
 
   .unitList li + li {
-    border-block-start: 1px solid rgb(255 255 255 / 0.14);
+    border-block-start: 1px solid var(--line);
   }
 
   .unit {

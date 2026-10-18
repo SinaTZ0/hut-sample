@@ -191,9 +191,12 @@
   border: 1px solid var(--line);
   overflow-x: auto;
   scrollbar-width: none;
+  /* keeps the label z-index below local to the tab bar */
+  isolation: isolate;
 }
 
 .tab {
+  position: relative;
   flex: 1 0 auto;
   padding: 6px 12px;
   border: 0;
@@ -201,14 +204,43 @@
   background: none;
   font-size: var(--step--2);
   font-weight: 600;
+  /*
+   * A whole-pixel height. The sliding pill is drawn on whole pixels during the
+   * transition; with a fractional height the real pill rounded 1px shorter and
+   * its bottom edge looked cropped the moment the slide ended.
+   */
+  line-height: 22px;
   color: var(--text-muted);
   cursor: pointer;
   white-space: nowrap;
 }
 
 .tab[aria-selected='true'] {
-  background: var(--pine-900);
   color: #fff;
+}
+
+/* the active tab's fill; a separate element so it can slide between tabs */
+.pill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--pine-900);
+}
+
+.tabLabel {
+  position: relative;
+  /*
+   * View transitions stack their snapshots in paint order. Without this the pill
+   * paints over any label that comes before it in the DOM, so switching back
+   * to an earlier tab hid its label under the pill until the slide ended.
+   */
+  z-index: 1;
+}
+
+/* while the tab fill slides, lift the labels above it so the chosen one is never covered */
+:global(html:active-view-transition-type(v11-notices)) .tabLabel {
+  view-transition-name: match-element;
+  view-transition-class: v11-tab-label;
 }
 
 .tabPanel {

@@ -1,5 +1,6 @@
 import campusDusk from '../assets/hut/campus-dusk.jpg'
 import campus from '../assets/hut/campus-alvand.jpg'
+import campusHero from '../assets/hut/campus-hero.jpg'
 import logoFooter from '../assets/hut/logo-footer.png'
 import logo from '../assets/hut/logo.png'
 import type { Contact, Department, Link, SocialLink, Stat } from './types'
@@ -20,6 +21,9 @@ export const identity = {
     campus,
     campusAlt: 'ساختمان مرکزی دانشگاه صنعتی همدان با کوه‌های برف‌پوش الوند در پس‌زمینه',
     campusDusk,
+    /** Wider, retouched daylight view of the same building, with the national flag composited in its top corner. */
+    campusHero,
+    campusHeroAlt: 'ساختمان مرکزی دانشگاه صنعتی همدان در روز آفتابی، با کوه‌های الوند و پرچم ایران',
   },
 }
 

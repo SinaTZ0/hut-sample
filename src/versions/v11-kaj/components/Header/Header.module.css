@@ -17,9 +17,8 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-s);
-  max-width: var(--max);
-  margin-inline: auto;
-  padding-inline: var(--gutter);
+  /* the same edge as the full-width hero under it */
+  padding-inline: var(--edge);
 }
 
 .stripInner {

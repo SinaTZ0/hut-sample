@@ -1,9 +1,6 @@
 .wrap {
   position: relative;
   z-index: 2;
-  max-width: var(--max);
-  margin: -64px auto 0;
-  padding-inline: var(--gutter);
 }
 
 .bar {
@@ -105,8 +102,30 @@
   rotate: 90deg;
 }
 
+/* Phones: the list is taller than the photo, so it stays in flow and opens downward under the rail. */
 .more {
   margin-block-start: var(--space-s);
+}
+
+/* Wider: the list opens upward, above the rail, and the hero copy rises to make room (v11-slide) while the
+   rail keeps its place. Source order stays rail, then list, so focus still goes from the toggle into it. */
+@media (min-width: 761px) {
+  .wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .more {
+    margin-block: 0 var(--space-s);
+  }
+
+  .allArrow {
+    rotate: 90deg;
+  }
+
+  .all[aria-expanded='true'] .allArrow {
+    rotate: -90deg;
+  }
 }
 
 .moreList {
@@ -209,10 +228,6 @@
 }
 
 @media (max-width: 560px) {
-  .wrap {
-    margin-block-start: -40px;
-  }
-
   .bar {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

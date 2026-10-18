@@ -1,5 +1,5 @@
 .card {
-  padding: 26px 32px 36px;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-l);
   background: var(--surface);
@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  padding-block-end: 20px;
+  padding: 22px 32px 20px;
   border-block-end: 1px solid var(--line);
 }
 
@@ -40,26 +40,94 @@
   text-decoration: underline;
 }
 
-/* timeline */
-.line {
-  --dot: 14px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(0, 1fr);
-  padding-block-start: 28px;
+/* track: the term at true scale */
+.strip {
+  position: relative;
+  margin: 52px 32px 32px;
+}
+
+/* One cell per day: a repeating mask cuts a gap at every day boundary, so the card shows through. */
+.bar {
+  --cell: calc(100% / var(--days));
+  --gap: 2px;
+  position: relative;
+  block-size: 14px;
+  border-radius: 4px;
+  background: var(--line);
+  mask-image: repeating-linear-gradient(
+    to left,
+    #000 0 calc(var(--cell) - var(--gap)),
+    transparent calc(var(--cell) - var(--gap)) var(--cell)
+  );
+}
+
+.segment {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: calc(var(--from) * 100%);
+  inline-size: calc((var(--to) - var(--from)) * 100%);
+}
+
+.segment[data-status='past'] {
+  background: var(--link);
+}
+
+.segment[data-status='current'] {
+  background: var(--accent);
+}
+
+.today {
+  position: absolute;
+  inset-block: -8px;
+  inset-inline-start: calc(var(--at) * 100%);
+  inline-size: 3px;
+  translate: 50% 0;
+  border-radius: 2px;
+  background: var(--heading);
+}
+
+.todayLabel {
+  position: absolute;
+  inset-block-end: calc(100% + 4px);
+  inset-inline-start: 50%;
+  translate: 50% 0;
+  padding: 1px 10px;
+  border-radius: 999px;
+  background: var(--heading);
+  color: var(--surface);
+  font-size: var(--step--2);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* milestones */
+/* flex, not grid: a short last row stretches, so no bare seam shows through */
+.stops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  border-block-start: 1px solid var(--line);
+  background: var(--line);
 }
 
 .stop {
+  position: relative;
+  flex: 1 1 136px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  padding: 18px 20px 22px;
+  background: var(--surface);
+}
+
+.stop[data-status='current'],
+.stop[data-next] {
+  background: color-mix(in srgb, var(--accent) 22%, var(--surface));
 }
 
 .day {
-  font-size: var(--step-2);
+  font-size: var(--step-3);
   font-weight: 800;
-  line-height: 1.5;
+  line-height: 1.25;
   color: var(--heading);
 }
 
@@ -69,45 +137,25 @@
   white-space: nowrap;
 }
 
-/* Full column width, so the connector can run from this dot's centre to the next one. */
-.track {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  inline-size: 100%;
-  margin-block: 16px 12px;
-}
-
-.stop[data-link] .track::before {
-  content: '';
-  position: absolute;
-  inset-block-start: calc(var(--dot) / 2 - 1px);
-  inset-inline: 50% -50%;
-  block-size: 2px;
-  background: var(--line-strong);
-}
-
-.stop[data-link='done'] .track::before {
-  background: var(--link);
-}
-
-.dot {
-  position: relative;
-  inline-size: var(--dot);
-  block-size: var(--dot);
-  border: 2px solid var(--link);
-  border-radius: 50%;
-  background: var(--surface);
-}
-
 .label {
+  margin-block-start: 6px;
   font-size: var(--step--1);
   font-weight: 700;
+  line-height: 1.6;
   color: var(--text);
 }
 
+.stop[data-status='past'] .day {
+  color: var(--link);
+}
+
+.stop[data-status='past'] .label {
+  color: var(--text-muted);
+}
+
 .flag {
-  margin-block-start: 8px;
+  align-self: flex-start;
+  margin-block-start: 10px;
   padding: 2px 10px;
   border-radius: 999px;
   background: var(--accent);
@@ -117,80 +165,80 @@
   white-space: nowrap;
 }
 
-.stop[data-status='past'] .dot {
-  background: var(--link);
+/* Hover, tap or focus a milestone for its distance from today. Anchored to the start edge so it never
+   pokes past the card's rounded clip at either end of the row. */
+.stop {
+  cursor: default;
+  transition: background-color 0.15s;
 }
 
-.stop[data-status='past'] .day,
-.stop[data-status='past'] .label {
-  color: var(--text-muted);
+.stop:not([data-next], [data-status='current']):is(:hover, :focus-visible) {
+  background: var(--chip);
 }
 
-.stop[data-status='current'] .dot,
-.stop[data-next] .dot {
-  border-color: var(--accent);
-  background: var(--accent);
-  box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 30%, transparent);
+.stop:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
 }
 
-/* Narrow screens: the line turns vertical, the dot column runs down the inline-start edge. */
+.tip {
+  position: absolute;
+  z-index: 1;
+  inset-block-end: calc(100% - 6px);
+  inset-inline-start: 14px;
+  padding: 4px 12px;
+  border-radius: var(--radius-s);
+  background: var(--heading);
+  color: var(--surface);
+  font-size: var(--step--2);
+  font-weight: 650;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  translate: 0 4px;
+  pointer-events: none;
+  transition:
+    opacity 0.15s,
+    translate 0.15s;
+}
+
+.tip::after {
+  content: '';
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 14px;
+  border: 5px solid transparent;
+  border-block-start-color: var(--heading);
+}
+
+.stop:hover .tip,
+.stop:focus .tip {
+  opacity: 1;
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stop,
+  .tip {
+    transition: none;
+  }
+}
+
+/* Narrow screens: a day is too thin to read, so the track is cut per week instead. */
 @media (max-width: 760px) {
-  .card {
-    padding: 20px 18px 24px;
+  .cardHead {
+    padding: 18px;
   }
 
-  .line {
-    grid-auto-flow: row;
-    grid-auto-columns: auto;
-    padding-block-start: 20px;
+  .strip {
+    margin-inline: 18px;
+  }
+
+  .bar {
+    --cell: calc(700% / var(--days));
   }
 
   .stop {
-    display: grid;
-    grid-template-columns: var(--dot) auto minmax(0, 1fr);
-    grid-template-areas:
-      'track label label'
-      'track day month'
-      'track flag flag';
-    column-gap: 14px;
-    align-items: baseline;
-    justify-items: start;
-    padding-block-end: 20px;
-    text-align: start;
-  }
-
-  .track {
-    grid-area: track;
-    align-self: stretch;
-    inline-size: var(--dot);
-    margin: 0;
-    padding-block-start: 8px;
-  }
-
-  .stop[data-link] .track::before {
-    inset-block: calc(8px + var(--dot) / 2) -28px;
-    inset-inline: calc(var(--dot) / 2 - 1px) auto;
-    inline-size: 2px;
-    block-size: auto;
-  }
-
-  .label {
-    grid-area: label;
-    font-size: var(--step-0);
-  }
-
-  .day {
-    grid-area: day;
-    font-size: var(--step-0);
-  }
-
-  .month {
-    grid-area: month;
-  }
-
-  .flag {
-    grid-area: flag;
-    justify-self: start;
-    margin-block-start: 4px;
+    flex-basis: 40%;
   }
 }

@@ -9,7 +9,7 @@ interface LearningProps {
   centre: Link
 }
 
-/** Pine panel with one link to the growth centre; events and short courses listed beside it, each with its photo. */
+/** Pine panel with one link to the growth centre; events and short courses listed beside it, with a photo where the item has one. */
 export function Learning({ items, categories, centre }: LearningProps) {
   const category = (n: NewsItem) => categories.find((c) => c.id === n.category)
 
@@ -38,9 +38,11 @@ export function Learning({ items, categories, centre }: LearningProps) {
           const cat = category(n)
           return (
             <li key={n.id} className={s.item}>
-              <div className={s.thumb}>
-                {n.image ? <img src={n.image} alt="" loading="lazy" /> : <Icon name="open-ed" size={32} />}
-              </div>
+              {n.image && (
+                <div className={s.thumb}>
+                  <img src={n.image} alt="" loading="lazy" />
+                </div>
+              )}
               <div className={s.body}>
                 {cat && <span className={s.tag}>{cat.title}</span>}
                 <h3 className={s.itemTitle}>

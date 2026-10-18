@@ -1,6 +1,6 @@
 ---
 name: react-view-transitions
-description: How to animate UI changes in this repo with React 19.3's stable <ViewTransition> component and the browser View Transitions API — expand/collapse, enter/exit, content that moves when something above it grows, list reorder, shared-element morphs, route changes. Use whenever a change should animate, when the user mentions view transitions, startViewTransition, ViewTransition, startTransition-driven animation, or asks for motion without an animation library. Covers the RTL overlay fix, CSS-module naming, reduced motion and how to verify a transition in headless Chromium.
+description: How to animate UI changes in this repo with React 19.3's stable <ViewTransition> component and the browser View Transitions API — expand/collapse, enter/exit, content that moves when something above it grows, list reorder, shared-element morphs, sliding tab indicators, route changes. Use whenever a change should animate, when the user mentions view transitions, startViewTransition, ViewTransition, startTransition-driven animation, or asks for motion without an animation library. Covers the RTL overlay fix, CSS-module naming, reduced motion, snapshot stacking and pixel-snapping pitfalls, and how to verify a transition frame by frame in headless Chromium.
 ---
 
 # React view transitions (hut-sample)
@@ -65,6 +65,29 @@ Only wrap what is likely on screen; React hides groups that are out of the viewp
 
 **Shared element / morph.** Give two boundaries the same `name` (unique per page) — one unmounts, the other mounts, inside one transition. Use a `share` class to style the morph.
 
+**Sliding indicator (tab pill).** Render the fill as its own element inside the active tab only, wrapped in a named boundary, so switching tabs morphs it from the old tab to the new one. Reference: the V11 announcements tabs, `src/versions/v11-kaj/components/NewsSection/` and the `v11-pill` rules in `src/versions/v11-kaj/tokens.css`.
+
+```tsx
+const select = (id: string) =>
+  startTransition(() => {
+    addTransitionType('v11-notices')
+    setActive(id)
+  })
+
+label: (
+  <>
+    {id === active && (
+      <ViewTransition name="v11-notice-pill" share="v11-pill">
+        <span className={s.pill} aria-hidden="true" />
+      </ViewTransition>
+    )}
+    <span className={s.tabLabel}>{title}</span>
+  </>
+)
+```
+
+A pill needs four things, each covered under Pitfalls: paint the group instead of the stretched snapshot; lift the labels into their own groups only while this transition type is active (`:global(html:active-view-transition-type(v11-notices)) .tabLabel { view-transition-name: match-element; view-transition-class: v11-tab-label; }`); keep the labels above the pill in both directions; give the tab a whole-pixel height. Pair it with a keyed `<ViewTransition>` on the panel and turn off the root cross-fade for that type. Keep the whole thing under ~0.25 s; tabs are clicked often.
+
 **Swap content in place.** Change the `key` on a `<ViewTransition>` to play exit on the old content and enter on the new one (e.g. a carousel slide, a tab panel).
 
 **Directional or context-specific motion.** Call `addTransitionType('next')` inside `startTransition`, then pass an object to the prop: `enter={{ next: 'from-right', previous: 'from-left', default: 'none' }}`. React also sets these as browser view-transition types, so plain CSS can branch with `:active-view-transition-type(next) ::view-transition-group(*) { … }`. Reserve directional slides for hierarchy or ordered sequences, not sibling tabs. Remember RTL: "next" moves toward the left here.
@@ -106,6 +129,16 @@ These already exist. Keep them when refactoring; replicate the per-version parts
 - **Interactivity**: during the animation, named participants are not hit-testable, and an in-flight overlay can swallow clicks. Keep reveals short (≤ 0.45 s). `::view-transition { pointer-events: none; }` passes clicks through to unnamed content if ever needed.
 - **Snapshots are images**: text inside an animating group cross-fades between old and new (a button label will briefly ghost), and a changing aspect ratio stretches. Keep elements whose content changes outside named groups, or accept the brief cross-fade.
 - **`useDeferredValue`** (e.g. the header service search) is a transition too. It only animates if a `<ViewTransition>` boundary's content changes, so keep boundaries off frequently-updating search UI.
+- **Groups stack in the old state's paint order**, not by your intent. A moving element covers every named sibling painted before it, so the bug shows in only one direction (V11: switching back to an earlier tab hid its label under the pill until the slide ended). Put the elements that must stay on top at `z-index: 1` inside a parent with `isolation: isolate`; z-index changes paint order, and so changes group order.
+- **A stretched snapshot blurs.** A rounded fill that changes width smears its ends, because the image is scaled. For a plain shape, hide the images and paint the group itself. The colour must be literal: the pseudo-elements hang off `<html>`, outside `[data-version]` where the tokens live.
+
+  ```css
+  ::view-transition-group(.v11-pill) { border-radius: 999px; background: #103d40; }
+  ::view-transition-old(.v11-pill),
+  ::view-transition-new(.v11-pill) { display: none; }
+  ```
+- **Groups are placed on whole pixels**; the live element is not. With a fractional height (e.g. a 33.594px tab) the two round to different boxes and the edge jumps 1px when the animation hands back, which reads as a crop. Give animated boxes a whole-pixel height, e.g. a `px` `line-height`.
+- **Overlap looks fuzzy.** Old and new snapshots both half-transparent ghost the text. For a content swap, run exit then enter in sequence (old out in ~0.07 s, new in after a delay of the same length). The root cross-fades too: when only named parts should move, turn it off for that type with `:active-view-transition-type(x)::view-transition-old(root), :active-view-transition-type(x)::view-transition-new(root) { animation: none; }`.
 
 ## Verifying
 
@@ -121,11 +154,36 @@ await page.waitForFunction(
 await page.screenshot({ path: `${dir}/mid.png` })
 ```
 
+Playwright is not in this repo; import it from `../hut-crawler-content/node_modules/playwright/index.mjs` and pass `executablePath` for the installed headless shell under `~/.cache/ms-playwright/` if the bundled version is missing. Scroll the target into view **before** clicking and screenshot with `page.screenshot({ clip })`: an element screenshot scrolls the page under the fixed overlay and produces offset, misleading frames.
+
+A screenshot takes longer than a short (≤ 0.3 s) animation, so the "mid" frame above is often already the end state. For short transitions, freeze or slow the animations instead:
+
+```js
+// freeze at fixed times
+await page.evaluate((t) => document.getAnimations().forEach((a) => {
+  if (a.effect?.pseudoElement) { a.pause(); a.currentTime = t }
+}), 60)
+
+// or play at 1/10 speed and grab a burst through the hand-off
+await page.evaluate(() => {
+  const start = document.startViewTransition.bind(document)
+  document.startViewTransition = (...args) => {
+    const t = start(...args)
+    t.ready.then(() => document.getAnimations().forEach((a) => (a.playbackRate = 0.1)))
+    t.finished.then(() => (window.__vtDone = true))
+    return t
+  }
+})
+```
+
+Measure, don't eyeball: load each PNG into an `OffscreenCanvas` in the page and print the bounding box of the shape's colour. A 1px jump between the last animated frame and the first settled one is invisible in a thumbnail and obvious to the user.
+
 Check:
 1. The mid frame shows the entering content partway through, and neighbours between their old and new positions — not a blank area.
-2. Closing animates too.
-3. `reducedMotion: 'reduce'` in the page options leaves no running `::view-transition*` animations.
-4. Typing in the header search triggers no stray transitions (wrap `document.startViewTransition` to count calls).
-5. 360 and 1440 px have no horizontal overflow in the open state.
+2. Closing animates too; for tabs and other ordered controls, test **both directions** (stacking bugs show in one only).
+3. The frames around the moment the transition finishes match: the box doesn't move, shrink or crop when the live element takes over.
+4. `reducedMotion: 'reduce'` in the page options leaves no running `::view-transition*` animations.
+5. Typing in the header search triggers no stray transitions (wrap `document.startViewTransition` to count calls).
+6. 360 and 1440 px have no horizontal overflow in the open state.
 
 To inspect what React did, list `document.getAnimations().filter((a) => a.effect?.pseudoElement)` and read `getComputedStyle(document.documentElement, '::view-transition-group(_t_0_)')`. React's own WAAPI animations (on `::view-transition` size and offscreen groups' opacity) show up there with no `animationName`.

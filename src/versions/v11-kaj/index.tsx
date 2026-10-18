@@ -127,20 +127,21 @@ export default function KajHome() {
         <Hero
           name={identity.name}
           city={identity.city}
-          image={identity.images.campus}
-          imageAlt={identity.images.campusAlt}
+          image={identity.images.campusHero}
+          imageAlt={identity.images.campusHeroAlt}
           aboutHref={ABOUT_HREF}
           newStudentsHref={newStudents.href}
           semesterTitle={semester.title}
           calendarHref="#v11-calendar"
           next={state.nextMilestone}
-        />
-        <ServiceBar
-          services={railServices}
-          moreServices={moreServices}
-          serviceCount={studentServices.length}
-          allServicesHref={SERVICES_HREF}
-        />
+        >
+          <ServiceBar
+            services={railServices}
+            moreServices={moreServices}
+            serviceCount={studentServices.length}
+            allServicesHref={SERVICES_HREF}
+          />
+        </Hero>
 
         {/* When the systems panel opens, these slide down to their new place instead of jumping. */}
         <ViewTransition default="v11-slide">
@@ -174,24 +175,24 @@ export default function KajHome() {
           channel={social.find((so) => so.id === 'aparat')}
         />
 
-        <div className={`${s.container} ${s.section}`}>
+        <div className={`${s.container} ${s.roomy}`}>
           <Achievements
             lead={leadAchievement}
             others={otherAchievements}
             tags={achievementTags}
             units={researchUnits.slice(0, 4)}
-          research={RESEARCH}
+            research={RESEARCH}
             moreHref={tab('university').moreHref}
           />
         </div>
 
         <div className={s.alt}>
-          <div className={`${s.container} ${s.section}`}>
+          <div className={`${s.container} ${s.roomy}`}>
             <Learning items={learningItems} categories={newsTabs} centre={growthCentre} />
           </div>
         </div>
 
-        <div className={`${s.container} ${s.section}`}>
+        <div className={`${s.container} ${s.roomy}`}>
           <Welcome
             newStudentsHref={newStudents.href}
             departmentsHref={DEPARTMENTS_HREF}

@@ -62,6 +62,10 @@
   --space-l: 40px;
   --space-xl: clamp(56px, 7vw, 96px);
   --gutter: clamp(16px, 4vw, 40px);
+  /* full-bleed bands (the hero) keep only this edge, no max width */
+  --edge: clamp(16px, 4vw, 72px);
+  /* utility bar + main nav; the hero fills the rest of the first screen */
+  --header-h: 117px;
   --max: 1240px;
   --radius-s: 10px;
   --radius: 16px;
@@ -110,8 +114,9 @@
 }
 
 /*
- * v11-open: the systems panel under the service rail opens from its top edge.
- * v11-slide: the sections under it move to their new place.
+ * v11-open: the systems panel opens from the rail: up from its bottom edge on wide screens, where it sits
+ * above the rail, and down from its top edge on phones, where it sits under it.
+ * v11-slide: the hero copy rises (wide screens) or the sections under it move down (phones).
  */
 ::view-transition-group(.v11-open),
 ::view-transition-group(.v11-slide) {
@@ -137,6 +142,82 @@
     clip-path: inset(0);
     translate: 0 0;
     opacity: 1;
+  }
+}
+
+@media (min-width: 761px) {
+  ::view-transition-new(.v11-open):only-child {
+    animation-name: v11-rise;
+  }
+
+  ::view-transition-old(.v11-open):only-child {
+    animation-name: v11-rise;
+  }
+}
+
+@keyframes v11-rise {
+  from {
+    clip-path: inset(100% 0 0 0);
+    translate: 0 8px;
+    opacity: 0.4;
+  }
+  to {
+    clip-path: inset(0);
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+/*
+ * v11-pill: the announcements tab fill slides to the chosen tab. The group itself is
+ * painted as the pill (snapshots stretch and blur its round ends), so it stays sharp at
+ * every width. The colour is literal because the pseudo-elements hang off <html>,
+ * outside [data-version='v11'] where --pine-900 lives.
+ * v11-notices-out / -in: the old list is gone almost at once, then the new one settles in;
+ * they never overlap, which is what made the swap look blurred.
+ * The rest of the page (the root) swaps without a cross-fade, so no text ghosts.
+ */
+::view-transition-group(.v11-pill) {
+  animation-duration: 0.22s;
+  animation-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 999px;
+  background: #103d40;
+}
+
+::view-transition-old(.v11-pill),
+::view-transition-new(.v11-pill) {
+  display: none;
+}
+
+/* tab labels switch colour quickly, so the one the pill leaves never washes out */
+::view-transition-old(.v11-tab-label),
+::view-transition-new(.v11-tab-label) {
+  animation-duration: 0.12s;
+}
+
+:active-view-transition-type(v11-notices)::view-transition-old(root),
+:active-view-transition-type(v11-notices)::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-old(.v11-notices-out):only-child {
+  animation: v11-fade 0.07s linear reverse both;
+}
+
+::view-transition-new(.v11-notices-in):only-child {
+  animation: v11-notices-in 0.18s cubic-bezier(0.25, 0.8, 0.25, 1) 0.07s both;
+}
+
+@keyframes v11-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes v11-notices-in {
+  from {
+    opacity: 0;
+    translate: 0 4px;
   }
 }
 
