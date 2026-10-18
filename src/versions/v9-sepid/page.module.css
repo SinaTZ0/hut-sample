@@ -1,0 +1,12 @@
+.main:focus {
+  outline: none;
+}
+
+/* Sheets on the mist, with generous air between them. */
+.page {
+  display: grid;
+  gap: var(--section);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: clamp(12px, 2vw, 24px) var(--gutter) var(--section);
+}

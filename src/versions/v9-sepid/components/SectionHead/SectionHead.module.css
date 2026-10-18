@@ -1,0 +1,23 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 0 8px 20px;
+}
+
+.title {
+  font-size: var(--step-3);
+  color: var(--heading);
+}
+
+.more {
+  font-size: var(--step--1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.more:hover {
+  text-decoration: underline;
+}

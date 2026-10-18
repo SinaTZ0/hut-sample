@@ -1,0 +1,118 @@
+/*
+ * V9 "Sepid": design tokens.
+ * A cool mist page and white sheets with soft corners. Inside a sheet the compartments meet at
+ * hairline seams (the sheet shows its seam colour through a 1px grid gap), so a section reads as
+ * one object. One accent, deep teal from the university's own palette; pale amber only for "next".
+ */
+[data-version='v9'] {
+  /* palette */
+  --mist: #eef2f4;
+  --sheet: #ffffff;
+  --tint: #f5f8f9;
+  --seam: #e1e7ea;
+  --ink: #17222e;
+  --teal: #0e6e68;
+  --teal-deep: #0a524e;
+  --teal-soft: #e3f1ef;
+  --amber-soft: #fdf1cf;
+  --amber-ink: #6b4a00;
+
+  /* roles */
+  --bg: var(--mist);
+  --surface: var(--sheet);
+  --text: var(--ink);
+  --text-muted: #56636f;
+  --heading: var(--ink);
+  --link: var(--teal);
+  --line: var(--seam);
+  --focus: var(--teal);
+
+  /* type: one family, gentle weights */
+  --font: 'Vazirmatn Variable', system-ui, sans-serif;
+  --step--2: 0.78125rem;
+  --step--1: 0.875rem;
+  --step-0: 1rem;
+  --step-1: 1.1875rem;
+  --step-2: 1.4375rem;
+  --step-3: clamp(1.5rem, 1.3rem + 0.7vw, 1.875rem);
+  --step-4: clamp(2rem, 1.6rem + 1.4vw, 2.625rem);
+  --step-5: clamp(2.5rem, 1.7rem + 3vw, 4.25rem);
+
+  /* shape and space */
+  --radius: 28px;
+  --radius-sm: 14px;
+  --pad: clamp(20px, 2.6vw, 40px);
+  --section: clamp(56px, 7vw, 104px);
+  --gutter: clamp(16px, 3vw, 40px);
+  --max: 1280px;
+
+  --skip-bg: var(--teal);
+  --skip-fg: var(--sheet);
+
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--step-0);
+  line-height: 1.85;
+  color-scheme: light;
+}
+
+:where([data-version='v9']) :focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Sheets clip their corners, so focus rings inside the main content are drawn inward. */
+:where([data-version='v9'] main) :focus-visible {
+  outline-offset: -3px;
+}
+
+:where([data-version='v9']) a {
+  color: var(--link);
+  text-underline-offset: 0.3em;
+}
+
+:where([data-version='v9']) h1,
+:where([data-version='v9']) h2,
+:where([data-version='v9']) h3 {
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+/*
+ * View transitions, applied by React's <ViewTransition> through these classes.
+ * v9-open: the hero's systems panel fades down into the sheet. v9-slide: sections under it move.
+ */
+::view-transition-group(.v9-open),
+::view-transition-group(.v9-slide) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+::view-transition-new(.v9-open):only-child {
+  animation: v9-open 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+::view-transition-old(.v9-open):only-child {
+  animation: v9-open 0.25s cubic-bezier(0.4, 0, 0.6, 1) reverse both;
+}
+
+@keyframes v9-open {
+  from {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

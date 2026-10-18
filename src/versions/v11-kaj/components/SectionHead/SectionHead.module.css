@@ -1,0 +1,67 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-s) var(--space-l);
+  margin-block-end: var(--space-l);
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--link);
+}
+
+.kicker::before {
+  content: '';
+  inline-size: 18px;
+  block-size: 4px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.title {
+  margin-block: 10px 6px;
+  font-size: var(--step-4);
+  font-weight: 800;
+  line-height: 1.45;
+  color: var(--heading);
+}
+
+.lede {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--step--1);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.more:hover {
+  text-decoration: underline;
+}
+
+.head[data-on-band] .kicker {
+  color: var(--accent);
+}
+
+.head[data-on-band] .title {
+  color: #fff;
+}
+
+.head[data-on-band] .lede {
+  color: var(--on-band-muted);
+}
+
+.head[data-on-band] .more {
+  color: var(--accent);
+}

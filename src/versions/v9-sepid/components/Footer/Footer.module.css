@@ -1,0 +1,194 @@
+/* The footer is the last sheet, open at the bottom edge of the page. */
+.footer {
+  max-width: calc(var(--max) - 2 * var(--gutter));
+  margin-inline: auto;
+  border-start-start-radius: var(--radius);
+  border-start-end-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--step--1);
+}
+
+.inner {
+  padding: clamp(32px, 4vw, 56px) var(--pad) 24px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+}
+
+.markBox {
+  display: grid;
+  place-items: center;
+  inline-size: 48px;
+  block-size: 48px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.mark {
+  color: var(--sheet);
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.name {
+  font-size: var(--step-1);
+  font-weight: 700;
+}
+
+.nameEn {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+}
+
+.about {
+  margin-block: 16px;
+  max-inline-size: 36ch;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--tint);
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: var(--teal-soft);
+  color: var(--teal-deep);
+}
+
+.colTitle {
+  margin-block-end: 12px;
+  font-size: var(--step-0);
+  color: var(--heading);
+}
+
+.list {
+  display: grid;
+  gap: 6px;
+}
+
+.list a,
+.contact a,
+.affiliates a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.list a:hover,
+.contact a:hover,
+.affiliates a:hover {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
+.internal {
+  font-size: var(--step--2);
+}
+
+.contact {
+  display: grid;
+  gap: 8px;
+  font-style: normal;
+}
+
+.contact p {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.contact svg {
+  flex: none;
+  margin-block-start: 4px;
+  color: var(--teal);
+}
+
+.fax {
+  flex-wrap: wrap;
+  column-gap: 16px;
+}
+
+.contactMore {
+  display: inline-block;
+  margin-block-start: 12px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.contactMore svg {
+  display: none;
+}
+
+.contactMore:hover {
+  text-decoration: underline;
+}
+
+.affiliates {
+  margin-block-start: 32px;
+  padding-block-start: 20px;
+  border-block-start: 1px solid var(--seam);
+}
+
+.affiliates ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-block-start: 24px;
+  padding-block-start: 16px;
+  border-block-start: 1px solid var(--seam);
+  font-size: var(--step--2);
+}
+
+@media (max-width: 1080px) {
+  .columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brandCol {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    --radius: 22px;
+  }
+
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,135 @@
+import { startTransition, useId, useState, ViewTransition } from 'react'
+import type { Service } from '../../../../content'
+import { ExternalLink } from '../../../../shared/components/ExternalLink'
+import { Icon } from '../../../../shared/components/Icon'
+import { faDigits, formatJalaliRange, relativeDays } from '../../../../shared/utils/fa'
+import type { EventWithStatus } from '../../../../shared/utils/semester'
+import s from './Hero.module.css'
+
+interface HeroProps {
+  name: string
+  city: string
+  mission: string
+  image: string
+  imageAlt: string
+  aboutHref: string
+  newStudentsHref: string
+  services: Service[]
+  /** The rest of the student systems, opened below the row by the "all" cell. */
+  moreServices: Service[]
+  serviceCount: number
+  allServicesHref: string
+  calendarHref: string
+  next?: EventWithStatus
+}
+
+/**
+ * The first sheet: the name and mission beside the campus photo, and beneath them, across one
+ * seam, the next deadline and the six daily systems. "All systems" opens the rest inside the sheet.
+ */
+export function Hero({
+  name,
+  city,
+  mission,
+  image,
+  imageAlt,
+  aboutHref,
+  newStudentsHref,
+  services,
+  moreServices,
+  serviceCount,
+  allServicesHref,
+  calendarHref,
+  next,
+}: HeroProps) {
+  const lead = name.replace(city, '').trim()
+  const panelId = useId()
+  const [open, setOpen] = useState(false)
+
+  // A transition, so the panel's <ViewTransition> opens it (see v9-open in tokens.css).
+  const toggle = () => startTransition(() => setOpen((o) => !o))
+
+  return (
+    <section aria-labelledby="v9-hero" className={s.hero}>
+      <div className={s.field}>
+        <h1 id="v9-hero" className={s.title}>
+          <span>{lead}</span> <span>{city}</span>
+        </h1>
+        <p className={s.mission}>{mission}</p>
+        <div className={s.actions}>
+          <a href={aboutHref} className={s.primary}>
+            آشنایی با دانشگاه
+          </a>
+          <ExternalLink href={newStudentsHref} newTab className={s.secondary}>
+            راهنمای نودانشجویان
+          </ExternalLink>
+        </div>
+      </div>
+
+      <figure className={s.photo}>
+        <img src={image} alt={imageAlt} fetchPriority="high" />
+      </figure>
+
+      <a href={calendarHref} className={s.deadline}>
+        {next ? (
+          <>
+            <span className={s.deadlineWhen}>{next.status === 'current' ? 'در جریان' : relativeDays(next.daysUntil)}</span>
+            <span className={s.deadlineWhat}>
+              <strong>{next.label}</strong>
+              {next.cohort && <> ({next.cohort})</>}
+              <span className={s.deadlineDate}>{formatJalaliRange(next.start, next.end)}</span>
+            </span>
+          </>
+        ) : (
+          <span className={s.deadlineWhat}>
+            <strong>تقویم آموزشی نیم‌سال</strong>
+          </span>
+        )}
+      </a>
+
+      <nav aria-label="سامانه‌های پرکاربرد" className={s.services}>
+        <ul role="list" className={s.serviceList}>
+          {services.map((sv) => (
+            <li key={sv.id}>
+              <ExternalLink href={sv.href} newTab className={s.service}>
+                <Icon name={sv.icon} size={26} className={s.serviceIcon} />
+                <span className={s.serviceName}>{sv.short}</span>
+                <span className={s.serviceDesc}>{sv.description}</span>
+              </ExternalLink>
+            </li>
+          ))}
+          <li>
+            <button type="button" className={s.all} aria-expanded={open} aria-controls={open ? panelId : undefined} onClick={toggle}>
+              {open ? 'بستن فهرست' : <>همه {faDigits(serviceCount)} سامانه</>}
+              <Icon name="arrow" size={18} />
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      {open && (
+        <ViewTransition enter="v9-open" exit="v9-open">
+          <div id={panelId} className={s.more}>
+            <ul role="list" className={s.moreList}>
+              {moreServices.map((sv) => (
+                <li key={sv.id}>
+                  <ExternalLink href={sv.href} newTab className={s.service}>
+                    <Icon name={sv.icon} size={26} className={s.serviceIcon} />
+                    <span className={s.serviceName}>{sv.short}</span>
+                    <span className={s.serviceDesc}>{sv.description}</span>
+                  </ExternalLink>
+                </li>
+              ))}
+              <li>
+                <a href={allServicesHref} className={s.directory}>
+                  راهنمای همه سامانه‌ها
+                  <Icon name="arrow" size={18} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ViewTransition>
+      )}
+    </section>
+  )
+}

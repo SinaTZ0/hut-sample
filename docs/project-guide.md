@@ -40,8 +40,9 @@ pnpm preview        # serve the production build
 
 | URL | What |
 |---|---|
-| `/` | Gallery of all registered versions |
-| `/v1` … `/v6` | The versions |
+| `/` | Gallery of the current versions |
+| `/archive` | Gallery of the archived versions (`archived: true` in the registry) |
+| `/v1` … `/v10` | The versions |
 | `?today=1405-09-28` | Pretend today is that Jalali date (calendar widgets, the V3 timeline, "next deadline") |
 
 A small floating bar on every version page switches between versions and keeps the `?today=` parameter. It belongs to the review tooling, not to any design (`src/app/VersionBar.tsx`).
@@ -210,7 +211,7 @@ Add an entry to `src/versions/registry.ts`:
 },
 ```
 
-The route, the gallery card and the switcher-bar entry now appear automatically.
+The route, the gallery card and the switcher-bar entry now appear automatically. To retire a version, set `archived: true` on its entry. It moves from `/` to `/archive`, its route keeps working, and the switcher bar lists it only next to the other archived versions.
 
 ### Step 4: Set fonts and tokens
 

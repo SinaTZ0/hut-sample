@@ -512,6 +512,104 @@ The design is a dark warp with bright compartments in either case.
 Kufi is hard to read over three lines. The spotlight card is the graduation announcement, as in V4.
 Staff systems keep their own footer column.
 
+### V9 Sepid (سپید): the rug, softened
+
+V8's structure was kept and its look was not: the rug read as too edgy for a governance university.
+V9 keeps every compartment of V8 in the same place and changes what holds them together.
+
+**Concept.** Each section is one white sheet with 28px corners on a cool mist page. The compartments
+inside a sheet meet at 1px hairline seams instead of gaps: the sheet's background is the seam colour,
+and a 1px grid gap lets it show through. A section therefore reads as one object, and the space between
+sheets (56–104px) carries the page's rhythm. Section headings sit in the open above their sheet.
+
+```
+ brand · nav · search · EN · (ورود به پرتال)
+ ╭───────────────────────────┬──────────────────────────────╮
+ │ دانشگاه صنعتی همدان        │          campus photo        │
+ │ mission · (two pills)      │                              │
+ ├────────────┬────┬────┬────┼────┬────┬────┬───────────────┤
+ │ 58 روز دیگر│ s1 │ s2 │ s3 │ s4 │ s5 │ s6 │ همه ۱۵ سامانه  │
+ ╰────────────┴────┴────┴────┴────┴────┴────┴───────────────╯
+   تازه‌های دانشگاه                                   همه اخبار
+ ╭──────────────────┬─────────────┬─────────────╮
+ │ lead story       │ story       │ notices     │   …one sheet per section
+ ╰──────────────────┴─────────────┴─────────────╯
+```
+
+| Token | Hex | Role |
+|---|---|---|
+| mist | `#EEF2F4` | page (cool, not cream) |
+| sheet | `#FFFFFF` | compartments |
+| tint | `#F5F8F9` | the secondary end of a sheet (notices, units, help) |
+| seam | `#E1E7EA` | hairlines between compartments |
+| teal | `#0E6E68` | the one accent: buttons, icons, links (deepened from the site's `#006F64`) |
+| amber-soft | `#FDF1CF` | the next deadline only, with `#6B4A00` text |
+| ink | `#17222E` | text |
+
+Vazirmatn throughout, at weights 500–700. Pill buttons and a segmented control for the announcement
+tabs. No shadows on sheets; only floating layers (menus, search) cast one. Focus rings inside the main
+content are drawn inward, since the sheets clip their corners.
+
+### V10 Sanati (صنعتی): the rug in the live site's clothes
+
+V10 also keeps V8's structure, and dresses it in the visual language of the current hut.ac.ir theme
+(`sanati-hamedan-theme`, read from `archive/raw/home.html`). The aim is a redesign that existing users
+recognise at once.
+
+**Taken from the live site:** petrol navy `#003459` for panels, amber `#FFC000` for line icons, dates
+and strokes, teal `#006F64` (the edge of its quick links), 1em corners on cards, Vazirmatn, and a
+hero where the navy description panel sits against the campus photo's edge.
+
+**Changed from the live site:** cards are arranged in V8's grid instead of carousels. Amber never
+carries text on white, because the contrast is too low: on white it is only a stroke (stat cards,
+section headings), and a darker `#805C00` carries dates. The daily systems keep the
+amber icon on a navy tile, which keeps the live site's icon style with enough contrast.
+
+The daily systems are one white card whose cells meet at hairlines, ending in the teal "all
+systems" cell. **دانشگاه در یک نگاه** is built the same way: one card holding the six figures (3×2,
+each with its navy icon tile), a navy strip for the eight departments (4×2) and the event. It has no
+breakpoints: the card is a size container and its lengths are `clamp()`s on its own width (`cqi`), so
+a phone shows the same composition as a desktop, only smaller.
+
+| Token | Hex | Role |
+|---|---|---|
+| navy | `#003459` | header, hero panel, notices, term, units, departments |
+| amber | `#FFC000` | deadline, welcome, icons, strokes, selected tabs |
+| teal | `#006F64` | "all systems", help cards |
+| page | `#F2F5F8` | page behind the cards |
+| white | `#FFFFFF` | reading cards |
+
+### V11 Kaj (کاج): V4's front door, finished
+
+V11 starts from a reference mockup the user supplied, which was drawn on V4 Alvand's palette and
+structure. It keeps V4's pine and wheat-gold, Vazirmatn, the light/dark toggle and the section order,
+and takes over the mockup's refinements:
+
+- **Hero:** a flag ribbon folds in from the photo's far corner. It is an inline SVG (three wavy
+  stripes and a soft-light sheen), not generated art, so the colours stay exact; it sits clear of the
+  copy and is clipped by the hero.
+- **Daily systems:** one even rail of six centred cells with no trailing link; the header's systems
+  menu reaches the rest.
+- **At a glance:** the campus-life photo carries a gold play disc. It links to the university's
+  video channel, separately from the photo's own link to its announcement, so neither lies about
+  where it goes. The six figures sit on hairlines; the eight departments stay in a row below.
+- **Achievements:** each card has a short category line with a gold dot, and the lead has a
+  "در کانون توجه" badge. The research units, which V4 listed in the courses panel, close this
+  section as one hairline row.
+- **Events and courses:** the pine panel holds only its title, lede and one link to the growth
+  centre; the list beside it shows each item's photo.
+
+| Token | Hex | Role |
+|---|---|---|
+| pine 950 | `#0B2F32` | top strip, hero wash, footer |
+| pine 900 | `#103D40` | glance band, courses panel |
+| pine 700 | `#146D66` / `#1B6A64` | welcome panel, links |
+| gold | `#E7BC65` | primary action, figures, play disc, tag dots |
+| mist | `#F6F8F5` | page |
+
+Not taken from the mockup: its website-visit counters in the footer (there is no data for them),
+and announcements without category tabs (the content checklist requires the filter).
+
 ### Self-review against generic defaults
 
 None of the versions uses a cream page with serif and terracotta, a dark page with an acid accent, a broadsheet layout or uniform SaaS cards. They avoid all-caps eyebrows and "→" link suffixes, and they don't decorate with numbered markers: numbers appear only on the calendar sequence in V3. Colours come from the subject: Alvand granite and lapis, Lalejin glazes, calendar ink with a single red for today, Alvand's pine slopes with wheat gold, four of the seven walls Herodotus gives Ecbatana, the granite and turquoise glass of the Baba Taher tower, and the travertine, midnight and manuscript gold of the Avicenna tower.
@@ -523,6 +621,8 @@ V5 is worth the same check, because it was built from a profile of V4 and could 
 V7 is the sharpest version of this risk, because it was copied directly from V6's files rather than built from a profile of it, so it had to earn its differences line by line instead of starting from a blank page. The things that make it a different design rather than a recolour: the section order itself changes (research and achievement lead, not news), the dark bands are night instead of daylit granite, the accent is warm gold instead of cool glass, a manuscript serif replaces the geometric one, and the one generated silhouette — the tower — appears as a drawn figure, not only as a repeating texture.
 
 V8 is the one most at risk of reading as a "bento grid" (the current default of content chopped into tiles). It avoids that with square corners, no shadows, compartments that touch on a coloured warp rather than float on a page, fills that change with the job of each compartment (madder for announcements and help, indigo for systems and figures, weld for the one thing to act on, white for reading), and seams that deliberately do not line up between rows, like courses of knots.
+
+V9 is close to the SaaS-card kit by brief, since the request was for soft, round and airy. It differs from that kit in the ways that count: there is one radius on the outside of each section, not on every tile; there are no shadows; compartments touch at hairlines instead of floating; and the fills still change with each compartment's job (amber for the deadline, teal for the welcome, tint for secondary lists). V10 deliberately follows an existing visual identity rather than inventing one, so its test is fidelity and contrast, not novelty.
 
 ---
 

@@ -5,7 +5,7 @@ Every version reads the same typed content, so new versions can sit beside the e
 
 ```sh
 pnpm install
-pnpm dev          # http://localhost:5173  →  /  (gallery), /v1, /v2, /v3, /v4, /v5, /v6, /v7, /v8
+pnpm dev          # http://localhost:5173  →  /  (gallery: V9, V10, V11), /archive (V1–V8), /v1 … /v11
 pnpm build && pnpm preview
 node scripts/scrape/scrape.mjs            # refresh the archive from the live site
 node scripts/scrape/scrape.mjs --offline  # re-parse archive/raw only
@@ -16,8 +16,14 @@ What "good" means here — the taste profile the newest version was built from �
 How the code fits together, and how to add a version step by step, is in [`docs/project-guide.md`](docs/project-guide.md).
 The scraped reference material is in [`archive/INVENTORY.md`](archive/INVENTORY.md).
 
+The gallery at `/` lists the current versions, V9, V10 and V11. V9 and V10 are built on V8's structure and V11 on V4's, all in a light theme with Vazirmatn. V1–V8 are listed at `/archive`, and their routes still work.
+
 | Route | Version | Leads with |
 |---|---|---|
+| `/v9` | Sepid (سپید) | V8's structure, soft: each section is one white sheet with 28px corners, its compartments meeting at hairline seams instead of gaps, on a cool mist page with one teal accent |
+| `/v10` | Sanati (صنعتی) | V8's structure in the live hut.ac.ir theme's language: petrol navy panels, amber line icons and strokes, a teal edge, separate 1em-rounded cards |
+| `/v11` | Kaj (کاج) | V4's front door, finished from a reference mockup: Alvand photo with a flag ribbon and the daily systems rail, a video-led glance band, photo-led achievements and courses |
+| **Archive** | | |
 | `/v1` | Ganjnameh (گنج‌نامه) | University identity and student gateway as twin carved tablets |
 | `/v2` | Lalejin (لالجین) | Student service mosaic with live search |
 | `/v3` | Taqvim (تقویم) | Live semester timeline and a sticky "now" rail |
@@ -55,7 +61,10 @@ src/
     v6-babataher/         + assets/ — the generated girih, granite, contour and seal artwork
     v7-ebnesina/          + assets/ — the generated tower, ribs, granite, contour and seal artwork
     v8-qali/              + assets/ — the generated rug border and medallion
-  pages/VersionGallery/  index page comparing versions
+    v9-sepid/             V8's structure as seamed white sheets
+    v10-sanati/           V8's structure in the live site's navy and amber
+    v11-kaj/              V4's structure, refined to a reference mockup
+  pages/VersionGallery/  index page comparing versions ("/" current, "/archive" earlier)
   app/                   router, shell, reviewer version bar
 ```
 

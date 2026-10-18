@@ -2,21 +2,26 @@ import '@fontsource-variable/vazirmatn'
 import { Link } from 'react-router'
 import { identity } from '../../content'
 import { faNumber } from '../../shared/utils/fa'
-import { versions } from '../../versions/registry'
+import { archivedVersions, currentVersions } from '../../versions/registry'
 import styles from './VersionGallery.module.css'
 
-/** Index page: lists every registered design version for side-by-side review. */
-export function VersionGallery() {
+/** Index page: lists the current design versions for side-by-side review; `archive` lists the earlier ones. */
+export function VersionGallery({ archive = false }: { archive?: boolean }) {
+  const versions = archive ? archivedVersions : currentVersions
   return (
     <main className={styles.page}>
       <header className={styles.head}>
         <img src={identity.images.campus} alt={identity.images.campusAlt} className={styles.photo} />
         <div>
-          <h1 className={styles.title}>بازطراحی صفحه اصلی {identity.name}</h1>
+          <h1 className={styles.title}>{archive ? 'بایگانی نسخه‌های پیشین' : `بازطراحی صفحه اصلی ${identity.name}`}</h1>
           <p className={styles.lede}>
-            {faNumber(versions.length)} نسخه با یک محتوای مشترک. همه نسخه‌ها از متن، سامانه‌ها و تقویم آموزشی بایگانی‌شده از
-            hut.ac.ir استفاده می‌کنند و فقط در ترتیب اولویت و زبان بصری با هم فرق دارند.
+            {archive
+              ? `${faNumber(versions.length)} نسخه‌ای که پیش‌تر بررسی شدند. نشانی هر نسخه همچنان کار می‌کند.`
+              : `${faNumber(versions.length)} نسخه با یک محتوای مشترک. همه نسخه‌ها از متن، سامانه‌ها و تقویم آموزشی بایگانی‌شده از hut.ac.ir استفاده می‌کنند و فقط در ترتیب اولویت و زبان بصری با هم فرق دارند.`}
           </p>
+          <Link to={archive ? '/' : '/archive'} className={styles.switch}>
+            {archive ? 'بازگشت به نسخه‌های فعلی' : `بایگانی (${faNumber(archivedVersions.length)} نسخه پیشین)`}
+          </Link>
         </div>
       </header>
 

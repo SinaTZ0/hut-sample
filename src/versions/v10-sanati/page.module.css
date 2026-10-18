@@ -1,0 +1,12 @@
+.main:focus {
+  outline: none;
+}
+
+/* Separate cards on the pale page, as on the live site. */
+.page {
+  display: grid;
+  gap: clamp(8px, 1.5vw, 20px);
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: var(--gap) var(--gutter) clamp(40px, 5vw, 72px);
+}

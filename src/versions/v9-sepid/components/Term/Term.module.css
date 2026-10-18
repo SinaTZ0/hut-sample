@@ -1,0 +1,155 @@
+/* One sheet: the term title and a soft track, then the milestones as cells divided by hairlines. */
+.panel {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.term {
+  padding: var(--pad) var(--pad) 0;
+  font-size: var(--step-2);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+/* the term at true scale: one rounded track, each segment from one milestone to the next */
+.strip {
+  position: relative;
+  display: flex;
+  gap: 3px;
+  block-size: 14px;
+  margin: 44px var(--pad) 32px;
+}
+
+.stripe {
+  flex-basis: 0;
+  min-inline-size: 4px;
+  background: var(--seam);
+}
+
+.stripe:first-child {
+  border-start-start-radius: 999px;
+  border-end-start-radius: 999px;
+}
+
+.stripe:nth-last-child(2) {
+  border-start-end-radius: 999px;
+  border-end-end-radius: 999px;
+}
+
+.stripe[data-status='past'] {
+  background: var(--teal);
+}
+
+.stripe[data-status='current'] {
+  background: #f2c14e;
+}
+
+.today {
+  position: absolute;
+  inset-block: -8px;
+  inset-inline-start: calc(var(--at) * 100%);
+  inline-size: 3px;
+  translate: 50% 0;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.todayLabel {
+  position: absolute;
+  inset-block-end: calc(100% + 4px);
+  inset-inline-start: 50%;
+  translate: 50% 0;
+  padding: 1px 10px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--sheet);
+  font-size: var(--step--2);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* milestones */
+/* flex, not grid: a short last row stretches, so no bare seam shows through */
+.stops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  border-block-start: 1px solid var(--seam);
+  background: var(--seam);
+}
+
+.stop {
+  flex: 1 1 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px 20px;
+  background: var(--surface);
+}
+
+.stop[data-status='past'] {
+  color: var(--text-muted);
+}
+
+.stop[data-status='current'],
+.stop[data-next] {
+  background: var(--amber-soft);
+  color: var(--amber-ink);
+}
+
+.day {
+  font-size: var(--step-3);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.stop[data-status='past'] .day {
+  color: var(--teal);
+}
+
+.month {
+  font-size: var(--step--2);
+  font-weight: 500;
+}
+
+.label {
+  margin-block-start: 6px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.stop[data-status='past'] .label {
+  color: var(--text-muted);
+}
+
+.flag {
+  align-self: flex-start;
+  margin-block-start: 10px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--amber-ink);
+  font-size: var(--step--2);
+  font-weight: 650;
+}
+
+.source {
+  padding: 18px var(--pad);
+  border-block-start: 1px solid var(--seam);
+  font-size: var(--step--1);
+}
+
+.source a {
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .panel {
+    --radius: 22px;
+  }
+
+  .stop {
+    flex-basis: 40%;
+  }
+}

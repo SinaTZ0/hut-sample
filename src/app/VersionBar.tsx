@@ -9,6 +9,8 @@ export function VersionBar() {
   const [open, setOpen] = useState(true)
   const current = versions.find((v) => pathname === `/${v.slug}`)
   if (!current) return null
+  // Only the versions in the same list as the current one, so the archive does not crowd the bar.
+  const siblings = versions.filter((v) => !!v.archived === !!current.archived)
 
   if (!open)
     return (
@@ -19,10 +21,10 @@ export function VersionBar() {
 
   return (
     <nav className={styles.bar} aria-label="نسخه‌های طراحی" dir="rtl">
-      <Link to="/" className={styles.home}>
-        همه نسخه‌ها
+      <Link to={current.archived ? '/archive' : '/'} className={styles.home}>
+        {current.archived ? 'بایگانی' : 'همه نسخه‌ها'}
       </Link>
-      {versions.map((v) => (
+      {siblings.map((v) => (
         <Link key={v.id} to={`/${v.slug}${search}`} className={styles.item} aria-current={v === current ? 'page' : undefined}>
           {v.name}
         </Link>

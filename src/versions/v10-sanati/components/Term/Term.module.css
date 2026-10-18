@@ -1,0 +1,142 @@
+.panel {
+  --focus: var(--amber);
+  padding: var(--pad);
+  border-radius: var(--radius);
+  background: var(--navy);
+  color: var(--white);
+}
+
+.term {
+  font-size: var(--step-2);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+/* the term at true scale: one rounded track, each segment from one milestone to the next */
+.strip {
+  position: relative;
+  display: flex;
+  gap: 3px;
+  block-size: 16px;
+  margin-block: 36px 24px;
+}
+
+.stripe {
+  flex-basis: 0;
+  min-inline-size: 5px;
+  background: var(--navy-2);
+}
+
+.stripe:first-child {
+  border-start-start-radius: 8px;
+  border-end-start-radius: 8px;
+}
+
+.stripe:nth-last-child(2) {
+  border-start-end-radius: 8px;
+  border-end-end-radius: 8px;
+}
+
+.stripe[data-status='past'] {
+  background: var(--teal-2);
+}
+
+.stripe[data-status='current'] {
+  background: var(--amber);
+}
+
+.today {
+  position: absolute;
+  inset-block: -8px;
+  inset-inline-start: calc(var(--at) * 100%);
+  inline-size: 4px;
+  translate: 50% 0;
+  border-radius: 2px;
+  background: var(--white);
+}
+
+.todayLabel {
+  position: absolute;
+  inset-block-end: calc(100% + 2px);
+  inset-inline-start: 50%;
+  translate: 50% 0;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--navy-deep);
+  font-size: var(--step--2);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* milestones */
+.stops {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 10px;
+}
+
+.stop {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--navy-deep);
+  box-shadow: inset 0 3px 0 var(--navy-2);
+}
+
+.stop[data-status='past'] {
+  box-shadow: inset 0 3px 0 var(--teal-2);
+  color: var(--on-dark-muted);
+}
+
+.stop[data-status='current'],
+.stop[data-next] {
+  background: var(--amber);
+  box-shadow: none;
+  color: var(--navy-deep);
+}
+
+.day {
+  font-size: var(--step-3);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.month {
+  font-size: var(--step--2);
+  font-weight: 600;
+}
+
+.label {
+  margin-block-start: 6px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.flag {
+  align-self: flex-start;
+  margin-block-start: 8px;
+  padding: 1px 8px;
+  border-radius: 6px;
+  background: var(--navy-deep);
+  color: var(--amber);
+  font-size: var(--step--2);
+  font-weight: 800;
+}
+
+.source {
+  margin-block-start: 16px;
+  font-size: var(--step--1);
+}
+
+.source a {
+  color: var(--amber);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .stops {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

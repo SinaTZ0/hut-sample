@@ -1,0 +1,326 @@
+/*
+ * One sheet. The seam colour shows through a 1px gap, so every compartment meets its neighbours
+ * at a hairline and the sheet's corners round the whole group.
+ *   ┌ field (5) ──────┬ photo (7) ─────────────────┐
+ *   ├ deadline (3) ┬ s1 ┬ s2 ┬ s3 ┬ s4 ┬ s5 ┬ s6 ┬ all ┤
+ *   ├ more (12): the other systems, opened by "all" ──┤
+ *   └──────────────────────────────────────────────────┘
+ */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-areas:
+    'field field field field field photo photo photo photo photo photo photo'
+    'deadline deadline deadline services services services services services services services services services'
+    'more more more more more more more more more more more more';
+  gap: 1px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--seam);
+}
+
+.field {
+  grid-area: field;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: clamp(32px, 4.5vw, 72px) var(--pad);
+  background: var(--surface);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--step-5);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--heading);
+}
+
+.mission {
+  max-inline-size: 40ch;
+  font-size: var(--step-1);
+  line-height: 1.9;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--teal);
+  color: var(--sheet);
+}
+
+.primary:hover {
+  background: var(--teal-deep);
+}
+
+.secondary {
+  background: var(--teal-soft);
+  color: var(--teal-deep);
+}
+
+.secondary:hover {
+  background: #d3e9e6;
+}
+
+.photo {
+  grid-area: photo;
+  min-block-size: clamp(320px, 36vw, 540px);
+  background: var(--tint);
+}
+
+.photo img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* next deadline */
+.deadline {
+  grid-area: deadline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 22px var(--pad);
+  background: var(--amber-soft);
+  color: var(--amber-ink);
+  text-decoration: none;
+}
+
+.deadline:hover .deadlineWhat strong {
+  text-decoration: underline;
+}
+
+.deadlineWhen {
+  font-size: var(--step-4);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.deadlineWhat {
+  font-size: var(--step--1);
+  line-height: 1.7;
+}
+
+.deadlineWhat strong {
+  font-size: var(--step-1);
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.deadlineDate {
+  display: block;
+}
+
+/* daily systems */
+.services {
+  grid-area: services;
+}
+
+.serviceList {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) minmax(0, 0.85fr);
+  gap: 1px;
+  block-size: 100%;
+}
+
+.service,
+.all,
+.directory {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  block-size: 100%;
+  padding: 22px 18px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.service:hover {
+  background: var(--tint);
+}
+
+.service:hover .serviceName {
+  color: var(--teal);
+}
+
+.serviceIcon {
+  margin-block-end: 10px;
+  color: var(--teal);
+}
+
+.serviceName {
+  font-size: var(--step-1);
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.serviceDesc {
+  font-size: var(--step--2);
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.all,
+.directory {
+  justify-content: flex-end;
+  gap: 8px;
+  font: inherit;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.all {
+  inline-size: 100%;
+  border: 0;
+  cursor: pointer;
+  text-align: start;
+  background: var(--teal-soft);
+  color: var(--teal-deep);
+}
+
+/* the arrow points down to the closed panel and up once it is open */
+.all svg {
+  rotate: -90deg;
+  transition: rotate 0.3s ease;
+}
+
+.all[aria-expanded='true'] svg {
+  rotate: 90deg;
+}
+
+.all:hover,
+.all[aria-expanded='true'] {
+  background: #d3e9e6;
+}
+
+/* the other systems, opened inside the sheet */
+.more {
+  grid-area: more;
+}
+
+.moreList {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+}
+
+.moreList .service {
+  background: var(--tint);
+}
+
+.moreList .service:hover {
+  background: var(--surface);
+}
+
+.directory {
+  background: var(--teal);
+  color: var(--sheet);
+}
+
+.directory:hover {
+  background: var(--teal-deep);
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      'field photo'
+      'deadline deadline'
+      'services services'
+      'more more';
+  }
+
+  .deadline {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .serviceList {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* six systems + a double-width "all" cell fill two whole rows */
+  .serviceList > li:last-child {
+    grid-column: span 2;
+  }
+
+  .moreList {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* nine systems + a triple-width directory cell fill three whole rows */
+  .moreList > li:last-child {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    --radius: 22px;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'photo'
+      'field'
+      'deadline'
+      'services'
+      'more';
+  }
+
+  .photo {
+    min-block-size: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .deadline {
+    gap: 16px;
+  }
+
+  .serviceList,
+  .moreList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service {
+    padding: 18px 16px;
+  }
+
+  .serviceDesc {
+    display: none;
+  }
+
+  .moreList > li:last-child {
+    grid-column: auto;
+  }
+
+  .all,
+  .directory {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

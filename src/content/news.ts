@@ -189,6 +189,7 @@ export const news: NewsItem[] = [
   {
     id: 'a-9505501',
     title: 'دوره رایگان «چگونه دانش‌بنیان شویم»',
+    summary: 'آشنایی گام‌به‌گام با مسیر ثبت شرکت دانش‌بنیان و حمایت‌هایی که به آن تعلق می‌گیرد.',
     date: '2025-11-09',
     href: 'https://hut.ac.ir/article/9505501',
     category: 'openEducation',
@@ -210,6 +211,7 @@ export const news: NewsItem[] = [
   {
     id: 'g-200s',
     title: 'مسابقه «ارائه‌های ۲۰۰ ثانیه‌ای» با حضور دانشجویان',
+    summary: 'دانشجویان ایده یا پژوهش خود را در دویست ثانیه برای داوران و مخاطبان ارائه می‌کنند.',
     image: growth200s,
     category: 'growth',
     href: 'https://hut.ac.ir/web/roshd',
@@ -217,6 +219,7 @@ export const news: NewsItem[] = [
   {
     id: 'g-career',
     title: 'نشست تخصصی هدایت شغلی با حضور مدیران صنعت',
+    summary: 'گفت‌وگوی دانشجویان با مدیران صنعت درباره مسیر شغلی و نیازهای بازار کار.',
     image: growthCareer,
     category: 'growth',
     href: 'https://hut.ac.ir/web/roshd',
